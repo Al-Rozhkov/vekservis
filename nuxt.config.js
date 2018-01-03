@@ -1,0 +1,46 @@
+module.exports = {
+  /*
+  ** Headers of the page
+  */
+  head: {
+    title: 'ВЭК СЕРВИС',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'ВЭК СЕРВИС' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic' }
+    ]
+  },
+  /*
+  ** Global CSS
+  */
+  css: [
+    '~assets/css/normalize.css',
+    { src: '~assets/scss/global.scss', lang: 'sass' }
+  ],
+  /*
+  ** Customize the progress bar color
+  */
+  loading: { color: '#4f48a3' },
+  /*
+  ** Build configuration
+  */
+  build: {
+    /*
+    ** Run ESLint on save
+    */
+    extend (config, ctx) {
+      if (ctx.dev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
+  }
+}

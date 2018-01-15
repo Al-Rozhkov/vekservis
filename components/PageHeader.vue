@@ -1,37 +1,27 @@
 <template>
   <header class="header container" v-bind:style="headerBg">
+    <slot></slot>
     <transition name="slidedown">
       <h1 class="page-title" v-html="pageTitle"></h1>
     </transition>
-    <slot></slot>
-    <div>
-      <button v-on:click="changeTitle('New one')">Переключить рендеринг</button>
-    </div>
   </header>
 </template>
 
 <script>
-// const routeMap = []
-
 export default {
-  data: function () {
-    return {
-      pageTitle: 'Эксплуатация объектов государственной и&nbsp;коммерческой недвижимости по&nbsp;всей России'
-    }
-  },
   computed: {
     headerBg: function () {
       return 'background-image: url(/img/bg-' + this.$route.name + '.jpg)'
-    }
-  },
-  methods: {
-    changeTitle: function (newTitle) {
-      this.pageTitle = newTitle
+    },
+    pageTitle: function () {
+      return this.$store.state.pageTitle
     }
   }
-  /* props: ['pageTitle']
-   components: {
-    Logo
+  /* props: {
+    pageTitle: {
+      type: String,
+      default: 'Эксплуатация объектов государственной и&nbsp;коммерческой недвижимости по&nbsp;всей России'
+    }
   } */
 }
 </script>

@@ -13,10 +13,15 @@ import PageHeader from '~/components/PageHeader.vue'
 import Services from '~/components/Services.vue'
 // import ClientsList from '~/components/ClientsList.vue'
 
+const nodeTitle = 'Эксплуатация объектов государственной и&nbsp;коммерческой недвижимости по&nbsp;всей России'
+
 export default {
   components: {
     PageHeader,
     Services
+  },
+  mounted () {
+    this.$store.commit('changeTitle', nodeTitle)
   }
 }
 </script>

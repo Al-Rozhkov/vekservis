@@ -40,6 +40,11 @@ export default {
 </script>
 
 <style lang="scss">
+.nuxt-link-exact-active {
+  color: #000000;
+  opacity: .5;
+}
+
 .leader {
   display: flex;
   padding-top: .5rem;

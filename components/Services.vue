@@ -13,10 +13,10 @@ export default {
       services: [
         { title: 'Обслуживание механических инженерных систем', name: 'mechanical' },
         { title: 'Монтаж и&nbsp;обслуживание электрических систем зданий', name: 'electrical' },
-        { title: 'Техническое обслуживание слаботочных инженерных систем', name: 'mechanical' },
-        { title: 'Услуги по&nbsp;эксплуатации ЖКХ', name: 'mechanical' },
-        { title: 'Отделочные и&nbsp;ремонтные работы', name: 'mechanical' },
-        { title: 'Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости', name: 'mechanical' }
+        { title: 'Техническое обслуживание слаботочных инженерных систем', name: 'lowvoltage' },
+        { title: 'Услуги по&nbsp;эксплуатации ЖКХ', name: 'zhkh' },
+        { title: 'Отделочные и&nbsp;ремонтные работы', name: 'finishing' },
+        { title: 'Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости', name: 'commercial' }
       ]
     }
   },
@@ -49,7 +49,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 2rem;
+  padding: 7.5rem 2rem 1.5rem 2rem;
 
   h2 {
     position: relative;

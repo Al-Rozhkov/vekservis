@@ -28,6 +28,16 @@ module.exports = {
   /*
   ** Build configuration
   */
+  env: {
+    services: [
+      { name: 'mechanical', title: 'Обслуживание механических инженерных систем' },
+      { name: 'electrical', title: 'Монтаж и&nbsp;обслуживание электрических систем зданий' },
+      { name: 'lowvoltage', title: 'Техническое обслуживание слаботочных инженерных систем' },
+      { name: 'zhkh', title: 'Услуги по&nbsp;эксплуатации ЖКХ' },
+      { name: 'finishing', title: 'Отделочные и&nbsp;ремонтные работы' },
+      { name: 'commercial', title: 'Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости' }
+    ]
+  },
   build: {
     /*
     ** Run ESLint on save

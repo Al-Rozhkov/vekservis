@@ -10,7 +10,6 @@
       </ul>
       <span class="phone"><span class="small">+7 (8412) </span>20-73-18</span>
     </div>
-    <page-header/>
     <nuxt/>
     <footer class="container">
       <div class="col-3">
@@ -40,14 +39,9 @@ export default {
 </script>
 
 <style lang="scss">
-.nuxt-link-exact-active {
-  color: #000000;
-  opacity: .5;
-}
-
 .leader {
   display: flex;
-  padding-top: .5rem;
+  padding-top: 1.5rem;
   padding-bottom: .5rem;
 }
 

@@ -2,7 +2,7 @@
   <div>
     <page-header>
       <services-submenu :servicesList="services"/>
-      <h1 class="page-title">Монтаж и&nbsp;обслуживание электрических систем зданий</h1>
+      <h1 class="page-title">Услуги по&nbsp;эксплуатации ЖКХ</h1>
     </page-header>
     <section class="container">
       ...
@@ -19,7 +19,7 @@ export default {
     return { services: env.services }
   },
   head: {
-    title: 'Монтаж и обслуживание электрических систем зданий. ВЭК СЕРВИС'
+    title: 'Услуги по эксплуатации ЖКХ. ВЭК СЕРВИС'
   },
   components: {
     PageHeader,

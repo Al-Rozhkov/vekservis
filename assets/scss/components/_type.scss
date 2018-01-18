@@ -7,3 +7,20 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.nuxt-link-exact-active {
+    color: #000000;
+    opacity: .5;
+}
+
+.nuxt-link-active {
+    color: #000000;
+    font-weight: 600;
+}
+
+.page-title {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #ffffff;
+}

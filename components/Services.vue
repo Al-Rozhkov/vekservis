@@ -1,23 +1,16 @@
 <template>
   <div class="service-teasers">
-    <a class="service-card" v-for="service in services" v-bind:href="serviceLink(service.name)" v-bind:style="serviceBg(service.name)">
-    <h2 v-html="service.title"></h2>
-    </a>
+    <nuxt-link class="service-card" v-for="service in services" :key="service.name" v-bind:to="serviceLink(service.name)" v-bind:style="serviceBg(service.name)">
+      <h2 v-html="service.title"></h2>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  data: function () {
-    return {
-      services: [
-        { title: 'Обслуживание механических инженерных систем', name: 'mechanical' },
-        { title: 'Монтаж и&nbsp;обслуживание электрических систем зданий', name: 'electrical' },
-        { title: 'Техническое обслуживание слаботочных инженерных систем', name: 'lowvoltage' },
-        { title: 'Услуги по&nbsp;эксплуатации ЖКХ', name: 'zhkh' },
-        { title: 'Отделочные и&nbsp;ремонтные работы', name: 'finishing' },
-        { title: 'Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости', name: 'commercial' }
-      ]
+  props: {
+    services: {
+      required: true
     }
   },
   methods: {
@@ -39,13 +32,10 @@ export default {
 }
 
 .service-card {
-  display: flex;
   position: relative;
   flex-grow: 1;
   width: 33%;
   border: 1px solid #ffffff;
-  // background: linear-gradient(to right, #1b0880 0%,#042a4a 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0880', endColorstr='#042a4a',GradientType=1 );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

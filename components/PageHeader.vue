@@ -1,9 +1,6 @@
 <template>
-  <header class="header container" v-bind:style="headerBg">
+  <header class="header container" :class="headerClass" :style="headerBg">
     <slot></slot>
-    <transition name="slidedown">
-      <h1 class="page-title" v-html="pageTitle"></h1>
-    </transition>
   </header>
 </template>
 
@@ -13,14 +10,13 @@ export default {
     headerBg: function () {
       return 'background-image: url(/img/bg-' + this.$route.name + '.jpg)'
     },
-    pageTitle: function () {
-      return this.$store.state.pageTitle
+    headerClass: function () {
+      return 'ph-' + this.$route.name
     }
   }
   /* props: {
-    pageTitle: {
-      type: String,
-      default: 'Эксплуатация объектов государственной и&nbsp;коммерческой недвижимости по&nbsp;всей России'
+    headerClass: {
+      type: String
     }
   } */
 }
@@ -28,7 +24,6 @@ export default {
 
 <style lang="scss">
 header.header {
-  background-color: #514aa1;
   background-size: cover;
   border-radius: 4px;
   overflow: hidden;
@@ -40,7 +35,7 @@ header.header {
     width: 50%;
   }
 
-  & > h1, & > div {
+  & > h1, & > div, & > ul {
     z-index: 50;
     position: relative;
   }
@@ -53,17 +48,25 @@ header.header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0880', endColorstr='#042a4a',GradientType=1 );
     opacity: .7;
     z-index: 0;
   }
 }
 
-.page-title {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: normal;
-  color: #ffffff;
+.ph-index {
+  background-color: #1b0880;
+  &:before { background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%); }
+}
+
+.ph-services,
+.ph-lowvoltage {
+  background-color: #042a4a;
+  &:before { background-image: linear-gradient(to right, #042a4a 0%,#087380 100%); }
+}
+
+.ph-clients,
+.ph-services-zhkh {
+  background-color: #921800;
+  &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
 }
 </style>

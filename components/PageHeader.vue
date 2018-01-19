@@ -23,36 +23,6 @@ export default {
 </script>
 
 <style lang="scss">
-header.header {
-  background-size: cover;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-
-  h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-    width: 50%;
-  }
-
-  & > h1, & > div, & > ul {
-    z-index: 50;
-    position: relative;
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: .7;
-    z-index: 0;
-  }
-}
-
 .ph-index {
   background-color: #1b0880;
   &:before { background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%); }

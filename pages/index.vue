@@ -13,33 +13,35 @@
       <h2>Комплексный подход</h2>
       <p>Это наш основополагающий принцип к&nbsp;решению задач, поставленных клиентом. Особенность и&nbsp;выгода такого подхода очевидна:</p>
       <div class="service-teasers">
-        <nuxt-link class="service-card" v-for="service in services" :key="service.name" v-bind:to="serviceLink(service.name)" v-bind:style="serviceBg(service.name)">
+        <nuxt-link class="service-card" v-for="service in services" :key="service.name" :to="'/services/' + service.name" v-bind:style="serviceBg(service.name)">
           <h2 v-html="service.title"></h2>
         </nuxt-link>
       </div>
+      <clients :clientsList="clients" :clientsNum="12"/>
     </section>
   </div>
 </template>
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
+import Clients from '~/components/Clients.vue'
 // import Services from '~/components/Services.vue'
-// import ClientsList from '~/components/ClientsList.vue'
 
 export default {
   asyncData ({ env }) {
-    return { services: env.services }
+    return {
+      services: env.services,
+      clients: env.clients
+    }
   },
   methods: {
-    serviceLink: function (name) {
-      return '/services/' + name
-    },
     serviceBg: function (name) {
       return 'background-image: url(/img/bg-services-' + name + '.jpg)'
     }
   },
   components: {
-    PageHeader
+    PageHeader,
+    Clients
   }
 }
 </script>

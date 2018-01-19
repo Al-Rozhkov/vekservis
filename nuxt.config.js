@@ -36,6 +36,20 @@ module.exports = {
       { name: 'zhkh', title: 'Услуги по&nbsp;эксплуатации ЖКХ' },
       { name: 'finishing', title: 'Отделочные и&nbsp;ремонтные работы' },
       { name: 'commercial', title: 'Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости' }
+    ],
+    clients: [
+      { name: 'vtb24' },
+      { name: 'acoola' },
+      { name: 'alfa-bank' },
+      { name: 'befree' },
+      { name: 'nike' },
+      { name: 'obuv-com' },
+      { name: 'concept-club' },
+      { name: 'd-mir' },
+      { name: 'restore' },
+      { name: 'galamart' },
+      { name: 'finn-flare' },
+      { name: 'x5' }
     ]
   },
   build: {

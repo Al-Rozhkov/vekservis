@@ -69,4 +69,10 @@ header.header {
   background-color: #921800;
   &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
 }
+
+.ph-contact,
+.ph-services-commercial {
+  background-color: #921800;
+  &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
+}
 </style>

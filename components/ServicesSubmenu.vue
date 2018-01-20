@@ -21,7 +21,7 @@ export default {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0 0;
+  margin: 0 0 2rem;
   padding: 0;
 
   li {

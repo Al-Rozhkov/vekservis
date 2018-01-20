@@ -11,11 +11,25 @@
     </page-header>
     <section class="container">
       <h2>Комплексный подход</h2>
-      <p>Это наш основополагающий принцип к&nbsp;решению задач, поставленных клиентом. Особенность и&nbsp;выгода такого подхода очевидна:</p>
+      <div class="row section">
+        <p class="col-4">Это наш основополагающий принцип к&nbsp;решению задач, поставленных клиентом. Особенность и&nbsp;выгода такого подхода очевидна:</p>
+        <ul class="col-4">
+          <li>единый подрядчик;</li><li>единая ответственность;</li><li>единая служба поддержки;</li><li>соблюдение единых стандартов обслуживания;</li>
+        </ul>
+        <ul class="col-4">
+          <li>экономия времени на&nbsp;контроль и&nbsp;обработку информации;</li><li>сокращение штатной численности клиента;</li><li>оптимизация доходной части;</li><li>дополнительные услуги на&nbsp;безвозмездной основе.</li>
+        </ul>
+      </div>
       <div class="service-teasers">
         <nuxt-link class="service-card" v-for="service in services" :key="service.name" :to="'/services/' + service.name" v-bind:style="serviceBg(service.name)">
           <h2 v-html="service.title"></h2>
         </nuxt-link>
+      </div>
+      <h2><nuxt-link to="/clients">Клиенты</nuxt-link></h2>
+      <div class="row">
+        <p class="col-4 offset-1">На&nbsp;данный момент компания ВЭК СЕРВИС осуществляет обслуживание объектов федеральных сетевых компаний более чем в&nbsp;40&nbsp;городах и&nbsp;30&nbsp;регионах&nbsp;РФ.</p>
+        <p class="col"><span class="lead">300+</span><br />объектов</p>
+        <p class="col-4"><span class="lead">100&thinsp;000+ м<sup>2</sup></span><br />обслуживаемых площадей</p>
       </div>
       <clients :clientsList="clients" :clientsNum="12"/>
     </section>
@@ -79,7 +93,7 @@ header.header {
 }
 
 .service-teasers {
-  margin: 0 -1px;
+  margin: 0 -1px 4rem;
   display: flex;
   flex-wrap: wrap;
 }

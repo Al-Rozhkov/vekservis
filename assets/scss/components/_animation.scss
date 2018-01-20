@@ -1,15 +1,15 @@
 .page-enter-active, .page-leave-active {
     transition: all .25s;
+    opacity: 1;
 }
 .page-enter, .page-leave-active {
     opacity: 0;
-    
 }
 .page-enter {
-    transform: translateY(-3rem);
+    transform: translateY(-2rem);
 }
 .page-leave-active {
-    transform: translateY(3rem);
+    transform: translateY(2rem);
 }
 
 /* .slidedown-enter-active, .slidedown-leave-active {

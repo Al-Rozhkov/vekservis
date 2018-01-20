@@ -9,3 +9,42 @@
     padding-left: 87px;
     padding-right: 30px;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+  
+footer {
+    border-top: 1px solid #cccccc;
+    margin-top: 2rem;
+    padding: 2rem 0 4rem;
+    @extend .row;
+}
+
+.col {
+    flex: 1 1 auto;
+}
+
+.col-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.col-5 {
+    max-width: 41.666667%;
+    flex: 0 0 41.666667%;
+}
+
+.col-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+}
+
+.offset-1 {
+    margin-right: 8.333333%;
+}

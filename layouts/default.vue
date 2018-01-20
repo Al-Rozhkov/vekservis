@@ -12,16 +12,14 @@
     </div>
     <nuxt/>
     <footer class="container">
-      <div class="col-3">
+      <div class="col-4">
         © 2011—2017 ООО «ВЭК СЕРВИС» 
       </div>
-      <div class="col-3">
-        г. Пенза, ул. Ставского, 4, оф. 4<br />
-        info@vekservis.ru
+      <div class="col-4">
+        <nuxt-link to="/contact">г. Пенза, ул. Ставского, 4, оф. 4<br />
+        info@vekservis.ru</nuxt-link>
       </div>
-      <div class="col-3">
         <span class="phone"><span class="small">+7 (8412) </span>20-73-18</span>
-      </div>
     </footer>
   </div>
 </template>
@@ -39,35 +37,5 @@ export default {
 </script>
 
 <style lang="scss">
-.leader {
-  display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: .5rem;
-}
 
-.main-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: .7rem 0 1rem;
-
-  li {
-    display: inline-block;
-    margin-right: 2rem;
-  }
-}
-
-.phone {
-  margin-left: auto;
-  font-size: 1.75rem;
-}
-
-.small {
-  font-size: 1rem;
-}
-
-footer {
-  border-top: 1px solid #cccccc;
-  margin-top: 2rem;
-  padding-top: 2rem;
-}
 </style>

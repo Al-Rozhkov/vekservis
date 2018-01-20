@@ -27,3 +27,25 @@ header.header {
         z-index: 0;
     }
 }
+
+.leader {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+  
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: .7rem 0 1rem;
+  
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+}
+  
+.phone {
+    margin-left: auto;
+    font-size: 1.75rem;
+}

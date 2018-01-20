@@ -23,26 +23,30 @@ export default {
 </script>
 
 <style lang="scss">
-.ph-index {
+.ph-index,
+.ph-services-lowvoltage {
   background-color: #1b0880;
   &:before { background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%); }
 }
 
 .ph-services,
-.ph-lowvoltage {
+.ph-advantages,
+.ph-services-electrical {
   background-color: #042a4a;
   &:before { background-image: linear-gradient(to right, #042a4a 0%,#087380 100%); }
 }
 
 .ph-clients,
+.ph-services-mechanical,
 .ph-services-zhkh {
   background-color: #921800;
   &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
 }
 
 .ph-contact,
+.ph-services-finishing,
 .ph-services-commercial {
   background-color: #921800;
-  &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
+  &:before { background-image: linear-gradient(to right, #00887d 0%,#006983 100%); }
 }
 </style>

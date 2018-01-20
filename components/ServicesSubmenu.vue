@@ -25,8 +25,8 @@ export default {
   padding: 0;
 
   li {
-    flex-grow: 1;
-    width: 33%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
     padding: 0 3rem 2rem 0;
     
     a {

@@ -36,7 +36,7 @@ export default {
   li {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     align-items: center;
     justify-content: center;
 

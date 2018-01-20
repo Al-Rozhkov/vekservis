@@ -49,7 +49,14 @@ module.exports = {
       { name: 'restore' },
       { name: 'galamart' },
       { name: 'finn-flare' },
-      { name: 'x5' }
+      { name: 'x5' },
+      { name: 'ashan' },
+      { name: 'lego' },
+      { name: 'love-republic' },
+      { name: 'samsung' },
+      { name: 'sony' },
+      { name: 'tom-farr' },
+      { name: 'zarina' }
     ]
   },
   build: {

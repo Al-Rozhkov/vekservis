@@ -3,12 +3,12 @@
     <div class="container">
       <ul class="article-submenu">
         <li v-for="(section, index) in sectionsList" :key="index">
-          <a v-bind:to="'#sec-' + index" v-html="section.title"></a>
+          <a v-bind:href="'#sec-' + index" v-html="section.title"></a>
         </li>
       </ul>
     </div>
     <section v-for="(section, index) in sectionsList" :key="index" :id="'sec-' + index" class="container">
-      <h2>{{ section.title }}</h2>
+      <h2 v-html="section.title"></h2>
       <div v-html="section.content"></div>
     </section>
   </article>

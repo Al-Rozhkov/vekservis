@@ -16,8 +16,8 @@
         © 2011—2017 ООО «ВЭК СЕРВИС» 
       </div>
       <div class="col-4">
-        <nuxt-link to="/contact">г. Пенза, ул. Ставского, 4, оф. 4<br />
-        info@vekservis.ru</nuxt-link>
+        <nuxt-link to="/contact">г. Пенза, ул. Ставского, 4, оф. 4</nuxt-link><br />
+        <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
       </div>
         <span class="phone"><span class="small">+7 (8412) </span>20-73-18</span>
     </footer>

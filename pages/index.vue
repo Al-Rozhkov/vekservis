@@ -31,7 +31,7 @@
         <p class="col"><span class="lead">300+</span><br />объектов</p>
         <p class="col-4"><span class="lead">100&thinsp;000+ м<sup>2</sup></span><br />обслуживаемых площадей</p>
       </div>
-      <clients :clientsList="clients" :clientsNum="12"/>
+      <clients :clientsList="clients"/>
     </section>
   </div>
 </template>

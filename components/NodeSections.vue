@@ -45,8 +45,6 @@ ul.article-submenu {
       flex: 0 0 25%;
       max-width: 25%;
     }
-
-
     
     a {
       color: $link-color;

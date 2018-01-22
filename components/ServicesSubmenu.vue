@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~assets/scss/init.scss";
+
 .services-submenu {
   list-style-type: none;
   display: flex;
@@ -25,9 +27,13 @@ export default {
   padding: 0;
 
   li {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-    padding: 0 3rem 2rem 0;
+    padding: 0 0 1rem 0;
+
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+      padding: 0 3rem 2rem 0;
+    }
     
     a {
       color: #fffcd4;

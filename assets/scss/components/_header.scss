@@ -41,6 +41,7 @@ header.header {
 
 .leader {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
 }
@@ -49,6 +50,10 @@ header.header {
     list-style-type: none;
     padding: 0;
     margin: .7rem 0 1rem;
+
+    @include media-breakpoint-down(lg) {
+        flex-grow: 1;
+    }
   
     li {
       display: inline-block;

@@ -113,6 +113,10 @@ header.header {
   padding: 7.5rem 2rem 1.5rem 2rem;
   flex-grow: 1;
 
+  @include media-breakpoint-between(sm, lg) {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
   @include media-breakpoint-up(lg) {
     max-width: 33.33333%;
     flex: 0 0 33.33333%;

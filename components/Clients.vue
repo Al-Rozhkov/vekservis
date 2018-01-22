@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~assets/scss/init.scss";
+
 .clients {
   list-style-type: none;
   display: flex;
@@ -34,8 +36,11 @@ export default {
   padding: 0;
 
   li {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    
     padding: 0 1.5rem;
     align-items: center;
     justify-content: center;

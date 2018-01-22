@@ -1,16 +1,24 @@
 header.header {
     background-size: cover;
-    border-radius: 4px;
-    overflow: hidden;
     position: relative;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+        border-radius: 4px;
+        overflow: hidden;
+    }
   
     h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-        width: 50%;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+            margin-top: 3rem;
+            width: 50%;
+        }
     }
   
     & > h1, & > div, & > ul {

@@ -61,13 +61,17 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~assets/scss/init.scss";
+
 header.header {
   padding-top: 3rem;
   padding-bottom: 2rem;
 
-  h1 {
-    float: left;
-    padding-right: 2rem;
+  @include media-breakpoint-up(lg) {
+    h1 {
+      float: left;
+      padding-right: 2rem;
+    }
   }
 }
 
@@ -80,8 +84,10 @@ header.header {
 
   list-style-type: none;
 
-  width: 40%;
-  float: right;
+  @include media-breakpoint-up(lg) {
+    width: 40%;
+    float: right;
+  }
 
   li {
     flex-basis: 50%;
@@ -100,13 +106,17 @@ header.header {
 
 .service-card {
   position: relative;
-  flex-grow: 1;
-  width: 33%;
   border: 1px solid #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 7.5rem 2rem 1.5rem 2rem;
+  flex-grow: 1;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
 
   h2 {
     position: relative;

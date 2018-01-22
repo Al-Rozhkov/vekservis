@@ -30,19 +30,21 @@ footer {
     flex: 1 1 auto;
 }
 
-.col-6 {
-    max-width: 50%;
-    flex: 0 0 50%;
-}
+@include media-breakpoint-up(lg) {
+    .col-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
 
-.col-5 {
-    max-width: 41.666667%;
-    flex: 0 0 41.666667%;
-}
+    .col-5 {
+        max-width: 41.666667%;
+        flex: 0 0 41.666667%;
+    }
 
-.col-4 {
-    max-width: 33.33333%;
-    flex: 0 0 33.33333%;
+    .col-4 {
+        max-width: 33.33333%;
+        flex: 0 0 33.33333%;
+    }
 }
 
 .offset-1 {

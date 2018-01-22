@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~assets/scss/_variables.scss";
+@import "~assets/scss/init.scss";
 
 ul.article-submenu {
   list-style-type: none;
@@ -35,9 +35,18 @@ ul.article-submenu {
   padding: 1rem 0;
   
   li {
-    flex: 0 0 25%;
-    max-width: 25%;
     padding: 0 3rem 2rem 0;
+
+    @include media-breakpoint-between(sm, lg) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+
     
     a {
       color: $link-color;

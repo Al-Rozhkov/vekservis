@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
     <nuxt-link to="/">
-      <img src="~assets/img/logo.png" />
+      <img src="~assets/img/logo.png" alt="ВЭК Сервис. Эксплуатация объектов государственной и коммерческой недвижимости" />
     </nuxt-link>
   </div>
 </template>

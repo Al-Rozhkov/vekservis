@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'ВЭК СЕРВИС',
+    title: 'ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

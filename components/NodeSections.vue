@@ -32,10 +32,10 @@ ul.article-submenu {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 2rem;
-  padding: 1rem 0;
+  padding: .5rem 0;
   
   li {
-    padding: 0 3rem 2rem 0;
+    padding: 0 2.5rem 2rem 0;
 
     @include media-breakpoint-between(sm, lg) {
       flex: 0 0 50%;
@@ -48,9 +48,26 @@ ul.article-submenu {
     
     a {
       color: $link-color;
+      line-height: 1.25;
+      display: block;
 
       &:hover {
         color: $link-hover-color;
+
+        &:before {
+          background-color: $link-hover-color;
+          opacity: .3;
+        }
+      }
+
+      &:before {
+        content: " ";
+        display: block;
+        width: 2rem;
+        height: 4px;
+        background-color: $link-color;
+        opacity: .15;
+        margin-bottom: .4rem;
       }
     }
   }

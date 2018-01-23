@@ -13,7 +13,7 @@
     <nuxt/>
     <footer class="container">
       <div class="col-4">
-        © 2011—2017 ООО «ВЭК СЕРВИС» 
+        © 2011—2018 ООО «ВЭК СЕРВИС» 
       </div>
       <div class="col-4">
         <nuxt-link to="/contact">г. Пенза, ул. Ставского, 4, оф. 4</nuxt-link><br />

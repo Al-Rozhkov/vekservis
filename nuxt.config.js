@@ -1,5 +1,13 @@
 module.exports = {
   /*
+  ** Single Page Application mode
+  ** No SSR, no prefetch
+
+  mode: 'spa',
+  render: {
+    resourceHints: false
+  }, */
+  /*
   ** Headers of the page
   */
   head: {

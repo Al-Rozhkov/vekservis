@@ -7,9 +7,9 @@
         </li>
       </ul>
     </div>
-    <section v-for="(section, index) in sectionsList" :key="index" :id="'sec-' + index" class="container">
-      <h2 v-html="section.title"></h2>
-      <div v-html="section.content"></div>
+    <section v-for="(section, index) in sectionsList" :key="index" :id="'sec-' + index" class="section">
+      <h2 class="section-title" v-html="section.title"></h2>
+      <div class="section-body" v-html="section.content"></div>
     </section>
   </article>
 </template>
@@ -70,6 +70,27 @@ ul.article-submenu {
         margin-bottom: .4rem;
       }
     }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .section-title {
+    width: 33.33333%;
+    float: left;
+    margin-top: 0;
+    padding-right: 3rem;
+
+    &:before {
+      content: " ";
+      display: block;
+      width: 30%;
+      height: 4px;
+      background-color: #000000;
+      opacity: .1;
+      margin-bottom: .4rem;
+    }
+  }
+  .section-body {
+    margin-left: 33.33333%;
   }
 }
 </style>

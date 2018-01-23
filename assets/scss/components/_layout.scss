@@ -16,6 +16,11 @@
     }
 }
 
+.section {
+    @extend .container;
+    margin-bottom: 2.5rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;

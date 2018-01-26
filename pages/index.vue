@@ -11,7 +11,7 @@
     </page-header>
     <section class="container">
       <h2>Комплексный подход</h2>
-      <div class="row section">
+      <div class="row">
         <p class="col-4">Это наш основополагающий принцип к&nbsp;решению задач, поставленных клиентом. Особенность и&nbsp;выгода такого подхода очевидна:</p>
         <ul class="col-4">
           <li>единый подрядчик;</li><li>единая ответственность;</li><li>единая служба поддержки;</li><li>соблюдение единых стандартов обслуживания;</li>
@@ -94,7 +94,7 @@ header.header {
 }
 
 .service-teasers {
-  margin: 0 -1px 4rem;
+  margin: 3rem -1px 4rem;
   display: flex;
   flex-wrap: wrap;
 }

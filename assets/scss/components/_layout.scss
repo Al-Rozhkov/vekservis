@@ -27,16 +27,12 @@
 
 .section {
     @extend .container;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.section {
-    margin-bottom: 4rem;
 }
   
 footer {

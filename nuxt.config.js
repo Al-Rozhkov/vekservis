@@ -1,9 +1,6 @@
 module.exports = {
   /*
-  ** Single Page Application mode
-  ** No SSR, no prefetch
-
-  mode: 'spa',
+  ** No prefetch
   render: {
     resourceHints: false
   }, */

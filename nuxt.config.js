@@ -8,6 +8,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'ru'
+    },
     title: 'ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости',
     meta: [
       { charset: 'utf-8' },

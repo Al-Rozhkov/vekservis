@@ -13,7 +13,7 @@
     </div>
     <section class="container">
       <h2>Клиенты</h2>
-      <clients :clientsList="clients" />
+      <clients/>
     </section>
   </div>
 </template>
@@ -23,11 +23,6 @@ import PageHeader from '~/components/PageHeader.vue'
 import Clients from '~/components/Clients.vue'
 
 export default {
-  asyncData ({ env }) {
-    return {
-      clients: env.clients
-    }
-  },
   head: {
     title: 'Опыт и клиенты. ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости'
   },

@@ -8,10 +8,34 @@
 
 <script>
 export default {
+  data () {
+    return {
+      clientsList: [
+        { name: 'vtb24', alt: 'ВТБ24' },
+        { name: 'acoola', alt: 'Acoola' },
+        { name: 'alfa-bank', alt: 'Альфа-банк' },
+        { name: 'befree', alt: 'Befree' },
+        { name: 'nike', alt: 'Nike' },
+        { name: 'mvideo', alt: 'Мвидео' },
+        { name: 'sberbank', alt: 'Сбербанк' },
+        { name: 'eldorado', alt: 'Эльдорадо' },
+        { name: 'concept-club', alt: 'Concept Club' },
+        { name: 'd-mir', alt: 'Детский мир' },
+        { name: 'restore', alt: 'Рестор' },
+        { name: 'galamart', alt: 'Галамарт' },
+        { name: 'finn-flare', alt: 'Finn Flare' },
+        { name: 'x5', alt: 'X5 retail group' },
+        { name: 'ashan', alt: 'Ашан' },
+        { name: 'lego', alt: 'Lego' },
+        { name: 'love-republic', alt: 'Love republic' },
+        { name: 'samsung', alt: 'Самсунг' },
+        { name: 'sony', alt: 'Сони' },
+        { name: 'tom-farr', alt: 'Том фар' },
+        { name: 'zarina', alt: 'Зарина' }
+      ]
+    }
+  },
   props: {
-    clientsList: {
-      required: true
-    },
     clientsNum: {
       type: Number,
       required: false

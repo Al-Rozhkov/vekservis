@@ -31,7 +31,7 @@
         <p class="col"><span class="lead">300+</span><br />объектов</p>
         <p class="col-4"><span class="lead">100&thinsp;000+ м<sup>2</sup></span><br />обслуживаемых площадей</p>
       </div>
-      <clients :clientsList="clients"/>
+      <clients/>
     </section>
   </div>
 </template>
@@ -39,13 +39,11 @@
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import Clients from '~/components/Clients.vue'
-// import Services from '~/components/Services.vue'
 
 export default {
   asyncData ({ env }) {
     return {
-      services: env.services,
-      clients: env.clients
+      services: env.services
     }
   },
   components: {

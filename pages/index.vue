@@ -21,7 +21,7 @@
         </ul>
       </div>
       <div class="service-teasers">
-        <nuxt-link class="service-card" v-for="service in services" :key="service.name" :to="'/services/' + service.name" v-bind:style="serviceBg(service.name)">
+        <nuxt-link class="service-card" v-for="service in services" :key="service.name" :to="'/services/' + service.name" v-bind:style="'background-image: url(/img/small/bg-services-' + service.name + '.jpg)'">
           <h2 v-html="service.title"></h2>
         </nuxt-link>
       </div>
@@ -46,11 +46,6 @@ export default {
     return {
       services: env.services,
       clients: env.clients
-    }
-  },
-  methods: {
-    serviceBg: function (name) {
-      return 'background-image: url(/img/bg-services-' + name + '.jpg)'
     }
   },
   components: {

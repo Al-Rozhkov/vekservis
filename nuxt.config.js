@@ -72,5 +72,12 @@ module.exports = {
         // accurateTrackBounce:true,
       }
     ],
-  ]
+    '@nuxtjs/sitemap'
+  ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://vekservis.ru',
+    cacheTime: 1000 * 60 * 15,
+    generate: true
+  }
 }

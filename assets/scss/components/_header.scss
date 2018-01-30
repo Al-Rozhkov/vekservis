@@ -45,6 +45,16 @@ header.header {
     padding-top: 1.5rem;
     padding-bottom: .5rem;
 }
+
+.logo {
+    margin-left: -51px;
+    margin-right: 3rem;
+    width: 184px;
+
+    a {
+        display: block;
+    }
+}
   
 .main-menu {
     list-style-type: none;

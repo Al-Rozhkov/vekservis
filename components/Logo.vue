@@ -26,14 +26,3 @@ export default {
   }
 } */
 </script>
-
-<style>
-.logo {
-  margin-left: -51px;
-  margin-right: 3rem;
-  width: 184px;
-}
-.logo a {
-  display: block;
-}
-</style>

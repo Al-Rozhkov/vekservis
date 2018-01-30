@@ -83,8 +83,10 @@ header.header {
   }
 
   li {
-    flex-basis: 50%;
-    flex-grow: 1;
+    @include media-breakpoint-up(lg) {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
     font-size: .75rem;
     padding-right: 2rem;
     padding-bottom: 2rem;

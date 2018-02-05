@@ -72,25 +72,4 @@ ul.article-submenu {
     }
   }
 }
-@include media-breakpoint-up(lg) {
-  .section-title {
-    width: 33.33333%;
-    float: left;
-    margin-top: 0;
-    padding-right: 3rem;
-
-    &:before {
-      content: " ";
-      display: block;
-      width: 30%;
-      height: 4px;
-      background-color: #000000;
-      opacity: .1;
-      margin-bottom: .4rem;
-    }
-  }
-  .section-body {
-    margin-left: 33.33333%;
-  }
-}
 </style>

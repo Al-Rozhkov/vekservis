@@ -11,7 +11,7 @@ module.exports = {
     htmlAttrs: {
       lang: 'ru'
     },
-    title: 'ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости',
+    title: 'ВЭК СЕРВИС. Обслуживание и управление объектами коммерческой и государственной недвижимости по всей России',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -15,7 +15,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'ВЭК СЕРВИС' }
+      { hid: 'description', name: 'description', content: 'Основные сферы деятельности компании: установка и обслуживание механических, электрических, слаботочных инженерных систем, услуги по эксплуатации ЖКХ, отделочные и ремонтные работы.' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },

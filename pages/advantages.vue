@@ -34,9 +34,12 @@
     <section class="section">
       <h2 class="section-title">Сертификат соответствия</h2>
       <div class="section-body">
-        <img v-img="{ src: '/docs/sert_1.jpg', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert_1.jpg" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert_2.jpg', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert_2.jpg" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert_3.jpg', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert_3.jpg" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-1.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-1.png" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-2.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-2.png" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-3.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-3.png" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-4.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-4.png" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-5.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-5.png" alt="Сертификат соответствия"/>
+        <img v-img="{ src: '/docs/sert-6.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-6.png" alt="Сертификат соответствия"/>
       </div>
     </section>
     <section class="section">

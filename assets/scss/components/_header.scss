@@ -47,12 +47,16 @@ header.header {
 }
 
 .logo {
-    margin-left: -51px;
+    margin-left: 0;
     margin-right: 3rem;
-    width: 184px;
+    width: 242px;
 
     a {
         display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-left: -51px;
     }
 }
   

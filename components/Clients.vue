@@ -20,9 +20,9 @@ export default {
         { name: 'sberbank', alt: 'Сбербанк' },
         { name: 'eldorado', alt: 'Эльдорадо' },
         { name: 'concept-club', alt: 'Concept Club' },
-        { name: 'd-mir', alt: 'Детский мир' },
+        { name: 'vans', alt: 'Vans' },
         { name: 'restore', alt: 'Рестор' },
-        { name: 'galamart', alt: 'Галамарт' },
+        { name: 'wrangler', alt: 'Wrangler' },
         { name: 'finn-flare', alt: 'Finn Flare' },
         { name: 'x5', alt: 'X5 retail group' },
         { name: 'ashan', alt: 'Ашан' },
@@ -30,8 +30,9 @@ export default {
         { name: 'love-republic', alt: 'Love republic' },
         { name: 'samsung', alt: 'Самсунг' },
         { name: 'sony', alt: 'Сони' },
-        { name: 'tom-farr', alt: 'Том фар' },
-        { name: 'zarina', alt: 'Зарина' }
+        { name: 'lee', alt: 'Lee' },
+        { name: 'zarina', alt: 'Зарина' },
+        { name: 'mango', alt: 'Mango' }
       ]
     }
   },

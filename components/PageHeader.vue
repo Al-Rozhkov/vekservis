@@ -23,15 +23,16 @@ export default {
 </script>
 
 <style lang="scss">
-.ph-index,
-.ph-services-lowvoltage {
+.ph-services-lowvoltage,
+.ph-services-electrical {
   background-color: #1b0880;
   &:before { background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%); }
 }
 
+.ph-index,
 .ph-services,
 .ph-advantages,
-.ph-services-electrical {
+ {
   background-color: #042a4a;
   &:before { background-image: linear-gradient(to right, #042a4a 0%,#087380 100%); }
 }

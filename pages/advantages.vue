@@ -48,6 +48,7 @@
         <img v-img="{ src: '/docs/VTB.jpg', group: 'docs' }" src="/docs/small/VTB.jpg"/>
         <img v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }" src="/docs/small/pismo_1.jpg"/>
         <img v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }" src="/docs/small/pismo_2.jpg"/>
+        <img v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }" src="/docs/small/pismo_sber.jpg"/>
       </div>
     </section>
   </div>

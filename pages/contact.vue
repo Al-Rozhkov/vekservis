@@ -10,7 +10,9 @@
       <p>Технический отдел: 8 909 319 04 59.</p>
       <p>Электронная почта: <a href="mailto:info@vekservis.ru">info@vekservis.ru</a></p>
     </section>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A817b9eca6bc4a7408f190ca30840d872d2fb659e69b36f6135b7958f7c8a8ff9&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"></script>
+    <section class="container">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A817b9eca6bc4a7408f190ca30840d872d2fb659e69b36f6135b7958f7c8a8ff9&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
   </div>
 </template>
 

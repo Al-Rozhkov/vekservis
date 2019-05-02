@@ -60,6 +60,7 @@ module.exports = {
         })
       }
     }
+    // extractCSS: true
   },
   modules: [
     [
@@ -77,7 +78,6 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://vekservis.ru',
-    cacheTime: 1000 * 60 * 15,
-    generate: true
+    cacheTime: 1000 * 60 * 15
   }
 }

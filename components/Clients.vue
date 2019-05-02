@@ -1,7 +1,13 @@
 <template>
   <ul class="clients">
-    <li v-for="client in clients" :key="client.name">
-      <img :src="'/clients/' + client.name + '.png'" :alt="client.alt" />
+    <li
+      v-for="client in clients"
+      :key="client.name"
+    >
+      <img
+        :src="`/clients/${client.name}.png`"
+        :alt="client.alt"
+      />
     </li>
   </ul>
 </template>
@@ -11,8 +17,9 @@ export default {
   data () {
     return {
       clientsList: [
+        { name: 'magnit', alt: 'Магнит' },
+        { name: 'leroy-merlin', alt: 'Leroy Merlin' },
         { name: 'vtb24', alt: 'ВТБ24' },
-        // { name: 'acoola', alt: 'Acoola' },
         { name: 'alfa-bank', alt: 'Альфа-банк' },
         { name: 'befree', alt: 'Befree' },
         { name: 'mts', alt: 'МТС' },
@@ -37,14 +44,16 @@ export default {
       ]
     }
   },
+
   props: {
     clientsNum: {
       type: Number,
       required: false
     }
   },
+
   computed: {
-    clients: function () {
+    clients() {
       return this.clientsList.slice(0, this.clientsNum)
     }
   }

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "vekservis",
+  "alias": "vekservis",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
+}

@@ -14,9 +14,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "1.1.0",
+    "@nuxtjs/sitemap": "1.2.0",
     "@nuxtjs/yandex-metrika": "0.1.1",
-    "nuxt": "^2.6.3",
+    "nuxt": "^2.7.1",
     "v-img": "^0.2.0"
   },
   "devDependencies": {

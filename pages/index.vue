@@ -29,7 +29,7 @@
       <div class="row">
         <p class="col-4 offset-1">На&nbsp;данный момент компания ВЭК СЕРВИС осуществляет обслуживание объектов федеральных сетевых компаний более чем в&nbsp;40&nbsp;городах и&nbsp;30&nbsp;регионах&nbsp;РФ.</p>
         <p class="col"><span class="lead">300+</span><br />объектов</p>
-        <p class="col-4"><span class="lead">100&thinsp;000+ м<sup>2</sup></span><br />обслуживаемых площадей</p>
+        <p class="col-4"><span class="lead">200&thinsp;000+ м<sup>2</sup></span><br />обслуживаемых площадей</p>
       </div>
       <clients/>
     </section>

@@ -44,7 +44,7 @@
     </section>
     <section class="section">
       <h2 class="section-title">Рекомендации</h2>
-      <div class="section-body">
+      <div class="section-body list-img">
         <img v-img="{ src: '/docs/VTB.jpg', group: 'docs' }" src="/docs/small/VTB.jpg"/>
         <img v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }" src="/docs/small/pismo_1.jpg"/>
         <img v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }" src="/docs/small/pismo_2.jpg"/>
@@ -73,12 +73,5 @@ export default {
 </script>
 
 <style>
-.section-body img {
-  margin: 0 .5rem .5rem;
-  opacity: 1;
-}
 
-.section-body img:hover {
-  opacity: .7;
-}
 </style>

@@ -21,7 +21,12 @@
         </ul>
       </div>
       <div class="service-teasers">
-        <nuxt-link class="service-card" v-for="service in services" :key="service.name" :to="'/services/' + service.name" v-bind:style="'background-image: url(/img/small/bg-services-' + service.name + '.jpg)'">
+        <nuxt-link
+          v-for="service in services.list" :key="service.name"
+          class="service-card"
+          :to="'/services/' + service.name"
+          :style="`background-image: url(/img/small/bg-services-${service.name}.jpg)`"
+        >
           <h2 v-html="service.title"></h2>
         </nuxt-link>
       </div>
@@ -40,10 +45,12 @@
 import PageHeader from '~/components/PageHeader.vue'
 import Clients from '~/components/Clients.vue'
 
+import servicesData from '~/data/services.json'
+
 export default {
-  asyncData ({ env }) {
+  data () {
     return {
-      services: env.services
+      services: servicesData
     }
   },
   components: {

@@ -1,7 +1,10 @@
 <template>
   <div class="logo">
     <nuxt-link to="/">
-      <svg role="img" aria-label="ВЭК Сервис. Эксплуатация объектов государственной и коммерческой недвижимости" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="242px" height="42px" viewBox="0 0 242 44" xml:space="preserve">
+      <svg
+        role="img" aria-label="ВЭК Сервис. Эксплуатация объектов государственной и коммерческой недвижимости" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="230px" height="42px" viewBox="0 0 242 44" xml:space="preserve"
+      >
         <g>
           <path style="fill-rule:evenodd;clip-rule:evenodd;fill:#006BB2;stroke:#006BB2;stroke-width:0.4252;stroke-miterlimit:10;" d="
             M16.305,6.409l-0.007,6.73c-0.67-0.223-2.121-1.196-2.827-1.588c-0.878-0.495-2.013-1.266-2.859-1.62

@@ -1,5 +1,5 @@
 <template>
-  <header class="header container ph" :class="headerClass" :style="headerBg">
+  <header class="header container" :class="headerClass" :style="headerBg">
     <slot></slot>
   </header>
 </template>
@@ -52,7 +52,8 @@ export default {
   &:before { background-image: linear-gradient(to right, #00887d 0%,#006983 100%); }
 }
 
-header.header.ph-clients {
+header.header.ph-clients,
+header.header.ph-manufacture-welding {
   background-position: 50% 40%;
   min-height: 300px;
 }

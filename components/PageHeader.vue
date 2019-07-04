@@ -1,5 +1,5 @@
 <template>
-  <header class="header container" :class="headerClass" :style="headerBg">
+  <header class="header container ph" :class="headerClass" :style="headerBg">
     <slot></slot>
   </header>
 </template>
@@ -7,10 +7,10 @@
 <script>
 export default {
   computed: {
-    headerBg: function () {
+    headerBg() {
       return 'background-image: url(/img/bg-' + this.$route.name + '.jpg)'
     },
-    headerClass: function () {
+    headerClass () {
       return 'ph-' + this.$route.name
     }
   }
@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
+.header,
 .ph-services-lowvoltage,
 .ph-services-electrical {
   background-color: #1b0880;
@@ -47,7 +48,7 @@ export default {
 .ph-services-mechanical,
 .ph-services-finishing,
 .ph-services-commercial {
-  background-color: #921800;
+  background-color: #00887d;
   &:before { background-image: linear-gradient(to right, #00887d 0%,#006983 100%); }
 }
 

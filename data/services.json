@@ -1,4 +1,5 @@
 {
+  "section": "services",
   "list": [
     { "name": "mechanical", "title": "Обслуживание механических инженерных систем" },
     { "name": "electrical", "title": "Монтаж и&nbsp;обслуживание электрических систем зданий" },

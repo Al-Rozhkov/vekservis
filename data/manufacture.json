@@ -1,0 +1,8 @@
+{
+  "section": "manufacture",
+  "list": [
+    { "name": "welding", "title": "Услуги полуавтоматической сварки" },
+    { "name": "welding-post", "title": "Сварочный пост" },
+    { "name": "visor", "title": "Защитный козырек наружного блока кондиционера" }
+  ]
+}

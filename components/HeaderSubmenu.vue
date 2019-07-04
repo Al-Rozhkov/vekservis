@@ -1,7 +1,7 @@
 <template>
   <ul class="services-submenu">
-    <li v-for="service in servicesList" :key="service.name">
-      <nuxt-link v-bind:to="'/services/'+service.name" v-html="service.title"></nuxt-link>
+    <li v-for="node in menu.list" :key="node.name">
+      <nuxt-link v-bind:to="`/${menu.section}/${node.name}`" v-html="node.title"></nuxt-link>
     </li>
   </ul>
 </template>
@@ -9,8 +9,9 @@
 <script>
 export default {
   props: {
-    servicesList: {
-      required: true
+    menu: {
+      required: true,
+      type: Object
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>
-      <services-submenu :servicesList="services"/>
+      <header-submenu :menu="menu"/>
       <h1 class="page-title">Услуги по эксплуатации объектов государственной и&nbsp;коммерческой недвижимости</h1>
     </page-header>
     <section class="container">
@@ -14,14 +14,14 @@
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
-import ServicesSubmenu from '~/components/ServicesSubmenu.vue'
+import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 
-import subpagesData from '~/data/services.json'
+import subpagesData from '~/data/manufacture.json'
 
 export default {
   data () {
     return {
-      services: subpagesData.list
+      menu: subpagesData
     }
   },
   head: {
@@ -29,7 +29,7 @@ export default {
   },
   components: {
     PageHeader,
-    ServicesSubmenu
+    HeaderSubmenu
   }
 }
 </script>

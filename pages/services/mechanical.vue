@@ -13,10 +13,12 @@ import PageHeader from '~/components/PageHeader.vue'
 import ServicesSubmenu from '~/components/ServicesSubmenu.vue'
 import NodeSections from '~/components/NodeSections.vue'
 
+import servicesData from '~/data/services.json'
+
 export default {
-  asyncData ({ env }) {
+  data () {
     return {
-      services: env.services,
+      services: servicesData.list,
       nodeSections: [
         {
           title: 'Системы вентиляции',

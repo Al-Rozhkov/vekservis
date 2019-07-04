@@ -5,6 +5,7 @@
       <ul class="main-menu">
         <li><nuxt-link to="/services">Услуги</nuxt-link></li>
         <li><nuxt-link to="/clients">Опыт и клиенты</nuxt-link></li>
+        <li><nuxt-link to="/manufacture">Производство</nuxt-link></li>
         <li><nuxt-link to="/advantages">Преимущества</nuxt-link></li>
         <li><nuxt-link to="/contact">Контакты</nuxt-link></li>
       </ul>

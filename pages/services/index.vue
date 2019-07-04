@@ -17,12 +17,16 @@
 import PageHeader from '~/components/PageHeader.vue'
 import ServicesSubmenu from '~/components/ServicesSubmenu.vue'
 
+import servicesData from '~/data/services.json'
+
 export default {
-  asyncData ({ env }) {
-    return { services: env.services }
+  data () {
+    return {
+      services: servicesData.list
+    }
   },
   head: {
-    title: 'Услуги по эксплуатации объектов государственной и коnpm run devммерческой недвижимости. ВЭК СЕРВИС'
+    title: 'Услуги по эксплуатации объектов государственной и коммерческой недвижимости. ВЭК СЕРВИС'
   },
   components: {
     PageHeader,

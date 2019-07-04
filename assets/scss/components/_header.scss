@@ -17,7 +17,7 @@ header.header {
         @include media-breakpoint-up(lg) {
             font-size: 2rem;
             margin-top: 3rem;
-            width: 50%;
+            width: 60%;
         }
     }
   
@@ -48,7 +48,7 @@ header.header {
 
 .logo {
     margin-left: 0;
-    margin-right: 3rem;
+    margin-right: 2rem;
     width: 242px;
 
     a {
@@ -71,7 +71,7 @@ header.header {
   
     li {
       display: inline-block;
-      margin-right: 2rem;
+      margin-right: 1.25rem;
       padding: .5rem 0;
     }
 }

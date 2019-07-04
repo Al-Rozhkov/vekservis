@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-blue">
       <header-submenu :menu="menu"/>
       <h1 class="page-title">Услуги по эксплуатации объектов государственной и&nbsp;коммерческой недвижимости</h1>
     </page-header>

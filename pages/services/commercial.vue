@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-teal">
       <header-submenu :menu="services"/>
       <h1 class="page-title">Комплексное обслуживание коммерческой и&nbsp;жилой недвижимости</h1>
     </page-header>

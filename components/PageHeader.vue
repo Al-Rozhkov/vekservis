@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss">
 .header,
+.ph-purple,
 .ph-services-lowvoltage,
 .ph-services-electrical {
   background-color: #1b0880;
@@ -31,23 +32,22 @@ export default {
 }
 
 .ph-index,
+.ph-blue,
 .ph-services,
-.ph-advantages,
-.ph-manufacture {
+.ph-advantages {
   background-color: #042a4a;
   &:before { background-image: linear-gradient(to right, #042a4a 0%,#087380 100%); }
 }
 
 .ph-clients,
+.ph-orange,
 .ph-services-zhkh {
   background-color: #921800;
   &:before { background-image: linear-gradient(to right, #921800 0%,#d96100 100%); }
 }
 
 .ph-contact,
-.ph-services-mechanical,
-.ph-services-finishing,
-.ph-services-commercial {
+.ph-teal {
   background-color: #00887d;
   &:before { background-image: linear-gradient(to right, #00887d 0%,#006983 100%); }
 }

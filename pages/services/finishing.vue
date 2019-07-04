@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-teal">
       <header-submenu :menu="services"/>
       <h1 class="page-title">Отделочные и&nbsp;ремонтные работы</h1>
     </page-header>

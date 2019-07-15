@@ -1,38 +1,63 @@
 <template>
   <div>
     <div class="leader container">
-      <logo/>
+      <logo />
       <ul class="main-menu">
-        <li><nuxt-link to="/services">Услуги</nuxt-link></li>
-        <li><nuxt-link to="/clients">Опыт и клиенты</nuxt-link></li>
-        <li><nuxt-link to="/manufacture">Производство</nuxt-link></li>
-        <li><nuxt-link to="/advantages">Преимущества</nuxt-link></li>
-        <li><nuxt-link to="/contact">Контакты</nuxt-link></li>
+        <li>
+          <nuxt-link to="/services">Услуги</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/clients">Опыт и клиенты</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/manufacture">Производство</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/advantages">Преимущества</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/contact">Контакты</nuxt-link>
+        </li>
       </ul>
-      <span class="phone"><span class="small">+7 (8412) </span>20-73-18</span>
+      <span class="phone">
+        <span class="small">+7 (8412)</span> 20-73-18
+      </span>
     </div>
-    <nuxt/>
+
+    <nuxt />
+
     <footer class="container">
       <div class="col-4">
-        <span class="site-desc">© 2013—2019 ООО «ВЭК СЕРВИС»</span>
+        <p>
+          <span class="site-desc">© 2013—2019 ООО «ВЭК СЕРВИС»</span>
+        </p>
       </div>
       <div class="col-4">
-        <nuxt-link to="/contact">г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4</nuxt-link><br />
-        <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
+        <p>
+          <nuxt-link to="/contact">г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4</nuxt-link>
+          <br />
+          <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
+        </p>
       </div>
-        <span class="phone"><span class="small">+7&nbsp;(8412) </span>20-73-18</span>
+      <div class="col-4">
+        <p class="text-right">
+          <span class="phone">
+            <span class="small">+7&nbsp;(8412)</span> 20-73-18
+          </span>
+        </p>
+      </div>
     </footer>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import PageHeader from '~/components/PageHeader.vue'
+import Logo from "~/components/Logo.vue";
+import PageHeader from "~/components/PageHeader.vue";
 
 export default {
   components: {
     Logo,
     PageHeader
   }
-}
+};
 </script>

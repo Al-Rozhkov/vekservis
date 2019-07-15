@@ -50,7 +50,7 @@ header.header {
 .logo {
     margin-left: 0;
     margin-right: 2rem;
-    width: 242px;
+    // width: 242px;
 
     a {
         display: block;
@@ -79,5 +79,7 @@ header.header {
   
 .phone {
     margin-left: auto;
+    padding-left: 2rem;
     font-size: 1.75rem;
+    line-height: 1.2;
 }

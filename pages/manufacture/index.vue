@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <main>
     <page-header class="ph-blue">
       <header-submenu :menu="menu"/>
       <h1 class="page-title">Услуги по эксплуатации объектов государственной и&nbsp;коммерческой недвижимости</h1>
     </page-header>
     <section class="container">
-      <article class="node">
+      <article class="intro">
         <p>...</p>
       </article>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -34,9 +34,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.node {
+<style lang="scss" scoped>
+.intro {
   padding-top: 3rem;
-  max-width: 868px;
+  max-width: 860px;
 }
 </style>

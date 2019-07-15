@@ -58,6 +58,7 @@ header.header.ph-manufacture-welding {
   min-height: 300px;
 }
 
+header.header.ph-position-bottom,
 header.header.ph-contact {
   background-position: bottom center;
 }

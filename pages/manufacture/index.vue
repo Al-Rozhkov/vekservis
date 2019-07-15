@@ -2,11 +2,11 @@
   <main>
     <page-header class="ph-blue">
       <header-submenu :menu="menu"/>
-      <h1 class="page-title">Услуги по эксплуатации объектов государственной и&nbsp;коммерческой недвижимости</h1>
+      <h1 class="page-title">Собственное производство и&nbsp;разработки компании «ВЭК Сервис»</h1>
     </page-header>
     <section class="container">
       <article class="intro">
-        <p>...</p>
+        <p></p>
       </article>
     </section>
   </main>

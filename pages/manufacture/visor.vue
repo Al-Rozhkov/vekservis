@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header class="ph-teal">
+    <page-header class="ph-teal ph-position-bottom">
       <header-submenu :menu="menu" />
       <h1 class="page-title">Защитный козырек наружного блока кондиционера</h1>
     </page-header>
@@ -16,7 +16,8 @@
         </div>
         <div class="col-3">
           <p>
-            <span class="lead">3 года</span><br />
+            <span class="lead">3 года</span>
+            <br />
             <span>гарантии на&nbsp;лакокрасочное покрытие</span>
           </p>
         </div>
@@ -30,6 +31,7 @@
             class="img"
           />
         </div>
+
         <div class="col-5">
           <h2 class="lead">
             Visor Lite
@@ -59,9 +61,6 @@
             />
           </div>
         </div>
-        <!-- <div class="gallery">
-          
-        </div>-->
       </div>
 
       <div class="row p-3">

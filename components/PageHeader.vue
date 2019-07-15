@@ -8,17 +8,12 @@
 export default {
   computed: {
     headerBg() {
-      return 'background-image: url(/img/bg-' + this.$route.name + '.jpg)'
+      return `background-image: url(/img/bg-${this.$route.name}.jpg)`
     },
     headerClass () {
       return 'ph-' + this.$route.name
     }
   }
-  /* props: {
-    headerClass: {
-      type: String
-    }
-  } */
 }
 </script>
 
@@ -61,5 +56,9 @@ header.header.ph-manufacture-welding {
 header.header.ph-position-bottom,
 header.header.ph-contact {
   background-position: bottom center;
+}
+
+header.header.ph-position-center {
+  background-position: center center;
 }
 </style>

@@ -29,6 +29,7 @@
         >
           <h2 v-html="item.title"></h2>
         </nuxt-link>
+        <div style="width: 100%; height: 1rem;"></div>
         <nuxt-link
           v-for="item in manufacture.list" :key="item.name"
           class="service-card"

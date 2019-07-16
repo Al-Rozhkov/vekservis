@@ -22,12 +22,20 @@
       </div>
       <div class="service-teasers">
         <nuxt-link
-          v-for="service in services.list" :key="service.name"
+          v-for="item in services.list" :key="item.name"
           class="service-card"
-          :to="'/services/' + service.name"
-          :style="`background-image: url(/img/small/bg-services-${service.name}.jpg)`"
+          :to="'/services/' + item.name"
+          :style="`background-image: url(/img/small/bg-services-${item.name}.jpg)`"
         >
-          <h2 v-html="service.title"></h2>
+          <h2 v-html="item.title"></h2>
+        </nuxt-link>
+        <nuxt-link
+          v-for="item in manufacture.list" :key="item.name"
+          class="service-card"
+          :to="'/manufacture/' + item.name"
+          :style="`background-image: url(/img/small/bg-manufacture-${item.name}.jpg)`"
+        >
+          <h2 v-html="item.title"></h2>
         </nuxt-link>
       </div>
       <h2><nuxt-link to="/clients">Клиенты</nuxt-link></h2>
@@ -46,11 +54,13 @@ import PageHeader from '~/components/PageHeader.vue'
 import Clients from '~/components/Clients.vue'
 
 import servicesData from '~/data/services.json'
+import manufactureData from '~/data/manufacture.json'
 
 export default {
   data () {
     return {
-      services: servicesData
+      services: servicesData,
+      manufacture: manufactureData
     }
   },
   components: {

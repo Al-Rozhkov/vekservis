@@ -2,7 +2,7 @@
   <main>
     <page-header class="ph-blue ph-position-center">
       <header-submenu :menu="menu"/>
-      <h1 class="page-title">Собственное производство и&nbsp;разработки компании «ВЭК Сервис»</h1>
+      <h1 class="page-title">Собственное производство и&nbsp;разработки компании «ВЭК СЕРВИС</h1>
     </page-header>
     <section class="container">
       <article class="intro">
@@ -25,7 +25,7 @@ export default {
     }
   },
   head: {
-    title: 'Собственное производство и разработки компании «ВЭК Сервис»'
+    title: 'Собственное производство и разработки компании «ВЭК СЕРВИС'
   },
   components: {
     PageHeader,

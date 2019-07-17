@@ -51,31 +51,23 @@
         <div class="col-5">
           <h2>Стоимость</h2>
           <dl>
-            <dt>
-              Сварочный пост неокрашенный стандартная комплектация:
-            </dt>
+            <dt>Сварочный пост неокрашенный стандартная комплектация:</dt>
             <dd>
               <span class="price-large">290 000,00 рублей</span>
             </dd>
           </dl>
 
           <h4>Дополнительно</h4>
-          <dl class="extra">
-            <dt>
-              Покраска
-            </dt>
+          <dl>
+            <dt>Покраска</dt>
             <dd class="dd">
-              <span class="price">40 296,00  рублей</span>
+              <span class="price">40 296,00 рублей</span>
             </dd>
-            <dt>
-              Установка вентиляции  в сборе
-            </dt>
+            <dt>Установка вентиляции в сборе</dt>
             <dd class="dd">
-              <span class="price">70 000,00 рублей</span>
+              <span class="price">70 000,00 рублей</span>
             </dd>
-            <dt>
-              Завесы(Шторы) на 5 секций размером 1,76х2,44 м
-            </dt>
+            <dt>Завесы(Шторы) на 5 секций размером 1,76х2,44 м</dt>
             <dd class="dd">
               <span class="price">75 190,00 рублей</span>
             </dd>
@@ -120,7 +112,8 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/scss/init.scss";
 
-.price, .price-large {
+.price,
+.price-large {
   background: $yellow;
 }
 

@@ -6,7 +6,7 @@
     </page-header>
 
     <section class="container">
-      <h2>ООО «ВЭК Сервис» предлагает услуги полуавтоматической сварки (MIG).</h2>
+      <h2>ООО «ВЭК&nbsp;СЕРВИС» предлагает услуги полуавтоматической сварки (MIG).</h2>
       <div class="list-cols welding-cols">
         <div class="welding-col col-4">
           <p

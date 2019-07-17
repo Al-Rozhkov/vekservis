@@ -31,11 +31,13 @@
         <p>
           <span class="site-desc">© 2013—2019 ООО «ВЭК СЕРВИС»</span>
         </p>
+        <p><nuxt-link to="/policy">Политика конфиденциальности</nuxt-link></p>
       </div>
       <div class="col-4">
         <p>
           <nuxt-link to="/contact">г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4</nuxt-link>
-          <br />
+        </p>
+        <p>
           <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
         </p>
       </div>

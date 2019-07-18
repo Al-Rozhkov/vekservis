@@ -20,25 +20,21 @@
           <li>экономия времени на&nbsp;контроль и&nbsp;обработку информации;</li><li>сокращение штатной численности клиента;</li><li>оптимизация доходной части;</li><li>дополнительные услуги на&nbsp;безвозмездной основе.</li>
         </ul>
       </div>
-      <div class="service-teasers">
-        <nuxt-link
+
+      <div class="row service-teasers">
+        <card-link
           v-for="item in services.list" :key="item.name"
-          class="service-card"
-          :to="'/services/' + item.name"
-          :style="`background-image: url(/img/small/bg-services-${item.name}.jpg)`"
-        >
-          <h2 v-html="item.title"></h2>
-        </nuxt-link>
+          :item="item"
+          :section="services.section"
+        />
         <div style="width: 100%; height: 1rem;"></div>
-        <nuxt-link
+        <card-link
           v-for="item in manufacture.list" :key="item.name"
-          class="service-card"
-          :to="'/manufacture/' + item.name"
-          :style="`background-image: url(/img/small/bg-manufacture-${item.name}.jpg)`"
-        >
-          <h2 v-html="item.title"></h2>
-        </nuxt-link>
+          :item="item"
+          :section="manufacture.section"
+        />
       </div>
+
       <h2><nuxt-link to="/clients">Клиенты</nuxt-link></h2>
       <div class="row">
         <p class="col-4 offset-1">На&nbsp;данный момент компания ВЭК СЕРВИС осуществляет обслуживание объектов федеральных сетевых компаний более чем в&nbsp;40&nbsp;городах и&nbsp;30&nbsp;регионах&nbsp;РФ.</p>
@@ -52,6 +48,7 @@
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
+import CardLink from '~/components/CardLink.vue'
 import Clients from '~/components/Clients.vue'
 
 import servicesData from '~/data/services.json'
@@ -66,6 +63,7 @@ export default {
   },
   components: {
     PageHeader,
+    CardLink,
     Clients
   }
 }
@@ -113,55 +111,5 @@ header.header {
 
 .service-teasers {
   margin: 3rem -1px 4rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.service-card {
-  position: relative;
-  border: 1px solid #ffffff;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 7.5rem 2rem 1.5rem 2rem;
-  flex-grow: 1;
-
-  @include media-breakpoint-between(sm, lg) {
-    max-width: 50%;
-    flex: 0 0 50%;
-  }
-  @include media-breakpoint-up(lg) {
-    max-width: 33.33333%;
-    flex: 0 0 33.33333%;
-  }
-
-  h2 {
-    position: relative;
-    z-index: 50;
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #0a2158;
-    opacity: .7;
-    z-index: 0;
-  }
-
-  &:hover:before {
-    background: #0c0d29;
-    opacity: .8;
-  }
-
-  h2 {
-    color: #fffcd4;
-    font-size: 1rem;
-    font-weight: bold;
-  }
 }
 </style>

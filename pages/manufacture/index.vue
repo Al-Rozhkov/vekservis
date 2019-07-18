@@ -1,20 +1,27 @@
 <template>
   <main>
     <page-header class="ph-blue ph-position-center">
-      <header-submenu :menu="menu"/>
-      <h1 class="page-title">Собственное производство и&nbsp;разработки компании «ВЭК СЕРВИС</h1>
+      <h1 class="page-title">Собственное производство и&nbsp;разработки компании «ВЭК&nbsp;СЕРВИС»</h1>
     </page-header>
     <section class="container">
       <article class="intro">
         <p>За&nbsp;годы работы в&nbsp;компании налажено собственное металлообрабатывающее производство. Мы&nbsp;тщательно контролируем всю последовательность действий, начиная c&nbsp;проверки качества комплектующих и заканчивая процессом установки и обслуживания готовой продукции. Опыт сотрудников &laquo;ВЭК&nbsp;Сервис&raquo; позволяет гарантировать качество выполняемых работ даже для больших серий и&nbsp;сжатых сроков.</p>
       </article>
+
+      <div class="row manufacture-teasers">
+        <card-link
+          v-for="item in menu.list" :key="item.name"
+          :item="item"
+          :section="menu.section"
+        />
+      </div>
     </section>
   </main>
 </template>
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
-import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
+import CardLink from '~/components/CardLink.vue'
 
 import subpagesData from '~/data/manufacture.json'
 
@@ -29,14 +36,17 @@ export default {
   },
   components: {
     PageHeader,
-    HeaderSubmenu
+    CardLink
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .intro {
-  padding-top: 3rem;
   max-width: 860px;
+}
+
+.manufacture-teasers {
+  margin: 3rem -1px 4rem;
 }
 </style>

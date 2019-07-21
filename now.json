@@ -7,6 +7,15 @@
     { "src": "api/order/index.js", "use": "@now/node" }
   ],
   "routes": [
+    { "src": "/api/(.*)",
+      "methods": ["POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": ["http://localhost:3000", "https://vekservis.ru"],
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "dest": "/api/$1"
+    },
     { "src": "/(.*)", "dest": "/$1" },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/200.html" }

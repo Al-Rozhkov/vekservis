@@ -38,7 +38,7 @@
             <span class="small">v.1.0</span>
           </h2>
           <p>
-            <span class="price">3&nbsp;759 руб.</span>
+            <span class="price" @click="sendRequest">3&nbsp;759 руб.</span>
           </p>
           <p>Силовой каркас выполнен сварным из квадратной трубы 20х20х2&nbsp;мм.</p>
           <p>
@@ -106,18 +106,46 @@
 </template>
 
 <script>
-import PageHeader from "~/components/PageHeader.vue";
-import HeaderSubmenu from "~/components/HeaderSubmenu.vue";
+import PageHeader from "~/components/PageHeader.vue"
+import HeaderSubmenu from "~/components/HeaderSubmenu.vue"
 // import NodeSections from '~/components/NodeSections.vue'
 
-import subpagesData from "~/data/manufacture.json";
+import subpagesData from "~/data/manufacture.json"
 
 export default {
+  components: {
+    PageHeader,
+    HeaderSubmenu
+  },
+
   data() {
     return {
       menu: subpagesData
-    };
+    }
   },
+
+  methods: {
+    sendRequest() {
+      const http = new XMLHttpRequest()
+      const url = "https://vekservis-git-dev.roro.now.sh/api/order"
+      const params = {
+        name: "Booba"
+      }
+      http.open("POST", url, true)
+
+      //Send the proper header information along with the request
+      http.setRequestHeader("Content-type", "application/json")
+
+      http.onreadystatechange = function() {
+        //Call a function when the state changes.
+        if (http.readyState == 4 && http.status == 200) {
+          alert(http.responseText)
+        }
+      }
+      http.send(params)
+    }
+  },
+
   head: {
     title: "Защитный козырек наружного блока кондиционера. ВЭК СЕРВИС",
     meta: [
@@ -128,12 +156,8 @@ export default {
           "Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов."
       }
     ]
-  },
-  components: {
-    PageHeader,
-    HeaderSubmenu
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

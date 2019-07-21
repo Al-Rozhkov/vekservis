@@ -3,6 +3,13 @@
   "name": "vekservis",
   "alias": "vekservis",
   "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "./api/server.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/server.js" },
+    { "src": "/(.*)", "dest": "/$1" },
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "/404" }
   ]
 }

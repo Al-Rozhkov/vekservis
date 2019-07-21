@@ -55,16 +55,16 @@ import servicesData from '~/data/services.json'
 import manufactureData from '~/data/manufacture.json'
 
 export default {
+  components: {
+    PageHeader,
+    CardLink,
+    Clients
+  },
   data () {
     return {
       services: servicesData,
       manufacture: manufactureData
     }
-  },
-  components: {
-    PageHeader,
-    CardLink,
-    Clients
   }
 }
 </script>

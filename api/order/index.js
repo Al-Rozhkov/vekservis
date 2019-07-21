@@ -1,4 +1,8 @@
 module.exports = async (req, res) => {
   const { body } = req
-  res.end(`Hello ${body.name}, you just parsed the request body!`)
+  if (body.name) {
+    res.end(`Hello ${body.name}, you just parsed the request body!`)
+  }
+  
+  res.status(400).send('Bad request')
 }

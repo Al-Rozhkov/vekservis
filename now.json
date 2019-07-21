@@ -10,7 +10,7 @@
     { "src": "/api/(.*)",
       "methods": ["POST"],
       "headers": {
-        "Access-Control-Allow-Origin": "http(s)?://(www.)?(localhost:3000|vekservis.ru)$",
+        "Access-Control-Allow-Origin": "http(s)?:\/\/(localhost:3000|vekservis.ru)$",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
         "Access-Control-Allow-Credentials": "true"
       },

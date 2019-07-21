@@ -127,9 +127,9 @@ export default {
     sendRequest() {
       const http = new XMLHttpRequest()
       const url = 'https://vekservis-git-dev.roro.now.sh/api/order'
-      const params = {
+      const params = JSON.stringify({
         name: 'Booba'
-      }
+      })
       http.open('POST', url, true)
 
       //Send the proper header information along with the request

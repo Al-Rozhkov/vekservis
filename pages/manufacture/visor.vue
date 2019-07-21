@@ -53,10 +53,10 @@
               :key="item"
               :src="`/img/visor/small/l${item}.jpg`"
               v-img="{
-                src: `/img/visor/l${item}.jpg`,
-                group: 'visor-lite',
-                title: 'Защитный козырек Visor Lite'
-              }"
+                  src: `/img/visor/l${item}.jpg`,
+                  group: 'visor-lite',
+                  title: 'Защитный козырек Visor Lite'
+                }"
               class="gi"
             />
           </div>
@@ -92,10 +92,10 @@
               :key="item"
               :src="`/img/visor/small/p${item}.jpg`"
               v-img="{
-                src: `/img/visor/p${item}.jpg`,
-                group: 'visor-pro',
-                title: 'Защитный козырек Visor Lite'
-              }"
+                  src: `/img/visor/p${item}.jpg`,
+                  group: 'visor-pro',
+                  title: 'Защитный козырек Visor Lite'
+                }"
               class="gi"
             />
           </div>
@@ -106,11 +106,10 @@
 </template>
 
 <script>
-import PageHeader from "~/components/PageHeader.vue"
-import HeaderSubmenu from "~/components/HeaderSubmenu.vue"
-// import NodeSections from '~/components/NodeSections.vue'
+import PageHeader from '~/components/PageHeader.vue'
+import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 
-import subpagesData from "~/data/manufacture.json"
+import subpagesData from '~/data/manufacture.json'
 
 export default {
   components: {
@@ -127,14 +126,14 @@ export default {
   methods: {
     sendRequest() {
       const http = new XMLHttpRequest()
-      const url = "https://vekservis-git-dev.roro.now.sh/api/order"
+      const url = 'https://vekservis-git-dev.roro.now.sh/api/order'
       const params = {
-        name: "Booba"
+        name: 'Booba'
       }
-      http.open("POST", url, true)
+      http.open('POST', url, true)
 
       //Send the proper header information along with the request
-      http.setRequestHeader("Content-type", "application/json")
+      http.setRequestHeader('Content-type', 'application/json')
 
       http.onreadystatechange = function() {
         //Call a function when the state changes.
@@ -147,13 +146,13 @@ export default {
   },
 
   head: {
-    title: "Защитный козырек наружного блока кондиционера. ВЭК СЕРВИС",
+    title: 'Защитный козырек наружного блока кондиционера. ВЭК СЕРВИС',
     meta: [
       {
-        hid: "description",
-        name: "description",
+        hid: 'description',
+        name: 'description',
         content:
-          "Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов."
+          'Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов.'
       }
     ]
   }
@@ -161,7 +160,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .intro {
   max-width: 860px;

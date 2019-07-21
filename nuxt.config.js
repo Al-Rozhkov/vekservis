@@ -50,6 +50,7 @@ module.exports = {
     }
     // extractCSS: true
   },
+
   modules: [
     [
       '@nuxtjs/yandex-metrika',
@@ -63,6 +64,11 @@ module.exports = {
     ],
     '@nuxtjs/sitemap'
   ],
+
+  plugins: [
+    '~/plugins/plugin.client.js'
+  ],
+
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://vekservis.ru',

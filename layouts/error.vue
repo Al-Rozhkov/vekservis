@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="container header-404">
+    <header class="container header-error">
       <h1 class="red">Извините, страницы с таким адресом у нас нет</h1>
     </header>
     
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header-404 {
+.header-error {
   border-top: 1px solid #cccccc;
   padding-top: 2rem;
 }

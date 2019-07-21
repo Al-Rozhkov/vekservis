@@ -38,7 +38,7 @@
             <span class="small">v.1.0</span>
           </h2>
           <p>
-            <span class="price">3&nbsp;759 руб.</span>
+            <span class="price" @click="sendRequest">3&nbsp;759 руб.</span>
           </p>
           <p>Силовой каркас выполнен сварным из квадратной трубы 20х20х2&nbsp;мм.</p>
           <p>
@@ -53,10 +53,10 @@
               :key="item"
               :src="`/img/visor/small/l${item}.jpg`"
               v-img="{
-                src: `/img/visor/l${item}.jpg`,
-                group: 'visor-lite',
-                title: 'Защитный козырек Visor Lite'
-              }"
+                  src: `/img/visor/l${item}.jpg`,
+                  group: 'visor-lite',
+                  title: 'Защитный козырек Visor Lite'
+                }"
               class="gi"
             />
           </div>
@@ -92,10 +92,10 @@
               :key="item"
               :src="`/img/visor/small/p${item}.jpg`"
               v-img="{
-                src: `/img/visor/p${item}.jpg`,
-                group: 'visor-pro',
-                title: 'Защитный козырек Visor Lite'
-              }"
+                  src: `/img/visor/p${item}.jpg`,
+                  group: 'visor-pro',
+                  title: 'Защитный козырек Visor Lite'
+                }"
               class="gi"
             />
           </div>
@@ -106,38 +106,61 @@
 </template>
 
 <script>
-import PageHeader from "~/components/PageHeader.vue";
-import HeaderSubmenu from "~/components/HeaderSubmenu.vue";
-// import NodeSections from '~/components/NodeSections.vue'
+import PageHeader from '~/components/PageHeader.vue'
+import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 
-import subpagesData from "~/data/manufacture.json";
+import subpagesData from '~/data/manufacture.json'
 
 export default {
-  data() {
-    return {
-      menu: subpagesData
-    };
-  },
-  head: {
-    title: "Защитный козырек наружного блока кондиционера. ВЭК СЕРВИС",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов."
-      }
-    ]
-  },
   components: {
     PageHeader,
     HeaderSubmenu
+  },
+
+  data() {
+    return {
+      menu: subpagesData
+    }
+  },
+
+  methods: {
+    sendRequest() {
+      const http = new XMLHttpRequest()
+      const url = 'https://vekservis.now.sh/api/order'
+      const params = JSON.stringify({
+        name: 'Booba'
+      })
+      http.open('POST', url, true)
+
+      //Send the proper header information along with the request
+      http.setRequestHeader('Content-type', 'application/json')
+
+      http.onreadystatechange = function() {
+        //Call a function when the state changes.
+        if (http.readyState == 4 && http.status == 200) {
+          console.log(http.responseText)
+        }
+      }
+      http.send(params)
+    }
+  },
+
+  head: {
+    title: 'Защитный козырек наружного блока кондиционера. ВЭК СЕРВИС',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов.'
+      }
+    ]
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .intro {
   max-width: 860px;

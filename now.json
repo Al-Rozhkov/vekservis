@@ -4,12 +4,20 @@
   "alias": "vekservis",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" },
-    { "src": "./api/server.js", "use": "@now/node" }
+    { "src": "api/order/index.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/api/.*", "dest": "/api/server.js" },
+    { "src": "/api/(.*)",
+      "methods": ["POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "http(s)?://(localhost:3000|vekservis.ru)$",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "dest": "/api/$1"
+    },
     { "src": "/(.*)", "dest": "/$1" },
     { "handle": "filesystem" },
-    { "src": "/.*", "status": 404, "dest": "/404" }
+    { "src": "/.*", "status": 404, "dest": "/200.html" }
   ]
 }

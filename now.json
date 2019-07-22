@@ -9,7 +9,6 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "methods": ["POST", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
@@ -20,14 +19,9 @@
     },
     {
       "src": "/(.*)",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-        "Access-Control-Allow-Credentials": "true"
-      },
       "dest": "/$1"
     },
     { "handle": "filesystem" },
-    { "src": "/.*", "status": 404, "dest": "/200.html" }
+    { "src": "/(.*)", "status": 404, "dest": "/200.html" }
   ]
 }

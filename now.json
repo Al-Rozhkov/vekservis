@@ -8,7 +8,7 @@
   ],
   "routes": [
     { "src": "/api/(.*)",
-      "methods": ["POST"],
+      "methods": ["POST","OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "http(s)?://(localhost:3000|vekservis.ru)$",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",

@@ -18,11 +18,15 @@
       },
       "dest": "/api/$1"
     },
-    { "src": "/(.*)",
+    {
+      "src": "/(.*)",
       "headers": {
-        "X-Test-Header": "I don't see my headers =("
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
       },
-      "dest": "/$1" },
+      "dest": "/$1"
+    },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/200.html" }
   ]

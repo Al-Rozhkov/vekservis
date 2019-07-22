@@ -18,7 +18,11 @@
       },
       "dest": "/api/$1"
     },
-    { "src": "/(.*)", "dest": "/$1" },
+    { "src": "/(.*)",
+      "headers": {
+        "X-Test-Header": "I don't see my headers =("
+      },
+      "dest": "/$1" },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/200.html" }
   ]

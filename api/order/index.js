@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
       'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
       'Access-Control-Max-Age': '86400'
     })
-    res.send()
+    return res.end()
   }
   
   const { body } = req

@@ -5,8 +5,7 @@ module.exports = async (req, res) => {
       'Access-Control-Allow-Methods': 'POST',
       'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
       'Access-Control-Max-Age': '86400'
-    })
-    .end()
+    }).end()
   }
   
   const { body } = req

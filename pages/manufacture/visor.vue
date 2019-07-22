@@ -126,11 +126,10 @@ export default {
   methods: {
     sendRequest() {
       const http = new XMLHttpRequest()
-      const url = 'https://vekservis.now.sh/api/order'
       const params = JSON.stringify({
-        name: 'Booba'
+        name: 'Vek'
       })
-      http.open('POST', url, true)
+      http.open('POST', 'https://vekservis.now.sh/api/order', true)
 
       //Send the proper header information along with the request
       http.setRequestHeader('Content-type', 'application/json')

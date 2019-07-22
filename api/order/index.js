@@ -1,6 +1,6 @@
 module.exports = async (req, res) => {
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.status(200).setHeader('Access-Control-Allow-Origin', '*')
   }
   
   const { body } = req

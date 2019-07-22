@@ -1,8 +1,12 @@
 module.exports = async (req, res) => {
+  // CORS preflight approve
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Methods', 'POST')
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-    res.setHeader('Access-Control-Max-Age', '86400')
+    res.writeHead(200, {
+      'Access-Control-Allow-Methods': 'POST',
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'Access-Control-Max-Age': '86400'
+    })
+    .end()
   }
   
   const { body } = req

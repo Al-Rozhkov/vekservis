@@ -1,6 +1,7 @@
 module.exports = async (req, res) => {
   // CORS preflight approve
   if (req.method === 'OPTIONS') {
+    console.log('--------------123---------------')
     res.setHeader('Access-Control-Allow-Methods', 'POST')
     res.setHeader(
       'Access-Control-Allow-Headers',

@@ -10,7 +10,7 @@ if ($_SERVER["CONTENT_TYPE"] == 'application/json') {
   if (!empty($data["name"]) && !empty($data["contact"]) && !empty($data["model"])) {
     // var_dump($data);
 
-    $to      = 'rozhkov-aa@yandex.ru';
+    $to      = 'vsintsev@vekservis.ru';
     $subject = 'Заказ на сайте vekservis.ru';
     $message = 'Имя: ' . strip_tags($data['name']) . "\r\n" .
       'Контактная информация: ' . $data['contact'] . "\r\n" .

@@ -112,7 +112,7 @@
     <no-ssr>
       <modal name="order" width="400" :minWidth="320" :maxWidth="400" height="auto" :pivotY="0.2">
         <div class="order">
-          <h2>Заказ защитного козырька</h2>
+          <h2 class="mt-0">Заказ защитного козырька</h2>
           <div class="group" role="group">
             <label class="label" for="input-name">Ваше имя:</label>
             <b-form-input id="input-name" v-model="name" placeholder="Иван Иванов" trim></b-form-input>

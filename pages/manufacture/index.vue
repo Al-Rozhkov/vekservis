@@ -10,9 +10,9 @@
         </div>
 
         <div class="col-4">
-          <h3 style="margin-top: 0">Наши партнеры</h3>
+          <h3 class="mt-0">Наши партнеры</h3>
           <p>
-            <a href="rse-athletics.com">Russian Sports Equipment</a>
+            <a href="https://www.rse-athletics.com/">Russian Sports Equipment</a>
           </p>
         </div>
       </div>

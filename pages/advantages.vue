@@ -10,45 +10,129 @@
     <section class="section">
       <h2 class="section-title">Свидетельство СРО</h2>
       <div class="section-body">
-        <img v-img="{ src: '/docs/svidetelstvo_1.jpg', group: 'docs', title: 'Свидетельство СРО' }" src="/docs/small/svidetelstvo_1.jpg" alt="Свидетельство СРО"/>
+        <div class="list-img">
+          <img
+            v-img="{ src: '/docs/svidetelstvo_1.jpg', group: 'docs', title: 'Свидетельство СРО' }"
+            src="/docs/small/svidetelstvo_1.jpg"
+            alt="Свидетельство СРО"
+          />
+        </div>
       </div>
     </section>
     <section class="section">
       <h2 class="section-title">Свидетельство о&nbsp;допуске к&nbsp;работам</h2>
       <div class="section-body">
-        <img v-img="{ src: '/docs/dopusk_1.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_1.jpg" alt="Свидетельство о допуске к работам"/>
-        <img v-img="{ src: '/docs/dopusk_2.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_2.jpg" alt="Свидетельство о допуске к работам"/>
-        <img v-img="{ src: '/docs/dopusk_3.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_3.jpg" alt="Свидетельство о допуске к работам"/>
-        <img v-img="{ src: '/docs/dopusk_4.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_4.jpg" alt="Свидетельство о допуске к работам"/>
-        <img v-img="{ src: '/docs/dopusk_5.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_5.jpg" alt="Свидетельство о допуске к работам"/>
-        <img v-img="{ src: '/docs/dopusk_6.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }" src="/docs/small/dopusk_6.jpg" alt="Свидетельство о допуске к работам"/>
+        <div class="list-img">
+          <img
+            v-img="{ src: '/docs/dopusk_1.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_1.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+          <img
+            v-img="{ src: '/docs/dopusk_2.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_2.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+          <img
+            v-img="{ src: '/docs/dopusk_3.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_3.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+          <img
+            v-img="{ src: '/docs/dopusk_4.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_4.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+          <img
+            v-img="{ src: '/docs/dopusk_5.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_5.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+          <img
+            v-img="{ src: '/docs/dopusk_6.jpg', group: 'docs', title: 'Свидетельство о допуске к работам' }"
+            src="/docs/small/dopusk_6.jpg"
+            alt="Свидетельство о допуске к работам"
+          />
+        </div>
       </div>
     </section>
     <section class="section">
       <h2 class="section-title">Свидетельство МЧС</h2>
       <div class="section-body">
-        <img v-img="{ src: '/docs/mchs_1.jpg', group: 'docs', title: 'Свидетельство МЧС' }" src="/docs/small/mchs_1.jpg" alt="Свидетельство МЧС"/>
-        <img v-img="{ src: '/docs/mchs_2.jpg', group: 'docs', title: 'Свидетельство МЧС' }" src="/docs/small/mchs_2.jpg" alt="Свидетельство МЧС"/>
+        <div class="list-img">
+          <img
+            v-img="{ src: '/docs/mchs_1.jpg', group: 'docs', title: 'Свидетельство МЧС' }"
+            src="/docs/small/mchs_1.jpg"
+            alt="Свидетельство МЧС"
+          />
+          <img
+            v-img="{ src: '/docs/mchs_2.jpg', group: 'docs', title: 'Свидетельство МЧС' }"
+            src="/docs/small/mchs_2.jpg"
+            alt="Свидетельство МЧС"
+          />
+        </div>
       </div>
     </section>
     <section class="section">
       <h2 class="section-title">Сертификат соответствия</h2>
       <div class="section-body">
-        <img v-img="{ src: '/docs/sert-1.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-1.png" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert-2.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-2.png" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert-3.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-3.png" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert-4.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-4.png" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert-5.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-5.png" alt="Сертификат соответствия"/>
-        <img v-img="{ src: '/docs/sert-6.png', group: 'docs', title: 'Сертификат соответствия' }" src="/docs/small/sert-6.png" alt="Сертификат соответствия"/>
+        <div class="list-img">
+          <img
+            v-img="{ src: '/docs/sert-1.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-1.png"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{ src: '/docs/sert-2.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-2.png"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{ src: '/docs/sert-3.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-3.png"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{ src: '/docs/sert-4.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-4.png"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{ src: '/docs/sert-5.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-5.png"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{ src: '/docs/sert-6.png', group: 'docs', title: 'Сертификат соответствия' }"
+            src="/docs/small/sert-6.png"
+            alt="Сертификат соответствия"
+          />
+        </div>
       </div>
     </section>
     <section class="section">
       <h2 class="section-title">Рекомендации</h2>
-      <div class="section-body list-img">
-        <img v-img="{ src: '/docs/VTB.jpg', group: 'docs' }" src="/docs/small/VTB.jpg"/>
-        <img v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }" src="/docs/small/pismo_1.jpg"/>
-        <img v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }" src="/docs/small/pismo_2.jpg"/>
-        <img v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }" src="/docs/small/pismo_sber.jpg"/>
+      <div class="section-body">
+        <div class="list-img">
+          <img v-img="{ src: '/docs/VTB.jpg', group: 'docs' }" src="/docs/small/VTB.jpg" />
+          <img v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }" src="/docs/small/pismo_1.jpg" />
+          <img v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }" src="/docs/small/pismo_2.jpg" />
+          <img
+            v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }"
+            src="/docs/small/pismo_sber.jpg"
+          />
+          <img v-img="{ src: '/docs/leroy.jpg', group: 'docs' }" src="/docs/small/leroy.jpg" />
+          <img v-img="{ src: '/docs/tander.jpg', group: 'docs' }" src="/docs/small/tander.jpg" />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Презентация компании</h2>
+      <div class="section-body">
+        <a href="/docs/vekservis2019.pdf">
+          <img src="/docs/vekservis2019.jpg" alt="Презентация компании ВЭК СЕРВИС в PDF" />
+          <div>(PDF, 1Mb)</div>
+        </a>
       </div>
     </section>
   </div>
@@ -57,21 +141,13 @@
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 
-import Vue from 'vue'
-import VueImg from 'v-img'
-
-Vue.use(VueImg)
-
 export default {
   head: {
-    title: 'Опыт и клиенты. ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости'
+    title:
+      'Опыт и клиенты. ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости'
   },
   components: {
     PageHeader
   }
 }
 </script>
-
-<style>
-
-</style>

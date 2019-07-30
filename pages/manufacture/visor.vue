@@ -80,7 +80,7 @@
             <span class="small">v.1.0</span>
           </h2>
           <h3>
-            <span class="price">5&nbsp;000 руб.</span>
+            <span class="price">5&nbsp;500 руб.</span>
           </h3>
           <p>Силовой каркас выполнен сварным из конструкционной листовой стали толщиной 2&nbsp;мм.</p>
           <p>

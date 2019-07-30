@@ -9,6 +9,14 @@
         <p>Обслуживание и&nbsp;ремонт инженерных систем&nbsp;&mdash; это комплекс технических и&nbsp;организационных мероприятий, в&nbsp;результате которых обеспечивается постоянная работоспособность оборудования. Качественное обслуживание инженерных систем помогает снизить вероятность возникновения аварийных ситуаций, предупредить поломку и&nbsp;значительно продлить срок службы оборудования.</p>
         <p>Для работы на&nbsp;объектах Заказчика техническая служба компании предоставляет персонального менеджера и&nbsp;необходимых специалистов по&nbsp;направлениям, которые обслуживают установленное в&nbsp;здании оборудование. Технический отдел и&nbsp;руководство компании «ВЭК СЕРВИС» обеспечивает поддержку в&nbsp;части соблюдения стандартов оказания услуг, а&nbsp;также контролирует их&nbsp;качество и&nbsp;сроки.</p>
       </article>
+
+      <div class="row card-teasers">
+        <card-link
+          v-for="item in services.list" :key="item.name"
+          :item="item"
+          :section="services.section"
+        />
+      </div>
     </section>
   </main>
 </template>
@@ -16,6 +24,7 @@
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
+import CardLink from '~/components/CardLink.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -30,7 +39,8 @@ export default {
   },
   components: {
     PageHeader,
-    HeaderSubmenu
+    HeaderSubmenu,
+    CardLink
   }
 }
 </script>

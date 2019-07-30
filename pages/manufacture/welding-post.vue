@@ -53,7 +53,7 @@
           <dl>
             <dt>Сварочный пост неокрашенный стандартная комплектация:</dt>
             <dd>
-              <span class="price-large">290 000,00 рублей</span>
+              <span class="price-large">347 000,00 рублей</span>
             </dd>
           </dl>
 

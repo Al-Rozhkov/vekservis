@@ -93,11 +93,6 @@
             alt="Сертификат соответствия"
           />
           <img
-            v-img="{ src: '/docs/sert-4.png', group: 'docs', title: 'Сертификат соответствия' }"
-            src="/docs/small/sert-4.png"
-            alt="Сертификат соответствия"
-          />
-          <img
             v-img="{ src: '/docs/sert-5.png', group: 'docs', title: 'Сертификат соответствия' }"
             src="/docs/small/sert-5.png"
             alt="Сертификат соответствия"

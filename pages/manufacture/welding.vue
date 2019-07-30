@@ -56,43 +56,40 @@
 </template>
 
 <script>
-import PageHeader from "~/components/PageHeader.vue";
-import HeaderSubmenu from "~/components/HeaderSubmenu.vue";
+import PageHeader from '~/components/PageHeader.vue'
+import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 // import NodeSections from '~/components/NodeSections.vue'
 
-import subpagesData from "~/data/manufacture.json";
+import subpagesData from '~/data/manufacture.json'
 
 export default {
-  data() {
-    return {
-      menu: subpagesData
-    };
-  },
-  methods: {
-    numPad(d) {
-      return d < 10 ? "0" + d.toString() : d.toString();
-    }
-  },
-  head: {
-    title: "Услуги полуавтоматической сварки. ВЭК СЕРВИС",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки."
-      }
-    ]
-  },
   components: {
     PageHeader,
     HeaderSubmenu
+  },
+
+  data() {
+    return {
+      menu: subpagesData
+    }
+  },
+
+  head: {
+    title: 'Услуги полуавтоматической сварки. ВЭК СЕРВИС',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки.'
+      }
+    ]
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .welding-cols {
   padding: 2rem 0;
@@ -107,7 +104,7 @@ export default {
   position: relative;
 
   &:before {
-    content: " ";
+    content: ' ';
     display: block;
     width: 2rem;
     height: 4px;

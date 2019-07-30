@@ -12,12 +12,12 @@
         <div class="col-4">
           <h3 class="mt-0">Наши партнеры</h3>
           <p>
-            <a href="https://www.rse-athletics.com/">Russian Sports Equipment</a>
+            <a target="_blank" href="https://www.rse-athletics.com/">Russian Sports Equipment</a>
           </p>
         </div>
       </div>
 
-      <div class="row manufacture-teasers">
+      <div class="row card-teasers">
         <card-link v-for="item in menu.list" :key="item.name" :item="item" :section="menu.section" />
       </div>
     </section>
@@ -45,9 +45,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.manufacture-teasers {
-  margin: 3rem -1px 4rem;
-}
-</style>

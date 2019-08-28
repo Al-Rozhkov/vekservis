@@ -17,18 +17,19 @@
           <p>Сварочный пост изготовлен на&nbsp;современном высокотехнологичном оборудовании: станки лазерной резки, станки листогибочные с&nbsp;ЧПУ, полуавтоматическая сварка.</p>
         </div>
 
-        <div class="col-6 list-img">
-          <img
-            v-for="item in 5"
-            :key="item"
-            :src="`/img/welding-post/small/${item}.jpg`"
-            v-img="{
-            src: `/img/welding-post/${item}.jpg`,
-            group: 'welding-post',
-            title: 'Сварочный пост'
-          }"
-            class="gi"
-          />
+        <div class="col-6">
+          <div class="list-img">
+            <img
+              v-for="item in 5"
+              :key="item"
+              :src="`/img/welding-post/small/${item}.jpg`"
+              v-img="{
+                src: `/img/welding-post/${item}.jpg`,
+                group: 'welding-post',
+                title: 'Сварочный пост'
+              }"
+            />
+          </div>
         </div>
       </div>
 
@@ -56,6 +57,9 @@
               <span class="price-large">347 000,00 рублей</span>
             </dd>
           </dl>
+          <p>
+            <button class="btn btn-yellow" @click="$modal.show('order')">Заказать</button>
+          </p>
 
           <h4>Дополнительно</h4>
           <dl>
@@ -75,42 +79,48 @@
         </div>
       </div>
     </section>
+
+    <order-modal selectedModel="Пост сварочный ПС5-001" title="Заказ сварочного поста" />
   </div>
 </template>
 
 <script>
-import PageHeader from "~/components/PageHeader.vue";
-import HeaderSubmenu from "~/components/HeaderSubmenu.vue";
+import PageHeader from '~/components/PageHeader.vue'
+import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
+import OrderModal from '~/components/OrderModal.vue'
 // import NodeSections from '~/components/NodeSections.vue'
 
-import subpagesData from "~/data/manufacture.json";
+import subpagesData from '~/data/manufacture.json'
 
 export default {
+  components: {
+    PageHeader,
+    HeaderSubmenu,
+    OrderModal
+  },
+
   data() {
     return {
       menu: subpagesData
-    };
+    }
   },
+
   head: {
-    title: "Пост сварочный ПС5-001. ВЭК СЕРВИС",
+    title: 'Пост сварочный ПС5-001. ВЭК СЕРВИС',
     meta: [
       {
-        hid: "description",
-        name: "description",
+        hid: 'description',
+        name: 'description',
         content:
-          "Сварочный пост предназначен для ограждения рабочих мест при проведении сварочных, слесарных и других видов работ, и защиты окружающих от излучения, возникающего во время сварки."
+          'Сварочный пост предназначен для ограждения рабочих мест при проведении сварочных, слесарных и других видов работ, и защиты окружающих от излучения, возникающего во время сварки.'
       }
     ]
-  },
-  components: {
-    PageHeader,
-    HeaderSubmenu
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .price,
 .price-large {

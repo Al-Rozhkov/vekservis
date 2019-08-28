@@ -118,6 +118,8 @@
           />
           <img v-img="{ src: '/docs/leroy.jpg', group: 'docs' }" src="/docs/small/leroy.jpg" />
           <img v-img="{ src: '/docs/tander.jpg', group: 'docs' }" src="/docs/small/tander.jpg" />
+          <img v-img="{ src: '/docs/pismo_3.jpg', group: 'docs' }" src="/docs/small/pismo_3.jpg" />
+          <img v-img="{ src: '/docs/pismo_4.jpg', group: 'docs' }" src="/docs/small/pismo_4.jpg" />
         </div>
       </div>
     </section>

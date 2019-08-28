@@ -14,11 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "1.2.0",
+    "@nuxtjs/sitemap": "1.3.0",
     "@nuxtjs/yandex-metrika": "0.1.2",
     "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^2.0.0-rc.27",
-    "nuxt": "^2.8.1",
+    "bootstrap-vue": "^2.0.0-rc.28",
+    "nuxt": "^2.9.2",
     "v-img": "^0.2.0",
     "vue-js-modal": "^1.3.31"
   },
@@ -29,7 +29,7 @@
     "eslint-loader": "^2.2.1",
     "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.3.1"
   },
   "prettier": {
     "semi": false,

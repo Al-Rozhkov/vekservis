@@ -1,0 +1,38 @@
+.btn {
+  // background-color: #ffcd2b;
+  background-color: $link-color;
+  border-color: transparent;
+  border-width: 0px;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($link-color, 10%);
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    background-color: #cccccc;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+.btn-yellow {
+  background-color: #ffd30d;
+  color: #000000;
+
+  &:hover {
+    background-color: darken(#ffd30d, 5%);
+  }
+}

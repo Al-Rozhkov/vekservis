@@ -4,24 +4,32 @@
       <logo />
       <ul class="main-menu">
         <li>
-          <nuxt-link to="/services">Услуги</nuxt-link>
+          <nuxt-link to="/services">
+            Услуги
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/clients">Опыт и клиенты</nuxt-link>
+          <nuxt-link to="/clients">
+            Опыт и клиенты
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/manufacture">Производство</nuxt-link>
+          <nuxt-link to="/manufacture">
+            Производство
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/advantages">Преимущества</nuxt-link>
+          <nuxt-link to="/advantages">
+            Преимущества
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">Контакты</nuxt-link>
+          <nuxt-link to="/contact">
+            Контакты
+          </nuxt-link>
         </li>
       </ul>
-      <span class="phone">
-        <span class="small">+7 (8412)</span> 20-73-18
-      </span>
+      <span class="phone"> <span class="small">+7 (8412)</span> 20-73-18 </span>
     </div>
 
     <nuxt />
@@ -31,11 +39,17 @@
         <p>
           <span class="site-desc">© 2013—2019 ООО «ВЭК&nbsp;СЕРВИС»</span>
         </p>
-        <p><nuxt-link to="/policy">Политика конфиденциальности</nuxt-link></p>
+        <p>
+          <nuxt-link to="/policy">
+            Политика конфиденциальности
+          </nuxt-link>
+        </p>
       </div>
       <div class="col-4">
         <p>
-          <nuxt-link to="/contact">г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4</nuxt-link>
+          <nuxt-link to="/contact">
+            г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4
+          </nuxt-link>
         </p>
         <p>
           <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
@@ -53,13 +67,13 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import PageHeader from "~/components/PageHeader.vue";
+import Logo from '~/components/Logo.vue'
+import PageHeader from '~/components/PageHeader.vue'
 
 export default {
   components: {
     Logo,
     PageHeader
   }
-};
+}
 </script>

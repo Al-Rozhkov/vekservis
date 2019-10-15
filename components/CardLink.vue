@@ -4,7 +4,7 @@
     :to="`/${section}/${item.name}`"
     :style="`background-image: url(/img/small/bg-${section}-${item.name}.jpg)`"
   >
-    <h2 class="h2" v-html="item.title"></h2>
+    <h2 class="h2" v-html="item.title" />
   </nuxt-link>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .card {
   position: relative;
@@ -45,7 +45,7 @@ export default {
   }
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;

@@ -1,20 +1,20 @@
 <template>
   <ul class="clients">
-    <li
-      v-for="client in clients"
-      :key="client.name"
-    >
-      <img
-        :src="`/clients/${client.name}.png`"
-        :alt="client.alt"
-      />
+    <li v-for="client in clients" :key="client.name">
+      <img :src="`/clients/${client.name}.png`" :alt="client.alt" />
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-  data () {
+  props: {
+    clientsNum: {
+      type: Number,
+      required: false
+    }
+  },
+  data() {
     return {
       clientsList: [
         { name: 'magnit', alt: 'Магнит' },
@@ -40,13 +40,6 @@ export default {
     }
   },
 
-  props: {
-    clientsNum: {
-      type: Number,
-      required: false
-    }
-  },
-
   computed: {
     clients() {
       return this.clientsList.slice(0, this.clientsNum)
@@ -56,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .clients {
   list-style-type: none;
@@ -68,17 +61,17 @@ export default {
   li {
     flex: 0 0 50%;
     max-width: 50%;
-    
+
     @include media-breakpoint-between(sm, md) {
       flex: 0 0 33.33333%;
       max-width: 33.33333%;
     }
-    
+
     @include media-breakpoint-between(md, lg) {
       flex: 0 0 25%;
       max-width: 25%;
     }
-    
+
     @include media-breakpoint-up(lg) {
       flex: 0 0 16.666667%;
       max-width: 16.666667%;

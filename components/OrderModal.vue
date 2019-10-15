@@ -1,20 +1,44 @@
 <template>
   <no-ssr>
-    <modal name="order" width="400" :minWidth="320" :maxWidth="400" height="auto" :pivotY="0.2">
+    <modal
+      name="order"
+      width="400"
+      :min-width="320"
+      :max-width="400"
+      height="auto"
+      :pivot-y="0.2"
+    >
       <div class="order">
-        <h2 class="mt-0">{{ title }}</h2>
+        <h2 class="mt-0">
+          {{ title }}
+        </h2>
         <div class="group" role="group">
           <label class="label" for="input-name">Ваше имя:</label>
-          <b-form-input id="input-name" v-model="name" placeholder="Иван Иванов" trim></b-form-input>
+          <b-form-input
+            id="input-name"
+            v-model="name"
+            placeholder="Иван Иванов"
+            trim
+          />
         </div>
         <div class="group" role="group">
           <label class="label" for="input-contact">Ваш телефон или электронная почта:</label>
-          <b-form-input id="input-contact" v-model="contact" placeholder="+7 927 222 3333" trim></b-form-input>
+          <b-form-input
+            id="input-contact"
+            v-model="contact"
+            placeholder="+7 927 222 3333"
+            trim
+          />
         </div>
         <p class="text-small">
-          Отправляя эту форму вы соглашаетесь на обработку ваших персональных данных. Ознакомьтесь с&nbsp;<nuxt-link to="/policy">политикой конфиденциальности.</nuxt-link>
+          Отправляя эту форму вы соглашаетесь на обработку ваших персональных
+          данных. Ознакомьтесь с&nbsp;<nuxt-link to="/policy">
+            политикой конфиденциальности.
+          </nuxt-link>
         </p>
-        <button :disabled="submitDisabled" @click="sendRequest" class="btn">Отправить</button>
+        <button :disabled="submitDisabled" class="btn" @click="sendRequest">
+          Отправить
+        </button>
       </div>
     </modal>
   </no-ssr>
@@ -27,7 +51,7 @@ export default {
   components: {
     BFormInput
   },
-  
+
   props: {
     title: {
       type: String,

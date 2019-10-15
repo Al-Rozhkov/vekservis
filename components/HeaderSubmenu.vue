@@ -1,7 +1,11 @@
 <template>
   <ul class="header-submenu">
     <li v-for="node in menu.list" :key="node.name" class="li">
-      <nuxt-link :to="`/${menu.section}/${node.name}`" v-html="node.title" class="a"></nuxt-link>
+      <nuxt-link
+        :to="`/${menu.section}/${node.name}`"
+        class="a"
+        v-html="node.title"
+      />
     </li>
   </ul>
 </template>
@@ -14,11 +18,11 @@ export default {
       type: Object
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 .header-submenu {
   list-style-type: none;

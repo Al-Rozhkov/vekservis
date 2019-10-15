@@ -1,7 +1,13 @@
 <template>
   <div class="service-teasers">
-    <nuxt-link class="service-card" v-for="service in services" :key="service.name" v-bind:to="serviceLink(service.name)" v-bind:style="serviceBg(service.name)">
-      <h2 v-html="service.title"></h2>
+    <nuxt-link
+      v-for="service in services"
+      :key="service.name"
+      class="service-card"
+      :to="serviceLink(service.name)"
+      :style="serviceBg(service.name)"
+    >
+      <h2 v-html="service.title" />
     </nuxt-link>
   </div>
 </template>
@@ -14,10 +20,10 @@ export default {
     }
   },
   methods: {
-    serviceLink: function (name) {
+    serviceLink: function(name) {
       return '/services/' + name
     },
-    serviceBg: function (name) {
+    serviceBg: function(name) {
       return 'background-image: url(/img/bg-services-' + name + '.jpg)'
     }
   }
@@ -54,15 +60,15 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, #1b0880 0%,#042a4a 100%);
+    background-image: linear-gradient(to right, #1b0880 0%, #042a4a 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0880', endColorstr='#042a4a',GradientType=1 );
-    opacity: .7;
+    opacity: 0.7;
     z-index: 0;
   }
 
   &:hover:before {
     background: #0c0d29;
-    opacity: .8;
+    opacity: 0.8;
   }
 
   h2 {

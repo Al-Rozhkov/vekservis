@@ -3,13 +3,18 @@
     <div class="container">
       <ul class="article-submenu">
         <li v-for="(section, index) in sectionsList" :key="index">
-          <a v-bind:href="'#sec-' + index" v-html="section.title"></a>
+          <a :href="'#sec-' + index" v-html="section.title" />
         </li>
       </ul>
     </div>
-    <section v-for="(section, index) in sectionsList" :key="index" :id="'sec-' + index" class="section">
-      <h2 class="section-title" v-html="section.title"></h2>
-      <div class="section-body" v-html="section.content"></div>
+    <section
+      v-for="(section, index) in sectionsList"
+      :id="'sec-' + index"
+      :key="index"
+      class="section"
+    >
+      <h2 class="section-title" v-html="section.title" />
+      <div class="section-body" v-html="section.content" />
     </section>
   </article>
 </template>
@@ -25,15 +30,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~assets/scss/init.scss";
+@import '~assets/scss/init.scss';
 
 ul.article-submenu {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 2rem;
-  padding: .5rem 0;
-  
+  padding: 0.5rem 0;
+
   li {
     padding: 0 2.5rem 2rem 0;
 
@@ -45,7 +50,7 @@ ul.article-submenu {
       flex: 0 0 25%;
       max-width: 25%;
     }
-    
+
     a {
       color: $link-color;
       line-height: 1.25;
@@ -56,18 +61,18 @@ ul.article-submenu {
 
         &:before {
           background-color: $link-hover-color;
-          opacity: .3;
+          opacity: 0.3;
         }
       }
 
       &:before {
-        content: " ";
+        content: ' ';
         display: block;
         width: 2rem;
         height: 4px;
         background-color: $link-color;
-        opacity: .15;
-        margin-bottom: .4rem;
+        opacity: 0.15;
+        margin-bottom: 0.4rem;
       }
     }
   }

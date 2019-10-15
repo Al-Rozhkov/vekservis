@@ -1,19 +1,23 @@
 <template>
   <div>
     <header class="container header-error">
-      <h1 class="red">Извините, страницы с таким адресом у нас нет</h1>
+      <h1 class="red">
+        Извините, страницы с таким адресом у нас нет
+      </h1>
     </header>
-    
+
     <section class="container">
       <div class="row service-teasers">
         <card-link
-          v-for="item in services.list" :key="item.name"
+          v-for="item in services.list"
+          :key="item.name"
           :item="item"
           :section="services.section"
         />
-        <div style="width: 100%; height: 1rem;"></div>
+        <div style="width: 100%; height: 1rem;" />
         <card-link
-          v-for="item in manufacture.list" :key="item.name"
+          v-for="item in manufacture.list"
+          :key="item.name"
           :item="item"
           :section="manufacture.section"
         />
@@ -32,7 +36,7 @@ export default {
   components: {
     CardLink
   },
-  data () {
+  data() {
     return {
       services: servicesData,
       manufacture: manufactureData
@@ -41,7 +45,11 @@ export default {
   head: {
     title: 'Страница не найдена',
     meta: [
-      { hid: 'description', name: 'description', content: 'Страницы с таким адресом на этом сайте нет' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Страницы с таким адресом на этом сайте нет'
+      }
     ]
   }
 }

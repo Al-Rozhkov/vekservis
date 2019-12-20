@@ -6,12 +6,10 @@
         и&nbsp;государственной недвижимости по&nbsp;всей России
       </h1>
       <ul class="adv-grid">
-        <li>
-          Единая стоимость работ для клиентов из&nbsp;любого региона России
-        </li>
-        <li>Комплексное обслуживание зданий и&nbsp;сооружений</li>
-        <li>Страхование работ по&nbsp;желанию Заказчика</li>
-        <li>Гарантия 1&nbsp;год на&nbsp;выполненные работы</li>
+        <li class="li">Единая стоимость работ для клиентов из&nbsp;любого региона России</li>
+        <li class="li">Комплексное обслуживание зданий и&nbsp;сооружений</li>
+        <li class="li">Страхование работ по&nbsp;желанию Заказчика</li>
+        <li class="li">Гарантия 1&nbsp;год на&nbsp;выполненные работы</li>
       </ul>
     </page-header>
     <section class="container">
@@ -28,9 +26,7 @@
           <li>соблюдение единых стандартов обслуживания;</li>
         </ul>
         <ul class="col-4">
-          <li>
-            экономия времени на&nbsp;контроль и&nbsp;обработку информации;
-          </li>
+          <li>экономия времени на&nbsp;контроль и&nbsp;обработку информации;</li>
           <li>сокращение штатной численности клиента;</li>
           <li>оптимизация доходной части;</li>
           <li>дополнительные услуги на&nbsp;безвозмездной основе.</li>
@@ -54,9 +50,7 @@
       </div>
 
       <h2>
-        <nuxt-link to="/clients">
-          Клиенты
-        </nuxt-link>
+        <nuxt-link to="/clients">Клиенты</nuxt-link>
       </h2>
       <div class="row">
         <p class="col-4 offset-1">
@@ -66,14 +60,14 @@
         </p>
         <p class="col">
           <span class="lead">300+</span>
-          <br >объектов
+          <br />объектов
         </p>
         <p class="col-4">
           <span class="lead">
-            200&thinsp;000+ м
+            500&thinsp;000+ м
             <sup>2</sup>
           </span>
-          <br >обслуживаемых площадей
+          <br />обслуживаемых площадей
         </p>
       </div>
       <clients />
@@ -104,7 +98,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~assets/scss/init.scss';
 
 header.header {
@@ -112,7 +106,7 @@ header.header {
   padding-bottom: 2rem;
 
   @include media-breakpoint-up(lg) {
-    h1 {
+    h1.page-title {
       float: left;
       padding-right: 2rem;
     }
@@ -133,7 +127,7 @@ header.header {
     float: right;
   }
 
-  li {
+  .li {
     @include media-breakpoint-up(lg) {
       flex: 1 1 50%;
       max-width: 50%;

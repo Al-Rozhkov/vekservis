@@ -3,6 +3,7 @@ node_modules
 
 # logs
 npm-debug.log
+*.log
 
 # Nuxt build
 .nuxt
@@ -12,3 +13,8 @@ dist
 
 # VS Code
 .vscode
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride

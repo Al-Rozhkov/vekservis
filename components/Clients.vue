@@ -19,7 +19,7 @@ export default {
       clientsList: [
         { name: 'magnit', alt: 'Магнит' },
         { name: 'leroy-merlin', alt: 'Leroy Merlin' },
-        { name: 'vtb24', alt: 'ВТБ24' },
+        { name: 'vtb', alt: 'ВТБ' },
         { name: 'alfa-bank', alt: 'Альфа-банк' },
         { name: 'befree', alt: 'Befree' },
         { name: 'mts', alt: 'МТС' },

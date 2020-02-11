@@ -186,6 +186,42 @@
     </section>
     <section class="section">
       <h2 class="section-title">
+        Сертификат соответствия ГОСТ РПО 2016:2019
+      </h2>
+      <div class="section-body">
+        <div class="list-img">
+          <img
+            v-img="{
+              src: '/docs/sert-rpo-1.jpg',
+              group: 'docs',
+              title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
+            }"
+            src="/docs/small/sert-rpo-1.png"
+            alt="Сертификат соответствия ГОСТ РПО 2016:2019"
+          />
+          <img
+            v-img="{
+              src: '/docs/sert-rpo-2.jpg',
+              group: 'docs',
+              title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
+            }"
+            src="/docs/small/sert-rpo-2.png"
+            alt="Сертификат соответствия ГОСТ РПО 2016:2019"
+          />
+          <img
+            v-img="{
+              src: '/docs/sert-rpo-3.jpg',
+              group: 'docs',
+              title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
+            }"
+            src="/docs/small/sert-rpo-3.png"
+            alt="Сертификат соответствия ГОСТ РПО 2016:2019"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">
         Рекомендации
       </h2>
       <div class="section-body">

@@ -76,11 +76,12 @@ export default {
   head() {
     return {
       script: [{
-        innerHTML: `WebFormSettings = { btn_text: 'Оставить заявку', btn_text_color: '#ffffff', btn_color: '#0c4b8c', btn_border_color: '#ffffff', btn_position: 'right', account_name: 'vekservis', site_url: 'https://help.vekservis.ru/' }; var scriptTag = document.createElement('script'); scriptTag.type = 'text/javascript';scriptTag.charset = 'utf-8'; scriptTag.src = ('https://help.vekservis.ru/web-form/web-form.js'); document.body.appendChild(scriptTag);`,
+        innerHTML: 'WebFormSettings = { btn_text: "Оставить заявку", btn_text_color: "#ffffff", btn_color: "#0c4b8c", btn_border_color: "#ffffff", btn_position: "right", account_name: "vekservis", site_url: "https://help.vekservis.ru/" }; var scriptTag = document.createElement("script"); scriptTag.type = "text/javascript";scriptTag.charset = "utf-8"; scriptTag.src = ("https://help.vekservis.ru/web-form/web-form.js"); document.body.appendChild(scriptTag);',
         id: 'okdesk-script',
         type: 'text/javascript',
         body: true
-      }]
+      }],
+      __dangerouslyDisableSanitizers: ['script']
     }
   }
 }

@@ -138,47 +138,65 @@
         <div class="list-img">
           <img
             v-img="{
-              src: '/docs/sert-1.png',
+              src: '/docs/sert-1.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-1.png"
+            src="/docs/small/sert-1.jpg"
             alt="Сертификат соответствия"
           />
           <img
             v-img="{
-              src: '/docs/sert-2.png',
+              src: '/docs/sert-2.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-2.png"
+            src="/docs/small/sert-2.jpg"
             alt="Сертификат соответствия"
           />
           <img
             v-img="{
-              src: '/docs/sert-3.png',
+              src: '/docs/sert-3.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-3.png"
+            src="/docs/small/sert-3.jpg"
             alt="Сертификат соответствия"
           />
           <img
             v-img="{
-              src: '/docs/sert-5.png',
+              src: '/docs/sert-4.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-5.png"
+            src="/docs/small/sert-4.jpg"
             alt="Сертификат соответствия"
           />
           <img
             v-img="{
-              src: '/docs/sert-6.png',
+              src: '/docs/sert-5.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-6.png"
+            src="/docs/small/sert-5.jpg"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{
+              src: '/docs/sert-6.jpg',
+              group: 'docs',
+              title: 'Сертификат соответствия'
+            }"
+            src="/docs/small/sert-6.jpg"
+            alt="Сертификат соответствия"
+          />
+          <img
+            v-img="{
+              src: '/docs/sert-7.jpg',
+              group: 'docs',
+              title: 'Сертификат соответствия'
+            }"
+            src="/docs/small/sert-7.jpg"
             alt="Сертификат соответствия"
           />
         </div>
@@ -229,15 +247,15 @@
           <img
             v-img="{ src: '/docs/VTB.jpg', group: 'docs' }"
             src="/docs/small/VTB.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }"
             src="/docs/small/pismo_1.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }"
             src="/docs/small/pismo_2.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }"
             src="/docs/small/pismo_sber.jpg"
@@ -245,19 +263,19 @@
           <img
             v-img="{ src: '/docs/leroy.jpg', group: 'docs' }"
             src="/docs/small/leroy.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/tander.jpg', group: 'docs' }"
             src="/docs/small/tander.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/pismo_3.jpg', group: 'docs' }"
             src="/docs/small/pismo_3.jpg"
-          >
+          />
           <img
             v-img="{ src: '/docs/pismo_4.jpg', group: 'docs' }"
             src="/docs/small/pismo_4.jpg"
-          >
+          />
         </div>
       </div>
     </section>
@@ -270,7 +288,7 @@
           <img
             src="/docs/vekservis2019.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"
-          >
+          />
           <div>(PDF, 1Mb)</div>
         </a>
       </div>

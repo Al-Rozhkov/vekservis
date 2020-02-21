@@ -46,7 +46,7 @@
 
       <section class="row">
         <div class="col-5 welding-scheme">
-          <img class="img" src="/img/welding/welding-scheme.png" >
+          <img class="img" src="/img/welding/welding-scheme.png" />
         </div>
         <div class="col-7">
           <p>

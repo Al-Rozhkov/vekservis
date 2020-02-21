@@ -505,8 +505,6 @@
 </template>
 
 <script>
-import PageHeader from '~/components/PageHeader.vue'
-
 export default {
   head: {
     title: 'Политика конфиденциальности. Компания «ВЭК СЕРВИС»',
@@ -517,9 +515,6 @@ export default {
         content: 'Политика конфиденциальности компания «ВЭК СЕРВИС»'
       }
     ]
-  },
-  components: {
-    PageHeader
   }
 }
 </script>

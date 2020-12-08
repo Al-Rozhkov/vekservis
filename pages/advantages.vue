@@ -276,6 +276,10 @@
             v-img="{ src: '/docs/pismo_4.jpg', group: 'docs' }"
             src="/docs/small/pismo_4.jpg"
           />
+          <img
+            v-img="{ src: '/docs/pismo_5.jpg', group: 'docs' }"
+            src="/docs/small/pismo_5.jpg"
+          />
         </div>
       </div>
     </section>

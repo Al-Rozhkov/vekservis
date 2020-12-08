@@ -35,7 +35,9 @@ export default {
         { name: 'sony', alt: 'Сони' },
         { name: 'zarina', alt: 'Зарина' },
         { name: 'decatlon', alt: 'Decatlon' },
-        { name: 'rosselhozbank', alt: 'Россельхозбанк' }
+        { name: 'rosselhozbank', alt: 'Россельхозбанк' },
+        { name: 'renessans', alt: 'Ренессанс кредит' },
+        { name: 'skbt', alt: 'СКБТ' }
       ]
     }
   },

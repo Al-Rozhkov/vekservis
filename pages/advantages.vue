@@ -288,12 +288,12 @@
         Презентация компании
       </h2>
       <div class="section-body">
-        <a href="/docs/vekservis2019.pdf">
+        <a href="/docs/vekservis2021.pdf">
           <img
-            src="/docs/vekservis2019.jpg"
+            src="/docs/vekservis2021.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"
           />
-          <div>(PDF, 1Mb)</div>
+          <div>(PDF, 13Mb)</div>
         </a>
       </div>
     </section>

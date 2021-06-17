@@ -280,6 +280,10 @@
             v-img="{ src: '/docs/pismo_5.jpg', group: 'docs' }"
             src="/docs/small/pismo_5.jpg"
           />
+          <img
+            v-img="{ src: '/docs/pismo_ashan.jpg', group: 'docs' }"
+            src="/docs/small/pismo_ashan.jpg"
+          />
         </div>
       </div>
     </section>

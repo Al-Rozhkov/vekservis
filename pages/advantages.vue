@@ -294,10 +294,10 @@
       <div class="section-body">
         <a href="/docs/vekservis2021.pdf">
           <img
-            src="/docs/vekservis2021.jpg"
+            src="/docs/presentation2021.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"
           />
-          <div>(PDF, 13Mb)</div>
+          <div>(PDF 3,6Mb)</div>
         </a>
       </div>
     </section>

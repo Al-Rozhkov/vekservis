@@ -11,8 +11,8 @@ export default {
   props: {
     clientsNum: {
       type: Number,
-      required: false
-    }
+      required: false,
+    },
   },
   data() {
     return {
@@ -20,33 +20,37 @@ export default {
         { name: 'magnit', alt: 'Магнит' },
         { name: 'leroy-merlin', alt: 'Leroy Merlin' },
         { name: 'vtb', alt: 'ВТБ' },
-        { name: 'alfa-bank', alt: 'Альфа-банк' },
         { name: 'befree', alt: 'Befree' },
         { name: 'mts', alt: 'МТС' },
-        { name: 'nike', alt: 'Nike' },
         { name: 'mvideo', alt: 'Мвидео' },
         { name: 'sberbank', alt: 'Сбербанк' },
         { name: 'eldorado', alt: 'Эльдорадо' },
-        { name: 'vans', alt: 'Vans' },
-        { name: 'wrangler', alt: 'Wrangler' },
         { name: 'finn-flare', alt: 'Finn Flare' },
         { name: 'ashan', alt: 'Ашан' },
         { name: 'love-republic', alt: 'Love republic' },
-        { name: 'sony', alt: 'Сони' },
         { name: 'zarina', alt: 'Зарина' },
         { name: 'decatlon', alt: 'Decatlon' },
         { name: 'rosselhozbank', alt: 'Россельхозбанк' },
         { name: 'renessans', alt: 'Ренессанс кредит' },
-        { name: 'skbt', alt: 'СКБТ' }
-      ]
+        { name: 'skbt', alt: 'СКБТ' },
+        { name: 'mkb', alt: 'Московский крудитный банк' },
+        { name: 'setelem', alt: 'Сетелем' },
+        { name: 'dom-rf', alt: 'Дом РФ Банк' },
+        { name: 'palmetta', alt: 'Palmetta' },
+        // { name: 'alfa-bank', alt: 'Альфа-банк' },
+        // { name: 'nike', alt: 'Nike' },
+        // { name: 'vans', alt: 'Vans' },
+        // { name: 'wrangler', alt: 'Wrangler' },
+        // { name: 'sony', alt: 'Сони' },
+      ],
     }
   },
 
   computed: {
     clients() {
       return this.clientsList.slice(0, this.clientsNum)
-    }
-  }
+    },
+  },
 }
 </script>
 

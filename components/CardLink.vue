@@ -1,6 +1,7 @@
 <template>
   <nuxt-link
     class="card"
+    :class="{ double: item.double }"
     :to="`/${section}/${item.name}`"
     :style="`background-image: url(/img/small/bg-${section}-${item.name}.jpg)`"
   >
@@ -13,13 +14,13 @@ export default {
   props: {
     item: {
       type: Object,
-      required: true
+      required: true,
     },
     section: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 
@@ -33,15 +34,11 @@ export default {
   background-position: center center;
   background-size: cover;
   padding: 7.5rem 2rem 1.5rem 2rem;
-  flex-grow: 1;
+  flex: 1 0 100%;
 
   @include media-breakpoint-between(sm, lg) {
     max-width: 50%;
     flex: 0 0 50%;
-  }
-  @include media-breakpoint-up(lg) {
-    max-width: 33.33333%;
-    flex: 0 0 33.33333%;
   }
 
   &:before {
@@ -69,5 +66,17 @@ export default {
   color: #fffcd4;
   font-size: 1rem;
   font-weight: bold;
+}
+
+@include media-breakpoint-up(lg) {
+  .card {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+
+    &.double {
+      max-width: 66.66666%;
+      flex: 0 0 66.66666%;
+    }
+  }
 }
 </style>

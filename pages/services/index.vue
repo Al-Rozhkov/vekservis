@@ -28,14 +28,7 @@
         </p>
       </article>
 
-      <div class="row card-teasers">
-        <card-link
-          v-for="item in services.list"
-          :key="item.name"
-          :item="item"
-          :section="services.section"
-        />
-      </div>
+      <services-list />
     </section>
   </main>
 </template>
@@ -43,7 +36,7 @@
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
-import CardLink from '~/components/CardLink.vue'
+import ServicesList from '~/components/ServicesList.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -51,7 +44,7 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    CardLink
+    ServicesList
   },
   data() {
     return {

@@ -63,7 +63,7 @@ export default {
   }
 }
 
-h2.h2 {
+.h2 {
   position: relative;
   z-index: 50;
   color: #fffcd4;

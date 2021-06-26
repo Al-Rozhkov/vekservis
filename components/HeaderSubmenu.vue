@@ -43,6 +43,7 @@ export default {
 }
 
 .a {
+  display: block;
   color: #fffcd4;
 
   &:hover {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-purple">
       <header-submenu :menu="services" />
       <h1 class="page-title">
         Монтаж и&nbsp;обслуживание электрических систем зданий

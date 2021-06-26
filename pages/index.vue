@@ -9,15 +9,9 @@
         <li class="li">
           Единая стоимость работ для клиентов из&nbsp;любого региона России
         </li>
-        <li class="li">
-          Комплексное обслуживание зданий и&nbsp;сооружений
-        </li>
-        <li class="li">
-          Страхование работ по&nbsp;желанию Заказчика
-        </li>
-        <li class="li">
-          Гарантия 1&nbsp;год на&nbsp;выполненные работы
-        </li>
+        <li class="li">Комплексное обслуживание зданий и&nbsp;сооружений</li>
+        <li class="li">Страхование работ по&nbsp;желанию Заказчика</li>
+        <li class="li">Гарантия 1&nbsp;год на&nbsp;выполненные работы</li>
       </ul>
     </page-header>
     <section class="container">
@@ -43,14 +37,9 @@
         </ul>
       </div>
 
+      <services-list class="mb-3" />
+
       <div class="row card-teasers">
-        <card-link
-          v-for="item in services.list"
-          :key="item.name"
-          :item="item"
-          :section="services.section"
-        />
-        <div style="width: 100%; height: 1rem;" />
         <card-link
           v-for="item in manufacture.list"
           :key="item.name"
@@ -60,11 +49,9 @@
       </div>
 
       <h2>
-        <nuxt-link to="/clients">
-          Клиенты
-        </nuxt-link>
+        <nuxt-link to="/clients"> Клиенты </nuxt-link>
       </h2>
-      <div class="row">
+      <div class="row mb-3">
         <p class="col-4 offset-1">
           На&nbsp;данный момент компания ВЭК СЕРВИС осуществляет обслуживание
           объектов федеральных сетевых компаний более чем в&nbsp;40&nbsp;городах
@@ -72,16 +59,31 @@
         </p>
         <p class="col">
           <span class="lead">300+</span>
-          <br>объектов
+          <br />объектов
         </p>
         <p class="col-4">
-          <span class="lead">
-            500&thinsp;000+ м
-            <sup>2</sup>
-          </span>
-          <br>обслуживаемых площадей
+          <span class="lead"> 500&thinsp;000+ м<sup>2</sup></span>
+          <br />обслуживаемых площадей
         </p>
       </div>
+      <div class="row">
+        <p class="col-3 offset-1">
+          Компания обслуживает более 300 объектов недвижимости, в том числе:
+        </p>
+        <ul class="col-4">
+          <li>Торговые центры</li>
+          <li>Продуктовые гипермаркеты, супермаркеты и магазины у дома</li>
+          <li>Банки и страховые компании</li>
+          <li>Офисные и административные здания</li>
+          <li>DIY сети</li>
+        </ul>
+        <ul class="col-4">
+          <li>Распределительные центры и складские логистические площадки</li>
+          <li>Производственные и промышленные площадки</li>
+          <li>Нефтегазовая отрасль</li>
+        </ul>
+      </div>
+
       <clients />
     </section>
   </div>
@@ -90,23 +92,23 @@
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import CardLink from '~/components/CardLink.vue'
+import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
 
-import servicesData from '~/data/services.json'
 import manufactureData from '~/data/manufacture.json'
 
 export default {
   components: {
     PageHeader,
     CardLink,
-    Clients
+    ServicesList,
+    Clients,
   },
   data() {
     return {
-      services: servicesData,
-      manufacture: manufactureData
+      manufacture: manufactureData,
     }
-  }
+  },
 }
 </script>
 

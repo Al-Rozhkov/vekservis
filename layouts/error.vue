@@ -7,14 +7,9 @@
     </header>
 
     <section class="container">
+      <services-list class="mb-3" />
+
       <div class="row service-teasers">
-        <card-link
-          v-for="item in services.list"
-          :key="item.name"
-          :item="item"
-          :section="services.section"
-        />
-        <div style="width: 100%; height: 1rem;" />
         <card-link
           v-for="item in manufacture.list"
           :key="item.name"
@@ -27,13 +22,14 @@
 </template>
 
 <script>
+import ServicesList from '~/components/ServicesList.vue'
 import CardLink from '~/components/CardLink.vue'
 
-import servicesData from '~/data/services.json'
 import manufactureData from '~/data/manufacture.json'
 
 export default {
   components: {
+    ServicesList,
     CardLink
   },
   data() {

@@ -34,7 +34,7 @@
 
     <nuxt />
 
-    <footer class="container">
+    <footer class="footer container">
       <div class="col-4">
         <p>
           <span class="site-desc">© 2013—2021 ООО «ВЭК&nbsp;СЕРВИС»</span>

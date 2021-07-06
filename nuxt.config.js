@@ -1,6 +1,6 @@
 module.exports = {
   target: 'static',
-  
+
   /*
    ** Headers of the page
    */
@@ -69,13 +69,21 @@ module.exports = {
       {
         id: '45245817',
         webvisor: true,
-        clickmap: true
-        // trackLinks:true,
-        // accurateTrackBounce:true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce:true,
       }
     ],
     '@nuxtjs/sitemap'
   ],
+
+  buildModules: [
+    '@nuxtjs/google-analytics'
+  ],
+
+  googleAnalytics: {
+    id: 'UA-200894230-1'
+  },
 
   plugins: ['~/plugins/plugin.client.js'],
 

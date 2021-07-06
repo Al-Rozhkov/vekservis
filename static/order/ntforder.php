@@ -21,6 +21,7 @@ if ($_SERVER["CONTENT_TYPE"] == 'application/json') {
       'Модель: ' . $data['model'];
     $headers = 'From: noreply@vekservis.ru' . "\r\n" .
       'Reply-To: noreply@vekservis.ru' . "\r\n" .
+      'Cc: sales@marketing-na100.ru' . "\r\n" .
       'X-Mailer: PHP/' . phpversion();
 
     mail($to, $subject, $message, $headers);

@@ -49,7 +49,7 @@
       </div>
 
       <h2>
-        <nuxt-link to="/clients"> Клиенты </nuxt-link>
+        <nuxt-link to="/clients">Клиенты</nuxt-link>
       </h2>
       <div class="row mb-3">
         <p class="col-4 offset-1">
@@ -85,6 +85,8 @@
       </div>
 
       <clients />
+
+      <feedback-form />
     </section>
   </div>
 </template>
@@ -96,6 +98,7 @@ import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
 
 import manufactureData from '~/data/manufacture.json'
+import FeedbackForm from '../components/FeedbackForm.vue'
 
 export default {
   components: {
@@ -103,7 +106,9 @@ export default {
     CardLink,
     ServicesList,
     Clients,
+    FeedbackForm,
   },
+
   data() {
     return {
       manufacture: manufactureData,

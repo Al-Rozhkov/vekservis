@@ -85,9 +85,11 @@
       </div>
 
       <clients />
-
-      <feedback-form />
     </section>
+
+    <div class="container feedback-form">
+      <feedback-form />
+    </div>
   </div>
 </template>
 
@@ -155,5 +157,11 @@ header.header {
     padding-right: 2rem;
     padding-bottom: 2rem;
   }
+}
+
+.feedback-form {
+  padding-bottom: 1.5rem;
+  background: lighten($blue, 40%);
+  border-radius: $border-radius-sm;
 }
 </style>

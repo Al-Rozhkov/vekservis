@@ -11,6 +11,7 @@
           <label class="label" for="input-name">Ваше имя:</label>
           <b-form-input
             id="input-name"
+            name="name"
             v-model="name"
             placeholder="Иван Петров"
             trim
@@ -20,6 +21,7 @@
           <label class="label" for="input-contact">Ваш телефон:</label>
           <b-form-input
             id="input-contact"
+            name="contact"
             v-model="contact"
             placeholder="+7 927 222 3333"
             trim
@@ -27,7 +29,7 @@
         </div>
         <div class="col-4 px-2" role="group">
           <label class="label" for="input-email">Электронная почта:</label>
-          <b-form-input id="input-email" v-model="email" trim />
+          <b-form-input id="input-email" name="email" v-model="email" trim />
         </div>
       </div>
 
@@ -46,7 +48,12 @@
         >
       </p>
 
-      <button :disabled="submitDisabled" class="btn">Отправить</button>
+      <input
+        class="btn"
+        :disabled="submitDisabled"
+        type="submit"
+        value="Отправить"
+      />
     </form>
   </no-ssr>
 </template>

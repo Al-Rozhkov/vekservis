@@ -7,6 +7,10 @@
       </h1>
     </page-header>
     <node-sections :sections-list="nodeSections" />
+
+    <div class="container feedback-form">
+      <feedback-form />
+    </div>
   </div>
 </template>
 
@@ -14,6 +18,7 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import NodeSections from '~/components/NodeSections.vue'
+import FeedbackForm from '../components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -21,7 +26,8 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    NodeSections
+    NodeSections,
+    FeedbackForm,
   },
   data() {
     return {
@@ -30,14 +36,14 @@ export default {
         {
           title: 'Автоматика и&nbsp;диспетчеризация здания',
           content:
-            '<ul><li>Система диспетчеризации внутреннего инженерного оборудования.</li></ul>'
+            '<ul><li>Система диспетчеризации внутреннего инженерного оборудования.</li></ul>',
         },
         {
           title: 'Комплекс технических средств безопасности (КТСБ)',
           content:
-            '<ul><li>Система автоматической пожарной сигнализации (САПС);</li><li>Система оповещения о&nbsp;пожаре и&nbsp;управления эвакуацией (СОУЭС);</li><li>Автоматика противопожарных систем (АПС);</li><li>Система охранно-тревожной сигнализации (СОТС);</li><li>Система контроля и&nbsp;управления доступом (СКУД);</li><li>Система видеодомофонной связи;</li><li>Система видеонаблюдения.</li></ul>'
-        }
-      ]
+            '<ul><li>Система автоматической пожарной сигнализации (САПС);</li><li>Система оповещения о&nbsp;пожаре и&nbsp;управления эвакуацией (СОУЭС);</li><li>Автоматика противопожарных систем (АПС);</li><li>Система охранно-тревожной сигнализации (СОТС);</li><li>Система контроля и&nbsp;управления доступом (СКУД);</li><li>Система видеодомофонной связи;</li><li>Система видеонаблюдения.</li></ul>',
+        },
+      ],
     }
   },
   head: {
@@ -47,10 +53,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ВЭК СЕРВИС предлагает следующие услуги по обслуживанию слаботочных инженерных систем: автоматика и диспетчеризация здания, комплекс технических средств безопасности (КТСБ).'
-      }
-    ]
-  }
+          'ВЭК СЕРВИС предлагает следующие услуги по обслуживанию слаботочных инженерных систем: автоматика и диспетчеризация здания, комплекс технических средств безопасности (КТСБ).',
+      },
+    ],
+  },
 }
 </script>
 

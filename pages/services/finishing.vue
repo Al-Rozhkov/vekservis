@@ -35,6 +35,10 @@
         </p>
       </div>
     </section>
+
+    <div class="container feedback-form">
+      <feedback-form />
+    </div>
   </div>
 </template>
 
@@ -42,6 +46,7 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import NodeSections from '~/components/NodeSections.vue'
+import FeedbackForm from '../components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -50,6 +55,7 @@ export default {
     PageHeader,
     HeaderSubmenu,
     NodeSections,
+    FeedbackForm,
   },
   data() {
     return {

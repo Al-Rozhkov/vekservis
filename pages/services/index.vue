@@ -30,6 +30,10 @@
 
       <services-list />
     </section>
+
+    <div class="container feedback-form">
+      <feedback-form />
+    </div>
   </main>
 </template>
 
@@ -37,6 +41,7 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import ServicesList from '~/components/ServicesList.vue'
+import FeedbackForm from '../components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -44,17 +49,18 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    ServicesList
+    ServicesList,
+    FeedbackForm,
   },
   data() {
     return {
-      services: servicesData
+      services: servicesData,
     }
   },
   head: {
     title:
-      'Услуги по эксплуатации объектов государственной и коммерческой недвижимости. ВЭК СЕРВИС'
-  }
+      'Услуги по эксплуатации объектов государственной и коммерческой недвижимости. ВЭК СЕРВИС',
+  },
 }
 </script>
 

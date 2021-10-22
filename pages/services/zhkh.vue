@@ -40,16 +40,14 @@
       </div>
     </section>
 
-    <div class="container feedback-form">
-      <feedback-form />
-    </div>
+    <feedback-form />
   </div>
 </template>
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
-import FeedbackForm from '../components/FeedbackForm.vue'
+import FeedbackForm from '~/components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -77,5 +75,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

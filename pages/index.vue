@@ -87,9 +87,7 @@
       <clients />
     </section>
 
-    <div class="container feedback-form">
-      <feedback-form />
-    </div>
+    <feedback-form />
   </div>
 </template>
 
@@ -98,7 +96,7 @@ import PageHeader from '~/components/PageHeader.vue'
 import CardLink from '~/components/CardLink.vue'
 import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
-import FeedbackForm from '../components/FeedbackForm.vue'
+import FeedbackForm from '~/components/FeedbackForm.vue'
 
 import manufactureData from '~/data/manufacture.json'
 
@@ -157,11 +155,5 @@ header.header {
     padding-right: 2rem;
     padding-bottom: 2rem;
   }
-}
-
-.feedback-form {
-  padding-bottom: 1.5rem;
-  background: lighten($blue, 40%);
-  border-radius: $border-radius-sm;
 }
 </style>

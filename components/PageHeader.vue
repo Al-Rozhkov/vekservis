@@ -32,6 +32,7 @@ export default {
   background-color: #042a4a;
   &:before {
     background-image: linear-gradient(to right, #042a4a 0%, #087380 100%);
+    opacity: .5;
   }
 }
 

@@ -8,7 +8,7 @@
 export default {
   computed: {
     headerBg() {
-      return `background-image: url(/img/bg-${this.$route.name}.jpg)`
+      return `background-image: url(/img/bg--${this.$route.name}.jpg)`
     },
     headerClass() {
       return 'ph-' + this.$route.name
@@ -18,7 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-.header,
 .ph-purple {
   background-color: #1b0880;
   &:before {

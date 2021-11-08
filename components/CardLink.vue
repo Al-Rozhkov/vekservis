@@ -1,9 +1,12 @@
 <template>
   <nuxt-link
     class="card"
-    :class="{ double: item.double }"
+    :class="{
+      double: item.double,
+      half: item.half
+    }"
     :to="`/${section}/${item.name}`"
-    :style="`background-image: url(/img/small/bg-${section}-${item.name}.jpg)`"
+    :style="`background-image: url(/img/teaser/bg-${section}-${item.name}.jpg)`"
   >
     <h2 class="h2" v-html="item.title" />
   </nuxt-link>
@@ -76,6 +79,11 @@ export default {
     &.double {
       max-width: 66.66666%;
       flex: 0 0 66.66666%;
+    }
+
+    &.half {
+      max-width: 50%;
+      flex: 0 0 50%;
     }
   }
 }

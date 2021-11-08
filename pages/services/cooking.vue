@@ -1,10 +1,10 @@
 <template>
   <div>
-    <page-header class="ph-orange">
+    <page-header class="ph-blue">
       <header-submenu :menu="services" />
       <h1 class="page-title">
-        Техническое обслуживание и&nbsp;ремонт технологичного оборудования
-        заведений общепита и&nbsp;собственного производства гипермаркетов
+        Ремонт и&nbsp;обслуживание ресторанного оборудования, оборудования пекарен,
+        кафе и&nbsp;столовых, оборудования собственного производства гипермаркетов
       </h1>
     </page-header>
     <section class="container">
@@ -96,5 +96,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

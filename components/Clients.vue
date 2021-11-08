@@ -37,7 +37,7 @@ export default {
         { name: 'setelem', alt: 'Сетелем' },
         { name: 'dom-rf', alt: 'Дом РФ Банк' },
         { name: 'palmetta', alt: 'Palmetta' },
-        // { name: 'alfa-bank', alt: 'Альфа-банк' },
+        { name: 'gamardjoba', alt: 'Грузинское кафе «Гамарджоба»' },
         // { name: 'nike', alt: 'Nike' },
         // { name: 'vans', alt: 'Vans' },
         // { name: 'wrangler', alt: 'Wrangler' },

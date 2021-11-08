@@ -98,7 +98,7 @@ export default {
 
 .feedback-form {
   padding-bottom: 1.5rem;
-  background: lighten($blue, 40%);
+  background: lighten($blue, 43%);
   border-radius: $border-radius-sm;
 }
 </style>

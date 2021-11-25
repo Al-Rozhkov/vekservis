@@ -35,10 +35,14 @@ export default {
         { name: 'skbt', alt: 'СКБТ' },
         { name: 'mkb', alt: 'Московский крудитный банк' },
         { name: 'setelem', alt: 'Сетелем' },
+        { name: 'transneft', alt: 'Транснефть' },
+        { name: 'rosneft', alt: 'Роснефть' },
+        { name: 'otkrytie', alt: 'Открытие' },
+        { name: 'ceetrus', alt: 'Ceetrus' },
         { name: 'dom-rf', alt: 'Дом РФ Банк' },
         { name: 'palmetta', alt: 'Palmetta' },
         { name: 'gamardjoba', alt: 'Грузинское кафе «Гамарджоба»' },
-        // { name: 'nike', alt: 'Nike' },
+        { name: 'oodji', alt: 'Oodji' },
         // { name: 'vans', alt: 'Vans' },
         // { name: 'wrangler', alt: 'Wrangler' },
         // { name: 'sony', alt: 'Сони' },
@@ -83,7 +87,8 @@ export default {
       max-width: 16.666667%;
     }
 
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0.75rem;
+    display: flex;
     align-items: center;
     justify-content: center;
 

@@ -1,10 +1,8 @@
 <template>
   <div>
-    <page-header class="ph-position-bottom">
-      <header-submenu :menu="menu" />
-      <h1 class="page-title">
-        Услуги полуавтоматической сварки
-      </h1>
+    <page-header class="ph-teal ph-position-bottom">
+      <header-submenu :menu="services" />
+      <h1 class="page-title">Услуги полуавтоматической сварки</h1>
     </page-header>
 
     <section class="container">
@@ -37,7 +35,7 @@
           v-img="{
             src: `/img/welding/${item}.jpg`,
             group: 'welding',
-            title: 'Образцы сварочных работ'
+            title: 'Образцы сварочных работ',
           }"
           :src="`/img/welding/small/${item}.jpg`"
           class="gi"
@@ -58,7 +56,9 @@
             неполного проплавления, что значительно снижает срок службы
             и&nbsp;прочность конструкции. Если для вас важна надежность
             сварочного шва,
-            <a href="mailto:info@vekservis.ru">обращайтесь к&nbsp;специалистам</a>
+            <a href="mailto:info@vekservis.ru"
+              >обращайтесь к&nbsp;специалистам</a
+            >
             «ВЭК&nbsp;СЕРВИС».
           </p>
           <p>
@@ -81,17 +81,17 @@ import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 // import NodeSections from '~/components/NodeSections.vue'
 
-import subpagesData from '~/data/manufacture.json'
+import servicesData from '~/data/services.json'
 
 export default {
   components: {
     PageHeader,
-    HeaderSubmenu
+    HeaderSubmenu,
   },
 
   data() {
     return {
-      menu: subpagesData
+      services: servicesData,
     }
   },
 
@@ -102,10 +102,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки.'
-      }
-    ]
-  }
+          'ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки.',
+      },
+    ],
+  },
 }
 </script>
 

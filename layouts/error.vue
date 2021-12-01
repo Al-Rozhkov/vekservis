@@ -1,9 +1,7 @@
 <template>
   <div>
     <header class="container header-error">
-      <h1 class="red">
-        Извините, страницы с таким адресом у нас нет
-      </h1>
+      <h1 class="red">Извините, страницы с таким адресом у нас нет</h1>
     </header>
 
     <section class="container">
@@ -25,17 +23,18 @@
 import ServicesList from '~/components/ServicesList.vue'
 import CardLink from '~/components/CardLink.vue'
 
-import manufactureData from '~/data/manufacture.json'
+import servicesData from '~/data/services.json'
+import manufactureData from '~/data/manufacture.js'
 
 export default {
   components: {
     ServicesList,
-    CardLink
+    CardLink,
   },
   data() {
     return {
       services: servicesData,
-      manufacture: manufactureData
+      manufacture: manufactureData,
     }
   },
   head: {
@@ -44,10 +43,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Страницы с таким адресом на этом сайте нет'
-      }
-    ]
-  }
+        content: 'Страницы с таким адресом на этом сайте нет',
+      },
+    ],
+  },
 }
 </script>
 

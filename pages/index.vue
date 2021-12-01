@@ -39,14 +39,14 @@
 
       <services-list class="mb-3" />
 
-      <div class="row card-teasers">
+      <!-- <div class="row card-teasers">
         <card-link
           v-for="item in manufacture.list"
           :key="item.name"
           :item="item"
           :section="manufacture.section"
         />
-      </div>
+      </div> -->
 
       <h2>
         <nuxt-link to="/clients">Клиенты</nuxt-link>
@@ -99,7 +99,7 @@ import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
 import FeedbackForm from '~/components/FeedbackForm.vue'
 
-import manufactureData from '~/data/manufacture.json'
+// import manufactureData from '~/data/manufacture.js'
 
 export default {
   components: {
@@ -110,11 +110,11 @@ export default {
     FeedbackForm,
   },
 
-  data() {
-    return {
-      manufacture: manufactureData,
-    }
-  },
+  // data() {
+  //   return {
+  //     manufacture: manufactureData,
+  //   }
+  // },
 }
 </script>
 

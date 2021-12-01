@@ -45,7 +45,7 @@
 import PageHeader from '~/components/PageHeader.vue'
 import CardLink from '~/components/CardLink.vue'
 
-import subpagesData from '~/data/manufacture.json'
+import subpagesData from '~/data/manufacture.js'
 
 export default {
   components: {

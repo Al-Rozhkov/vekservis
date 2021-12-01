@@ -118,7 +118,7 @@ import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import OrderModal from '~/components/OrderModal.vue'
 // import NodeSections from '~/components/NodeSections.vue'
 
-import subpagesData from '~/data/manufacture.json'
+import subpagesData from '~/data/manufacture.js'
 
 export default {
   components: {

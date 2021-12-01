@@ -1,7 +1,7 @@
-{
+export default {
   "section": "manufacture",
   "list": [
-    { "name": "welding", "title": "Услуги полуавтоматической сварки" },
+    // { "name": "welding", "title": "Услуги полуавтоматической сварки" },
     {
       "name": "visor",
       "title": "Защитный козырек наружного блока кондиционера"

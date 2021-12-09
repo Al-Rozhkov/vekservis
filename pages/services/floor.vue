@@ -48,6 +48,20 @@
         </div>
       </div>
 
+      <div class="p-3 list-img">
+        <nuxt-img
+          v-for="item in 4"
+          :key="item"
+          v-img="{
+            src: `/img/floor/done_${item}.jpg`,
+            group: 'floor',
+            title: 'Образцы полов',
+          }"
+          :src="`/floor/done_${item}.jpg`"
+          preset="square160"
+        />
+      </div>
+
       <h2>Почему нам доверяют?</h2>
 
       <section class="row">

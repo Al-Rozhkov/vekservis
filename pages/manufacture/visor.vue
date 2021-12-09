@@ -57,7 +57,7 @@
           <p><strong>Габаритные размеры:</strong> 1100х560х380&nbsp;мм</p>
           <p><strong>Вес:</strong> 13&nbsp;кг</p>
           <div class="list-img">
-            <img
+            <nuxt-img
               v-for="item in 8"
               :key="item"
               v-img="{
@@ -65,7 +65,8 @@
                 group: 'visor-lite',
                 title: 'Защитный козырек Visor Lite'
               }"
-              :src="`/img/visor/small/l${item}.jpg`"
+              :src="`/visor/l${item}.jpg`"
+              preset="square80"
               class="gi"
             />
           </div>
@@ -100,7 +101,7 @@
           <p><strong>Габаритные размеры:</strong> 1100х600х260&nbsp;мм</p>
           <p><strong>Вес:</strong> 14&nbsp;кг</p>
           <div class="list-img">
-            <img
+            <nuxt-img
               v-for="item in 4"
               :key="item"
               v-img="{
@@ -108,7 +109,8 @@
                 group: 'visor-pro',
                 title: 'Защитный козырек Visor Lite'
               }"
-              :src="`/img/visor/small/p${item}.jpg`"
+              :src="`/visor/p${item}.jpg`"
+              preset="square80"
               class="gi"
             />
           </div>

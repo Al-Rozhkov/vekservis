@@ -42,7 +42,7 @@
 
         <div class="col-6">
           <div class="list-img">
-            <img
+            <nuxt-img
               v-for="item in 5"
               :key="item"
               v-img="{
@@ -50,7 +50,8 @@
                 group: 'welding-post',
                 title: 'Сварочный пост'
               }"
-              :src="`/img/welding-post/small/${item}.jpg`"
+              :src="`/welding-post/${item}.jpg`"
+              preset="square160"
             />
           </div>
         </div>

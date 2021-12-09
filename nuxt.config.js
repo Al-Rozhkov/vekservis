@@ -91,13 +91,14 @@ module.exports = {
         webvisor: true,
         clickmap: true,
         trackLinks: true,
-        accurateTrackBounce:true,
+        accurateTrackBounce: true,
       }
     ],
     '@nuxtjs/sitemap'
   ],
 
   buildModules: [
+    '@nuxt/image',
     '@nuxtjs/google-analytics'
   ],
 
@@ -111,5 +112,28 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: 'https://vekservis.ru',
     cacheTime: 1000 * 60 * 15
+  },
+
+  image: {
+    dir: 'static/img',
+    provider: 'static',
+    presets: {
+      square80: {
+        modifiers: {
+          format: 'jpg',
+          fit: 'cover',
+          width: 80,
+          height: 80
+        }
+      },
+      square160: {
+        modifiers: {
+          format: 'jpg',
+          fit: 'cover',
+          width: 160,
+          height: 160
+        }
+      }
+    }
   }
 }

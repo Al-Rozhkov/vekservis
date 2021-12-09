@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="p-3 list-img">
-        <img
+        <nuxt-img
           v-for="item in 22"
           :key="item"
           v-img="{
@@ -37,7 +37,8 @@
             group: 'welding',
             title: 'Образцы сварочных работ',
           }"
-          :src="`/img/welding/small/${item}.jpg`"
+          :src="`/welding/${item}.jpg`"
+          preset="square160"
           class="gi"
         />
       </div>

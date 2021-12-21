@@ -2,8 +2,8 @@
   <div>
     <page-header>
       <h1 class="page-title">
-        Обслуживание и&nbsp;управление объектами коммерческой
-        и&nbsp;государственной недвижимости по&nbsp;всей России
+        Техническая поддержка и&nbsp;аутсорсинг непрофильных функций предприятий<br>
+        Maintain and support Facility's
       </h1>
       <ul class="adv-grid">
         <li class="li">
@@ -120,6 +120,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '~assets/scss/init.scss';
+
+.page-title {
+  max-width: 40rem;
+}
 
 header.header {
   padding-top: 3rem;

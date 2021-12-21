@@ -1,5 +1,5 @@
 <template>
-  <no-ssr>
+  <client-only>
     <div class="container feedback-form">
       <form
         method="post"
@@ -57,7 +57,7 @@
         />
       </form>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

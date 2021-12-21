@@ -1,5 +1,5 @@
 <template>
-  <no-ssr>
+  <client-only>
     <modal
       name="order"
       width="400"
@@ -41,7 +41,7 @@
         </button>
       </div>
     </modal>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

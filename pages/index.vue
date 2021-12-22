@@ -3,7 +3,7 @@
     <page-header>
       <h1 class="page-title">
         Техническая поддержка и&nbsp;аутсорсинг непрофильных функций предприятий<br>
-        Maintain and support Facility's
+        Maintain and support Facilities
       </h1>
       <ul class="adv-grid">
         <li class="li">

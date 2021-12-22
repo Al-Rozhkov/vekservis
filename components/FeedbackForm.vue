@@ -8,7 +8,7 @@
             method="post"
             action="https://api.formcake.com/api/form/97f10aee-9328-4347-aab1-bc45871357a4/submission"
           >
-            <div class="mb-3" role="group">
+            <!-- <div class="mb-3" role="group">
               <label class="label" for="input-name">Ваше имя:</label>
               <b-form-input
                 id="input-name"
@@ -17,7 +17,7 @@
                 placeholder="Иван Петров"
                 trim
               />
-            </div>
+            </div> -->
             <div class="mb-3" role="group">
               <label class="label" for="input-contact">Ваш телефон:</label>
               <b-form-input
@@ -29,12 +29,13 @@
               />
             </div>
             <div class="mb-3" role="group">
-              <label class="label" for="input-email">Электронная почта:</label>
-              <b-form-input
-                id="input-email"
-                name="email"
-                v-model="email"
-                trim
+              <!-- <label class="label" for="input-email">Электронная почта:</label> -->
+              <b-form-textarea
+                id="input-text"
+                name="text"
+                v-model="text"
+                placeholder="Ваш вопрос или комментарий"
+                rows="3"
               />
             </div>
 
@@ -67,25 +68,27 @@
 </template>
 
 <script>
-import { BFormInput } from 'bootstrap-vue'
+import { BFormInput, BFormTextarea } from 'bootstrap-vue'
 
 export default {
   components: {
     BFormInput,
+    BFormTextarea,
   },
 
   data() {
     return {
       name: '',
       contact: '',
-      email: '',
+      text: '',
     }
   },
 
   computed: {
     submitDisabled() {
-      return this.name.length < 3 || this.contact.length < 6
+      return this.text.length < 1 || this.contact.length < 6
     },
+
     utm() {
       const { query } = this.$route
       const res = {}
@@ -128,7 +131,6 @@ export default {
     text-align: center;
     max-width: 34rem;
     margin: 0 auto 2rem;
-
   }
 }
 

@@ -27,7 +27,7 @@
     <footer class="footer container">
       <div class="col-4">
         <p>
-          <span class="site-desc">© 2013—2021 ООО «ВЭК&nbsp;СЕРВИС»</span>
+          <span class="site-desc">© 2013—2022 ООО «ВЭК&nbsp;СЕРВИС»</span>
         </p>
         <p>
           <nuxt-link to="/policy"> Политика конфиденциальности </nuxt-link>

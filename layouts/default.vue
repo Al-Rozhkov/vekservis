@@ -19,7 +19,7 @@
           <nuxt-link to="/contact"> Контакты </nuxt-link>
         </li>
       </ul>
-      <span class="phone"> <span class="small">+7 (8412)</span> 20-73-18 </span>
+      <span class="phone">+7(8412) 20-73-18</span>
     </div>
 
     <nuxt />

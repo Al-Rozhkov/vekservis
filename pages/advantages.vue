@@ -36,7 +36,7 @@
             }"
             src="/docs/small/svidetelstvo_1.jpg"
             alt="Свидетельство СРО"
-          />
+          >
         </div>
       </div>
     </section>
@@ -54,7 +54,7 @@
             }"
             src="/docs/small/dopusk_1.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
           <img
             v-img="{
               src: '/docs/dopusk_2.jpg',
@@ -63,7 +63,7 @@
             }"
             src="/docs/small/dopusk_2.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
           <img
             v-img="{
               src: '/docs/dopusk_3.jpg',
@@ -72,7 +72,7 @@
             }"
             src="/docs/small/dopusk_3.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
           <img
             v-img="{
               src: '/docs/dopusk_4.jpg',
@@ -81,7 +81,7 @@
             }"
             src="/docs/small/dopusk_4.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
           <img
             v-img="{
               src: '/docs/dopusk_5.jpg',
@@ -90,7 +90,7 @@
             }"
             src="/docs/small/dopusk_5.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
           <img
             v-img="{
               src: '/docs/dopusk_6.jpg',
@@ -99,7 +99,7 @@
             }"
             src="/docs/small/dopusk_6.jpg"
             alt="Свидетельство о допуске к работам"
-          />
+          >
         </div>
       </div>
     </section>
@@ -117,7 +117,7 @@
             }"
             src="/docs/small/mchs_1.jpg"
             alt="Свидетельство МЧС"
-          />
+          >
           <img
             v-img="{
               src: '/docs/mchs_2.jpg',
@@ -126,7 +126,7 @@
             }"
             src="/docs/small/mchs_2.jpg"
             alt="Свидетельство МЧС"
-          />
+          >
         </div>
       </div>
     </section>
@@ -144,7 +144,7 @@
             }"
             src="/docs/small/sert-1.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-2.jpg',
@@ -153,7 +153,7 @@
             }"
             src="/docs/small/sert-2.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-3.jpg',
@@ -162,7 +162,7 @@
             }"
             src="/docs/small/sert-3.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-4.jpg',
@@ -171,7 +171,7 @@
             }"
             src="/docs/small/sert-4.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-5.jpg',
@@ -180,7 +180,7 @@
             }"
             src="/docs/small/sert-5.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-6.jpg',
@@ -189,7 +189,7 @@
             }"
             src="/docs/small/sert-6.jpg"
             alt="Сертификат соответствия"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-7.jpg',
@@ -198,7 +198,7 @@
             }"
             src="/docs/small/sert-7.jpg"
             alt="Сертификат соответствия"
-          />
+          >
         </div>
       </div>
     </section>
@@ -216,7 +216,7 @@
             }"
             src="/docs/small/sert-rpo-1.png"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-rpo-2.jpg',
@@ -225,7 +225,7 @@
             }"
             src="/docs/small/sert-rpo-2.png"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          />
+          >
           <img
             v-img="{
               src: '/docs/sert-rpo-3.jpg',
@@ -234,7 +234,7 @@
             }"
             src="/docs/small/sert-rpo-3.png"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          />
+          >
         </div>
       </div>
     </section>
@@ -247,43 +247,43 @@
           <img
             v-img="{ src: '/docs/VTB.jpg', group: 'docs' }"
             src="/docs/small/VTB.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }"
             src="/docs/small/pismo_1.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }"
             src="/docs/small/pismo_2.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }"
             src="/docs/small/pismo_sber.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/leroy.jpg', group: 'docs' }"
             src="/docs/small/leroy.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/tander.jpg', group: 'docs' }"
             src="/docs/small/tander.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_3.jpg', group: 'docs' }"
             src="/docs/small/pismo_3.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_4.jpg', group: 'docs' }"
             src="/docs/small/pismo_4.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_5.jpg', group: 'docs' }"
             src="/docs/small/pismo_5.jpg"
-          />
+          >
           <img
             v-img="{ src: '/docs/pismo_ashan.jpg', group: 'docs' }"
             src="/docs/small/pismo_ashan.jpg"
-          />
+          >
         </div>
       </div>
     </section>
@@ -296,7 +296,7 @@
           <img
             src="/docs/presentation2021.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"
-          />
+          >
           <div>(PDF 3,6Mb)</div>
         </a>
       </div>
@@ -308,12 +308,12 @@
 import PageHeader from '~/components/PageHeader.vue'
 
 export default {
+  components: {
+    PageHeader
+  },
   head: {
     title:
       'Опыт и клиенты. ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости'
-  },
-  components: {
-    PageHeader
   }
 }
 </script>

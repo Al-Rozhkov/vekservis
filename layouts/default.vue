@@ -4,19 +4,29 @@
       <logo />
       <ul class="main-menu">
         <li>
-          <nuxt-link to="/services"> Услуги </nuxt-link>
+          <nuxt-link to="/services">
+            Услуги
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/clients"> Опыт и клиенты </nuxt-link>
+          <nuxt-link to="/clients">
+            Опыт и клиенты
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/manufacture"> Производство </nuxt-link>
+          <nuxt-link to="/manufacture">
+            Производство
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/advantages"> Преимущества </nuxt-link>
+          <nuxt-link to="/advantages">
+            Преимущества
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact"> Контакты </nuxt-link>
+          <nuxt-link to="/contact">
+            Контакты
+          </nuxt-link>
         </li>
       </ul>
       <span class="phone">+7(8412) 20-73-18</span>
@@ -30,7 +40,9 @@
           <span class="site-desc">© 2013—2022 ООО «ВЭК&nbsp;СЕРВИС»</span>
         </p>
         <p>
-          <nuxt-link to="/policy"> Политика конфиденциальности </nuxt-link>
+          <nuxt-link to="/policy">
+            Политика конфиденциальности
+          </nuxt-link>
         </p>
       </div>
       <div class="col-4">
@@ -59,7 +71,7 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
   },
 }
 </script>

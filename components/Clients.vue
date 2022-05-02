@@ -1,7 +1,7 @@
 <template>
   <ul class="clients">
     <li v-for="client in clients" :key="client.name">
-      <img :src="`/clients/${client.name}.png`" :alt="client.alt" />
+      <img :src="`/clients/${client.name}.png`" :alt="client.alt">
     </li>
   </ul>
 </template>
@@ -11,7 +11,7 @@ export default {
   props: {
     clientsNum: {
       type: Number,
-      required: false,
+      default: undefined,
     },
   },
   data() {

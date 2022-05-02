@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-orange">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Услуги по&nbsp;эксплуатации ЖКХ</h1>
+      <h1 class="page-title">
+        Услуги по&nbsp;эксплуатации ЖКХ
+      </h1>
     </page-header>
     <section class="container">
       <div class="page-body">

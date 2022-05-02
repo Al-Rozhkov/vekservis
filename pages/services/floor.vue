@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-blue ph-position-bottom">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Ремонт и&nbsp;устройство промышленных полов</h1>
+      <h1 class="page-title">
+        Ремонт и&nbsp;устройство промышленных полов
+      </h1>
     </page-header>
 
     <section class="container">
@@ -17,34 +19,54 @@
           <p class="feat">Послестроительная уборка</p>
         </div> -->
         <div class="feat-col col-4">
-          <p class="feat">Ремонт всех типов промышленных полов</p>
+          <p class="feat">
+            Ремонт всех типов промышленных полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Капитальный ремонт промышленных полов</p>
+          <p class="feat">
+            Капитальный ремонт промышленных полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Реконструкция полов</p>
+          <p class="feat">
+            Реконструкция полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство рамп, пандусов, аппарелей</p>
+          <p class="feat">
+            Устройство рамп, пандусов, аппарелей
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство полимерных полов</p>
+          <p class="feat">
+            Устройство полимерных полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство тонкослойных полимерных покрытий</p>
+          <p class="feat">
+            Устройство тонкослойных полимерных покрытий
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство бетонных полов</p>
+          <p class="feat">
+            Устройство бетонных полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство топинговых полов</p>
+          <p class="feat">
+            Устройство топинговых полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство полеуретан-цементных полов</p>
+          <p class="feat">
+            Устройство полеуретан-цементных полов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Устройство полов с железнением</p>
+          <p class="feat">
+            Устройство полов с железнением
+          </p>
         </div>
       </div>
 
@@ -66,17 +88,23 @@
 
       <section class="row">
         <div class="col-4">
-          <div class="b"><UilFileCheckAlt size="2rem" /></div>
+          <div class="b">
+            <UilFileCheckAlt size="2rem" />
+          </div>
           <h3>Заключаем реальный договор</h3>
           <p>По договору вы получаете гарантию на работу</p>
         </div>
         <div class="col-4">
-          <div class="b"><UilMoneyStack size="2rem" /></div>
+          <div class="b">
+            <UilMoneyStack size="2rem" />
+          </div>
           <h3>Оплата по факту</h3>
           <p>Вы видите за что платите</p>
         </div>
         <div class="col-4">
-          <div class="b"><UilStar size="2rem" /></div>
+          <div class="b">
+            <UilStar size="2rem" />
+          </div>
           <h3>Лучшую цену</h3>
           <p>
             Мы работаем с крупными поставщиками стройматериалов и имеем хорошие
@@ -84,7 +112,9 @@
           </p>
         </div>
         <div class="col-4">
-          <div class="b"><UilRulerCombined size="2rem" /></div>
+          <div class="b">
+            <UilRulerCombined size="2rem" />
+          </div>
           <h3>Внимание к мелочам</h3>
           <p>
             Мы соблюдаем все технологии а также используем свои наработки для
@@ -92,7 +122,9 @@
           </p>
         </div>
         <div class="col-4">
-          <div class="b"><UilShoppingCartAlt size="2rem" /></div>
+          <div class="b">
+            <UilShoppingCartAlt size="2rem" />
+          </div>
           <h3>Закупим и доставим материалы</h3>
           <p>
             Всю работу по подбору, закупки и доставки берем на себя. (если это
@@ -100,7 +132,9 @@
           </p>
         </div>
         <div class="col-4">
-          <div class="b"><UilHourglass size="2rem" /></div>
+          <div class="b">
+            <UilHourglass size="2rem" />
+          </div>
           <h3>Выполняем все работы в срок</h3>
           <p>
             Нам не интересно затягивать сроки т.к. нам попросту за это не платят

@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-teal ph-position-bottom">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Услуги полуавтоматической сварки</h1>
+      <h1 class="page-title">
+        Услуги полуавтоматической сварки
+      </h1>
     </page-header>
 
     <section class="container">
@@ -45,7 +47,7 @@
 
       <section class="row">
         <div class="col-5 welding-scheme">
-          <img class="img" src="/img/welding/welding-scheme.png" />
+          <img class="img" src="/img/welding/welding-scheme.png">
         </div>
         <div class="col-7">
           <p>
@@ -57,9 +59,7 @@
             неполного проплавления, что значительно снижает срок службы
             и&nbsp;прочность конструкции. Если для вас важна надежность
             сварочного шва,
-            <a href="mailto:info@vekservis.ru"
-              >обращайтесь к&nbsp;специалистам</a
-            >
+            <a href="mailto:info@vekservis.ru">обращайтесь к&nbsp;специалистам</a>
             «ВЭК&nbsp;СЕРВИС».
           </p>
           <p>

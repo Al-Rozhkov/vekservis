@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-teal">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Отделочные и&nbsp;ремонтные работы</h1>
+      <h1 class="page-title">
+        Отделочные и&nbsp;ремонтные работы
+      </h1>
     </page-header>
     <section class="container">
       <p>

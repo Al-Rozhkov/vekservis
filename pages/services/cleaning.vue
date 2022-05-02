@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-blue ph-position-bottom">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Комплексная уборка помещений и&nbsp;территорий</h1>
+      <h1 class="page-title">
+        Комплексная уборка помещений и&nbsp;территорий
+      </h1>
     </page-header>
 
     <section class="container">
@@ -23,28 +25,44 @@
           </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Мойка окон, фасадов, стеклянных поверхностей</p>
+          <p class="feat">
+            Мойка окон, фасадов, стеклянных поверхностей
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Послестроительная уборка</p>
+          <p class="feat">
+            Послестроительная уборка
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Очистка сложных поверхностей спецсредствами</p>
+          <p class="feat">
+            Очистка сложных поверхностей спецсредствами
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Химчистка ковровых покрытий</p>
+          <p class="feat">
+            Химчистка ковровых покрытий
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Механизированная и ручная уборка</p>
+          <p class="feat">
+            Механизированная и ручная уборка
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Уборка и вывоз снега</p>
+          <p class="feat">
+            Уборка и вывоз снега
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Услуги альпинистов</p>
+          <p class="feat">
+            Услуги альпинистов
+          </p>
         </div>
         <div class="feat-col col-4">
-          <p class="feat">Благоустройство территорий, садовнические работы</p>
+          <p class="feat">
+            Благоустройство территорий, садовнические работы
+          </p>
         </div>
       </div>
 
@@ -52,7 +70,7 @@
 
       <section class="row">
         <div class="col-5">
-          <img class="img" src="/img/cleaning.jpg" />
+          <img class="img" src="/img/cleaning.jpg">
         </div>
         <div class="col-7">
           <h3>1. Профессиональные уборщики</h3>

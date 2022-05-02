@@ -1,7 +1,9 @@
 <template>
   <div>
     <header class="container header-error">
-      <h1 class="red">Извините, страницы с таким адресом у нас нет</h1>
+      <h1 class="red">
+        Извините, страницы с таким адресом у нас нет
+      </h1>
     </header>
 
     <section class="container">

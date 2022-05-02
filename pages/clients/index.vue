@@ -40,6 +40,10 @@ import PageHeader from '~/components/PageHeader.vue'
 import Clients from '~/components/Clients.vue'
 
 export default {
+  components: {
+    PageHeader,
+    Clients
+  },
   head: {
     title:
       'Опыт и клиенты. ВЭК СЕРВИС. Эксплуатация объектов государственной и коммерческой недвижимости',
@@ -51,10 +55,6 @@ export default {
           'Компания ВЭК СЕРВИС осуществляет обслуживание объектов федеральных сетевых компаний более чем в 40 городах и 30 регионах РФ.'
       }
     ]
-  },
-  components: {
-    PageHeader,
-    Clients
   }
 }
 </script>

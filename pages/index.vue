@@ -9,9 +9,15 @@
         <li class="li">
           Единая стоимость работ на&nbsp;весь период договора
         </li>
-        <li class="li">Комплексное обслуживание зданий и&nbsp;сооружений</li>
-        <li class="li">Страхование работ по&nbsp;желанию Заказчика</li>
-        <li class="li">Гарантия 1&nbsp;год на&nbsp;выполненные работы</li>
+        <li class="li">
+          Комплексное обслуживание зданий и&nbsp;сооружений
+        </li>
+        <li class="li">
+          Страхование работ по&nbsp;желанию Заказчика
+        </li>
+        <li class="li">
+          Гарантия 1&nbsp;год на&nbsp;выполненные работы
+        </li>
       </ul>
     </page-header>
     <section class="container">
@@ -49,7 +55,9 @@
       </div> -->
 
       <h2>
-        <nuxt-link to="/clients">Клиенты</nuxt-link>
+        <nuxt-link to="/clients">
+          Клиенты
+        </nuxt-link>
       </h2>
       <div class="row mb-3">
         <p class="col-4 offset-1">
@@ -59,11 +67,11 @@
         </p>
         <p class="col">
           <span class="lead">300+</span>
-          <br />объектов
+          <br>объектов
         </p>
         <p class="col-4">
           <span class="lead"> 500&thinsp;000+ м<sup>2</sup></span>
-          <br />обслуживаемых площадей
+          <br>обслуживаемых площадей
         </p>
       </div>
       <div class="row">
@@ -74,7 +82,7 @@
           <li>Торговые центры</li>
           <li>Продуктовые гипермаркеты, супермаркеты и&nbsp;магазины у&nbsp;дома</li>
           <li>Рестораны, кафе, столовые, пекарни</li>
-          <li>Банки и страховые компании</li>
+          <li>Банки и&nbsp;страховые компании</li>
           <li>Офисные и&nbsp;административные здания</li>
         </ul>
         <ul class="col-4">
@@ -94,7 +102,7 @@
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
-import CardLink from '~/components/CardLink.vue'
+// import CardLink from '~/components/CardLink.vue'
 import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
 import FeedbackForm from '~/components/FeedbackForm.vue'
@@ -104,7 +112,7 @@ import FeedbackForm from '~/components/FeedbackForm.vue'
 export default {
   components: {
     PageHeader,
-    CardLink,
+    // CardLink,
     ServicesList,
     Clients,
     FeedbackForm,

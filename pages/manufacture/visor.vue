@@ -28,7 +28,7 @@
         <div class="col-3">
           <p>
             <span class="lead">3 года</span>
-            <br >
+            <br>
             <span>гарантии на&nbsp;лакокрасочное покрытие</span>
           </p>
         </div>
@@ -40,7 +40,7 @@
             src="/img/visor/visor-lite.jpg"
             alt="Защитный козырек наружного блока кондиционера Visor Lite"
             class="img"
-          />
+          >
         </div>
 
         <div class="col-5">
@@ -84,7 +84,7 @@
             src="/img/visor/visor-pro-lite.jpg"
             alt="Защитный козырек наружного блока кондиционера Visor Pro Lite"
             class="img"
-          />
+          >
         </div>
         <div class="col-5">
           <h2 class="lead">

@@ -22,8 +22,8 @@
               <label class="label" for="input-contact">Ваш телефон:</label>
               <b-form-input
                 id="input-contact"
-                name="contact"
                 v-model="contact"
+                name="contact"
                 placeholder="+7 927 222 3333"
                 trim
               />
@@ -32,8 +32,8 @@
               <!-- <label class="label" for="input-email">Электронная почта:</label> -->
               <b-form-textarea
                 id="input-text"
-                name="text"
                 v-model="text"
+                name="text"
                 placeholder="Ваш вопрос или комментарий"
                 rows="3"
               />
@@ -45,13 +45,13 @@
               :name="`utm_${key}`"
               type="hidden"
               :value="item"
-            />
+            >
 
             <p class="text-policy">
               Отправляя эту форму вы соглашаетесь на обработку ваших
-              персональных данных. Ознакомьтесь с&nbsp;<nuxt-link to="/policy"
-                >политикой конфиденциальности.</nuxt-link
-              >
+              персональных данных. Ознакомьтесь с&nbsp;<nuxt-link to="/policy">
+                политикой конфиденциальности.
+              </nuxt-link>
             </p>
 
             <input
@@ -59,7 +59,7 @@
               :disabled="submitDisabled"
               type="submit"
               value="Отправить"
-            />
+            >
           </form>
         </div>
       </div>

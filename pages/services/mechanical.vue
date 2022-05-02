@@ -2,7 +2,9 @@
   <div>
     <page-header class="ph-teal">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Обслуживание механических инженерных систем</h1>
+      <h1 class="page-title">
+        Обслуживание механических инженерных систем
+      </h1>
     </page-header>
     <node-sections :sections-list="nodeSections" />
 

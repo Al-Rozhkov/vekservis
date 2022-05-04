@@ -38,6 +38,15 @@
   flex: 1 1 auto;
 }
 
+.d-grid {
+  display: grid;
+}
+
+.grid {
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
 @include media-breakpoint-up(lg) {
   footer {
     display: flex;

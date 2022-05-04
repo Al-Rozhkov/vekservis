@@ -138,22 +138,6 @@ export default {
   padding-right: 1.5rem;
 }
 
-.feat {
-  font-size: 1.2rem;
-  position: relative;
-  margin-bottom: 2rem;
-
-  &:before {
-    content: ' ';
-    display: block;
-    width: 2rem;
-    height: 4px;
-    background-color: rgba(#000000, 0.5);
-    opacity: 0.15;
-    margin-bottom: 0.4rem;
-  }
-}
-
 .img {
   border-radius: $border-radius-sm;
 }

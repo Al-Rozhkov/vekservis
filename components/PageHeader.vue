@@ -8,7 +8,7 @@
 export default {
   computed: {
     headerBg() {
-      return `background-image: url(/img/bg--${this.$route.name}.jpg)`
+      return `background-image: url(/img/bg-${this.$route.name}.jpg)`
     },
     headerClass() {
       return 'ph-' + this.$route.name

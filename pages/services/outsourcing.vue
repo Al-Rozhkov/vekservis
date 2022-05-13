@@ -3,7 +3,7 @@
     <page-header class="ph-purple">
       <header-submenu :menu="services" />
       <h1 class="page-title">
-        Предоставление персонала или аутсорсинг персонала
+        Аутсорсинг персонала
       </h1>
     </page-header>
 
@@ -108,7 +108,7 @@ export default {
     }
   },
   head: {
-    title: 'Предоставление персонала или аутсорсинг персонала',
+    title: 'Аутсорсинг персонала',
     meta: [
       {
         hid: 'description',

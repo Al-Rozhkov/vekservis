@@ -11,10 +11,10 @@ export default {
   props: {
     clientsNum: {
       type: Number,
-      default: undefined,
-    },
+      default: undefined
+    }
   },
-  data() {
+  data () {
     return {
       clientsList: [
         { name: 'sberbank', alt: 'Сбербанк' },
@@ -42,19 +42,19 @@ export default {
         { name: 'decatlon', alt: 'Decatlon' },
         { name: 'skbt', alt: 'СКБТ' },
         { name: 'transneft', alt: 'Транснефть' },
-        { name: 'rosneft', alt: 'Роснефть' },
+        { name: 'rosneft', alt: 'Роснефть' }
         // { name: 'vans', alt: 'Vans' },
         // { name: 'wrangler', alt: 'Wrangler' },
         // { name: 'sony', alt: 'Сони' },
-      ],
+      ]
     }
   },
 
   computed: {
-    clients() {
+    clients () {
       return this.clientsList.slice(0, this.clientsNum)
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -104,12 +104,12 @@ import servicesData from '~/data/services.json'
 export default {
   components: {
     PageHeader,
-    HeaderSubmenu,
+    HeaderSubmenu
   },
 
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
 
@@ -120,10 +120,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ВЭК СЕРВИС выполняет уборку коммерческих объектов, промышленных предприятий, а также осуществляет послестроительную уборку.',
-      },
-    ],
-  },
+          'ВЭК СЕРВИС выполняет уборку коммерческих объектов, промышленных предприятий, а также осуществляет послестроительную уборку.'
+      }
+    ]
+  }
 }
 </script>
 

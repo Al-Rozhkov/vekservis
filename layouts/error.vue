@@ -31,12 +31,12 @@ import manufactureData from '~/data/manufacture.js'
 export default {
   components: {
     ServicesList,
-    CardLink,
+    CardLink
   },
-  data() {
+  data () {
     return {
       services: servicesData,
-      manufacture: manufactureData,
+      manufacture: manufactureData
     }
   },
   head: {
@@ -45,10 +45,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Страницы с таким адресом на этом сайте нет',
-      },
-    ],
-  },
+        content: 'Страницы с таким адресом на этом сайте нет'
+      }
+    ]
+  }
 }
 </script>
 

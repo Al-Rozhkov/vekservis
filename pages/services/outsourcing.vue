@@ -100,11 +100,11 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    FeedbackForm,
+    FeedbackForm
   },
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
   head: {
@@ -114,10 +114,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.',
-      },
-    ],
-  },
+          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.'
+      }
+    ]
+  }
 }
 </script>
 

@@ -15,12 +15,12 @@ import servicesData from '~/data/services.json'
 
 export default {
   components: {
-    CardLink,
+    CardLink
   },
-  data() {
+  data () {
     return {
       services: servicesData.list
     }
-  },
+  }
 }
 </script>

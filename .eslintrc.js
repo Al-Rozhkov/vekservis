@@ -4,14 +4,18 @@ module.exports = {
     browser: true,
     node: true
   },
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint'
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    "plugin:vue/recommended"
+    'plugin:vue/recommended',
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
   ],
   // required to lint *.vue files
   plugins: [
@@ -19,8 +23,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "semi": [2, "never"],
-    "no-console": "off",
-    "vue/max-attributes-per-line": "off"
+    semi: [2, 'never'],
+    'no-console': 'off'
   }
 }

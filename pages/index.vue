@@ -115,8 +115,8 @@ export default {
     // CardLink,
     ServicesList,
     Clients,
-    FeedbackForm,
-  },
+    FeedbackForm
+  }
 
   // data() {
   //   return {

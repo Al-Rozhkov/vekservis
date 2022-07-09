@@ -87,12 +87,12 @@ import servicesData from '~/data/services.json'
 export default {
   components: {
     PageHeader,
-    HeaderSubmenu,
+    HeaderSubmenu
   },
 
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
 
@@ -103,10 +103,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки.',
-      },
-    ],
-  },
+          'ВЭК СЕРВИС производит сварку изделий из металла до 3,5м на сварочном столе собственного производства. Гарантирует повторяемость качества при производстве больших серий в сжатые сроки.'
+      }
+    ]
+  }
 }
 </script>
 

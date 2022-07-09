@@ -146,9 +146,9 @@
 </template>
 
 <script>
+import { UilFileCheckAlt, UilMoneyStack, UilStar, UilRulerCombined, UilShoppingCartAlt, UilHourglass } from '@iconscout/vue-unicons'
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
-import { UilFileCheckAlt, UilMoneyStack, UilStar, UilRulerCombined, UilShoppingCartAlt, UilHourglass } from '@iconscout/vue-unicons'
 
 import servicesData from '~/data/services.json'
 
@@ -161,12 +161,12 @@ export default {
     UilStar,
     UilRulerCombined,
     UilShoppingCartAlt,
-    UilHourglass,
+    UilHourglass
   },
 
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
 
@@ -177,10 +177,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Ремонтируем промышленные полы всех типов с гарантией до 3 лет. Работаем по всей России.',
-      },
-    ],
-  },
+          'Ремонтируем промышленные полы всех типов с гарантией до 3 лет. Работаем по всей России.'
+      }
+    ]
+  }
 }
 </script>
 

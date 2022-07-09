@@ -17,13 +17,13 @@ export default {
   props: {
     item: {
       type: Object,
-      required: true,
+      required: true
     },
     section: {
       type: String,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 }
 </script>
 

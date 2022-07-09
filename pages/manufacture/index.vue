@@ -52,7 +52,7 @@ export default {
     PageHeader,
     CardLink
   },
-  data() {
+  data () {
     return {
       menu: subpagesData
     }

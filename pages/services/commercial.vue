@@ -76,12 +76,12 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    FeedbackForm,
+    FeedbackForm
   },
 
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
 
@@ -93,10 +93,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ВЭК СЕРВИС предлагает полный спектр услуг по эксплуатации различных объектов государственной и коммерческой недвижимости любого назначения и жизненного цикла.',
-      },
-    ],
-  },
+          'ВЭК СЕРВИС предлагает полный спектр услуг по эксплуатации различных объектов государственной и коммерческой недвижимости любого назначения и жизненного цикла.'
+      }
+    ]
+  }
 }
 </script>
 

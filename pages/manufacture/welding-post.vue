@@ -128,7 +128,7 @@ export default {
     OrderModal
   },
 
-  data() {
+  data () {
     return {
       menu: subpagesData
     }

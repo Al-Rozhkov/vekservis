@@ -7,10 +7,10 @@
 <script>
 export default {
   computed: {
-    headerBg() {
+    headerBg () {
       return `background-image: url(/img/bg-${this.$route.name}.jpg)`
     },
-    headerClass() {
+    headerClass () {
       return 'ph-' + this.$route.name
     }
   }

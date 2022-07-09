@@ -63,7 +63,7 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {
       name: '',
       contact: ''
@@ -71,13 +71,13 @@ export default {
   },
 
   computed: {
-    submitDisabled() {
+    submitDisabled () {
       return this.name.length < 3 || this.contact.length < 6
     }
   },
 
   methods: {
-    sendRequest() {
+    sendRequest () {
       if (!this.submitDisabled) {
         this.$modal.hide('order')
 
@@ -90,11 +90,11 @@ export default {
         const ntf = 'ntforder'
         http.open('POST', `https://vekservis.ru/order/${ntf}.php`, true)
 
-        //Send the proper header information along with the request
+        // Send the proper header information along with the request
         http.setRequestHeader('Content-type', 'application/json')
 
-        http.onreadystatechange = function() {
-          //Call a function when the state changes.
+        http.onreadystatechange = function () {
+          // Call a function when the state changes.
           if (http.readyState == 4 && http.status == 200) {
             console.log(http.responseText)
           }

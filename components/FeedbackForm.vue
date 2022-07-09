@@ -73,32 +73,33 @@ import { BFormInput, BFormTextarea } from 'bootstrap-vue'
 export default {
   components: {
     BFormInput,
-    BFormTextarea,
+    BFormTextarea
   },
 
-  data() {
+  data () {
     return {
       name: '',
       contact: '',
       text: '',
+      isSubmitted: false
     }
   },
 
   computed: {
-    submitDisabled() {
+    submitDisabled () {
       return this.text.length < 1 || this.contact.length < 6
     },
 
-    utm() {
+    utm () {
       const { query } = this.$route
       const res = {}
 
-      for (let key in query) {
-        if (key.startsWith('utm_')) res[key] = query[key]
+      for (const key in query) {
+        if (key.startsWith('utm_')) { res[key] = query[key] }
       }
       return res
-    },
-  },
+    }
+  }
 }
 </script>
 

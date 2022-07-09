@@ -144,19 +144,10 @@ export default {
     OrderModal
   },
 
-  data() {
+  data () {
     return {
       menu: subpagesData,
       selectedModel: ''
-    }
-  },
-
-  methods: {
-    openModel(model) {
-      if (model) {
-        this.selectedModel = model
-      }
-      this.$modal.show('order')
     }
   },
 
@@ -170,6 +161,15 @@ export default {
           'Защитный козырек предназначен для защиты наружного блока кондиционера от осадков, падения снега и наледи с крыш домов.'
       }
     ]
+  },
+
+  methods: {
+    openModel (model) {
+      if (model) {
+        this.selectedModel = model
+      }
+      this.$modal.show('order')
+    }
   }
 }
 </script>

@@ -48,17 +48,17 @@ export default {
     PageHeader,
     HeaderSubmenu,
     ServicesList,
-    FeedbackForm,
+    FeedbackForm
   },
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
   head: {
     title:
-      'Услуги по эксплуатации объектов государственной и коммерческой недвижимости. ВЭК СЕРВИС',
-  },
+      'Услуги по эксплуатации объектов государственной и коммерческой недвижимости. ВЭК СЕРВИС'
+  }
 }
 </script>
 

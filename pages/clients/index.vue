@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-orange">
       <h1 class="page-title">
         Опыт и&nbsp;клиенты
       </h1>

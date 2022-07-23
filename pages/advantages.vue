@@ -1,6 +1,6 @@
 <template>
   <div>
-    <page-header>
+    <page-header class="ph-blue">
       <h1 class="page-title">
         Преимущества
       </h1>

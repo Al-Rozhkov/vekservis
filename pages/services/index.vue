@@ -1,6 +1,6 @@
 <template>
   <main>
-    <page-header>
+    <page-header class="ph-blue">
       <header-submenu :menu="services" />
       <h1 class="page-title">
         Услуги по эксплуатации объектов государственной и&nbsp;коммерческой
@@ -30,8 +30,6 @@
 
       <services-list />
     </section>
-
-    <feedback-form />
   </main>
 </template>
 
@@ -39,7 +37,6 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import ServicesList from '~/components/ServicesList.vue'
-import FeedbackForm from '~/components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -47,8 +44,7 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    ServicesList,
-    FeedbackForm
+    ServicesList
   },
   data () {
     return {

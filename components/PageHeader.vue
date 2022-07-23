@@ -1,5 +1,5 @@
 <template>
-  <header class="header container" :class="headerClass" :style="headerBg">
+  <header class="header container" :class="headerClass" :style="headerStyle">
     <slot />
   </header>
 </template>
@@ -7,16 +7,27 @@
 <script>
 export default {
   props: {
+    image: {
+      type: String,
+      default: null
+    },
+
+    position: {
+      type: String,
+      default: 'center center'
+    },
+
     default: {
       type: Boolean,
       default: false
     }
   },
   computed: {
-    headerBg () {
-      return this.default
-        ? 'background-image: url(/img/bg-index.jpg)'
-        : `background-image: url(/img/bg-${this.$route.name}.jpg)`
+    headerStyle () {
+      return {
+        'background-image': this.image ? `url(/img/bg-${this.image}.jpg)` : `url(/img/bg-${this.$route.name}.jpg)`,
+        'background-position': this.position
+      }
     },
     headerClass () {
       return this.default ? 'ph-index' : `ph-${this.$route.name}`
@@ -26,17 +37,8 @@ export default {
 </script>
 
 <style lang="scss">
-.ph-purple {
-  background-color: #1b0880;
-  &:before {
-    background-image: linear-gradient(to right, #1b0880 0%, #042a4a 100%);
-  }
-}
-
 .ph-index,
-.ph-blue,
-.ph-services,
-.ph-advantages {
+.ph-blue {
   background-color: #042a4a;
   &:before {
     background-image: linear-gradient(to right, #042a4a 0%, #087380 100%);
@@ -44,7 +46,13 @@ export default {
   }
 }
 
-.ph-clients,
+.ph-purple {
+  background-color: #1b0880;
+  &:before {
+    background-image: linear-gradient(to right, #1b0880 0%, #042a4a 100%);
+  }
+}
+
 .ph-orange {
   background-color: #921800;
   &:before {
@@ -52,7 +60,6 @@ export default {
   }
 }
 
-.ph-contact,
 .ph-teal {
   background-color: #00887d;
   &:before {
@@ -60,18 +67,8 @@ export default {
   }
 }
 
-header.header.ph-clients,
-header.header.ph-manufacture-welding {
+.header.ph-clients {
   background-position: 50% 40%;
   min-height: 300px;
-}
-
-header.header.ph-position-bottom,
-header.header.ph-contact {
-  background-position: bottom center;
-}
-
-header.header.ph-position-center {
-  background-position: center center;
 }
 </style>

@@ -20,6 +20,7 @@
         </li>
       </ul>
     </page-header>
+
     <section class="container">
       <h2>Комплексный подход</h2>
       <div class="row">
@@ -95,8 +96,6 @@
 
       <clients />
     </section>
-
-    <feedback-form />
   </div>
 </template>
 
@@ -105,24 +104,13 @@ import PageHeader from '~/components/PageHeader.vue'
 // import CardLink from '~/components/CardLink.vue'
 import ServicesList from '~/components/ServicesList.vue'
 import Clients from '~/components/Clients.vue'
-import FeedbackForm from '~/components/FeedbackForm.vue'
-
-// import manufactureData from '~/data/manufacture.js'
 
 export default {
   components: {
     PageHeader,
-    // CardLink,
     ServicesList,
-    Clients,
-    FeedbackForm
+    Clients
   }
-
-  // data() {
-  //   return {
-  //     manufacture: manufactureData,
-  //   }
-  // },
 }
 </script>
 

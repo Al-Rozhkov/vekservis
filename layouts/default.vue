@@ -14,11 +14,6 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/manufacture">
-            Производство
-          </nuxt-link>
-        </li>
-        <li>
           <nuxt-link to="/advantages">
             Преимущества
           </nuxt-link>
@@ -32,7 +27,11 @@
       <span class="phone">+7(8412) 20-73-18</span>
     </div>
 
-    <nuxt />
+    <nuxt class="section" />
+
+    <div class="container">
+      <feedback-form />
+    </div>
 
     <footer class="footer container">
       <div class="col-4">
@@ -48,7 +47,10 @@
       <div class="col-4">
         <p>
           <nuxt-link to="/contact">
-            г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4<br>
+            г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4
+          </nuxt-link>
+          <br>
+          <nuxt-link to="/contact/moscow">
             г.&nbsp;Москва, ул.&nbsp;Космонавта Волкова 6А
           </nuxt-link>
         </p>
@@ -68,11 +70,13 @@
 </template>
 
 <script>
+import FeedbackForm from '../components/FeedbackForm.vue'
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    FeedbackForm
   }
 }
 </script>

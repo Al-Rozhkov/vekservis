@@ -63,9 +63,6 @@ export default {
   /*
    ** Build configuration
    */
-
-  // env: {},
-
   build: {
     /*
      ** Run ESLint on save

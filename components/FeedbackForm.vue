@@ -1,7 +1,7 @@
 <template>
   <client-only>
     <div class="container feedback-form">
-      <div class="form-content">
+      <div v-if="!isSubmitted" class="form-content">
         <h2>Запросите предложение на&nbsp;обслуживание инженерных систем</h2>
         <div class="form-container mb-3">
           <form
@@ -59,9 +59,14 @@
               :disabled="submitDisabled"
               type="submit"
               value="Отправить"
+              @click="onSubmit"
             >
           </form>
         </div>
+      </div>
+
+      <div v-else class="form-confirmation">
+        <h2>Спасибо за вашу заявку! Наш менеджер свяжется с вами в ближайшее время.</h2>
       </div>
     </div>
   </client-only>
@@ -76,12 +81,18 @@ export default {
     BFormTextarea
   },
 
+  props: {
+    isSubmitted: {
+      type: Boolean,
+      default: false
+    }
+  },
+
   data () {
     return {
       name: '',
       contact: '',
-      text: '',
-      isSubmitted: false
+      text: ''
     }
   },
 
@@ -95,9 +106,18 @@ export default {
       const res = {}
 
       for (const key in query) {
-        if (key.startsWith('utm_')) { res[key] = query[key] }
+        if (key.startsWith('utm_')) {
+          res[key] = query[key]
+        }
       }
       return res
+    }
+  },
+
+  methods: {
+    onSubmit () {
+      // eslint-disable-next-line no-undef
+      ym(45245817, 'reachGoal', 'zayavka')
     }
   }
 }
@@ -138,6 +158,10 @@ export default {
 .form-content {
   position: relative;
   z-index: 1;
+}
+
+.form-confirmation {
+  min-height: 200px;
 }
 
 .form-container {

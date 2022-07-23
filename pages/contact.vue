@@ -17,6 +17,11 @@
         Электронная почта:
         <a href="mailto:info@vekservis.ru">info@vekservis.ru</a>
       </p>
+
+      <h2>Дополнительный офис</h2>
+      <p>
+        г. Москва, ул. Космонавта Волкова 6А
+      </p>
     </section>
     <section class="container">
       <script
@@ -50,5 +55,3 @@ export default {
   }
 }
 </script>
-
-<style></style>

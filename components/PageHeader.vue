@@ -6,12 +6,20 @@
 
 <script>
 export default {
+  props: {
+    default: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     headerBg () {
-      return `background-image: url(/img/bg-${this.$route.name}.jpg)`
+      return this.default
+        ? 'background-image: url(/img/bg-index.jpg)'
+        : `background-image: url(/img/bg-${this.$route.name}.jpg)`
     },
     headerClass () {
-      return 'ph-' + this.$route.name
+      return this.default ? 'ph-index' : `ph-${this.$route.name}`
     }
   }
 }

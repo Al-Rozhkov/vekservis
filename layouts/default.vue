@@ -48,7 +48,8 @@
       <div class="col-4">
         <p>
           <nuxt-link to="/contact">
-            г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4
+            г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4<br>
+            г.&nbsp;Москва, ул.&nbsp;Космонавта Волкова 6А
           </nuxt-link>
         </p>
         <p>

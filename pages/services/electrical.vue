@@ -7,8 +7,6 @@
       </h1>
     </page-header>
     <node-sections :sections-list="nodeSections" />
-
-    <feedback-form />
   </div>
 </template>
 
@@ -16,7 +14,6 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import NodeSections from '~/components/NodeSections.vue'
-import FeedbackForm from '~/components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -24,8 +21,7 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    NodeSections,
-    FeedbackForm
+    NodeSections
   },
   data () {
     return {

@@ -60,23 +60,19 @@
         </ul>
       </div>
     </section>
-
-    <feedback-form />
   </div>
 </template>
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
-import FeedbackForm from '~/components/FeedbackForm.vue'
 
 import servicesData from '~/data/services.json'
 
 export default {
   components: {
     PageHeader,
-    HeaderSubmenu,
-    FeedbackForm
+    HeaderSubmenu
   },
 
   data () {

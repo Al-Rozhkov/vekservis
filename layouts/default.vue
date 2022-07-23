@@ -24,7 +24,14 @@
           </nuxt-link>
         </li>
       </ul>
-      <span class="phone">+7(8412) 20-73-18</span>
+      <div class="leader-right">
+        <div class="phone">
+          +7(8412) 20-73-18
+        </div>
+        <nuxt-link class="btn btn-sm btn-primary mb-1" to="#feedback-form">
+          Оставьте заявку
+        </nuxt-link>
+      </div>
     </div>
 
     <nuxt class="section" />

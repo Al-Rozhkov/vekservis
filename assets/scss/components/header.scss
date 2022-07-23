@@ -43,8 +43,21 @@
 .leader {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
+}
+
+.leader-right {
+    margin-left: auto;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.phone {
+    font-size: 1.5rem;
+    line-height: 1.75;
+    margin-bottom: 0.25rem;
 }
 
 .logo {
@@ -75,11 +88,4 @@
       margin-right: 1.25rem;
       padding: .5rem 0;
     }
-}
-  
-.phone {
-    margin-left: auto;
-    padding-left: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
 }

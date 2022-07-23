@@ -6,7 +6,11 @@
       </h1>
     </page-header>
     <section class="container">
-      <h2>Основной офис / <nuxt-link to="/contact/moscow">Московский офис</nuxt-link></h2>
+      <h2>
+        Основной офис / <nuxt-link to="/contact/moscow">
+          Московский офис
+        </nuxt-link>
+      </h2>
       <p>
         ООО «ВЭК СЕРВИС» 440000, Пензенская область, г. Пенза, ул. Ставского 4,
         оф. 4

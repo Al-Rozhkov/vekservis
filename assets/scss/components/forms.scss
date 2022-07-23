@@ -37,6 +37,24 @@
   }
 }
 
+.btn.btn-primary {
+  opacity: 1;
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}
+
 // Bootstrap form styles
 .form-control {
   display: block;

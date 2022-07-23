@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="container feedback-form">
+    <div id="feedback-form" class="container feedback-form">
       <div v-if="!isSubmitted" class="form-content">
         <h2>Запросите предложение на&nbsp;обслуживание инженерных систем</h2>
         <div class="form-container mb-3">
@@ -8,16 +8,26 @@
             method="post"
             action="https://api.formcake.com/api/form/97f10aee-9328-4347-aab1-bc45871357a4/submission"
           >
-            <!-- <div class="mb-3" role="group">
+            <div class="mb-3" role="group">
               <label class="label" for="input-name">Ваше имя:</label>
               <b-form-input
                 id="input-name"
-                name="name"
                 v-model="name"
+                name="name"
                 placeholder="Иван Петров"
                 trim
               />
-            </div> -->
+            </div>
+            <div class="mb-3" role="group">
+              <label class="label" for="input-name">Название компании:</label>
+              <b-form-input
+                id="input-name"
+                v-model="company"
+                name="company"
+                placeholder="Название компании"
+                trim
+              />
+            </div>
             <div class="mb-3" role="group">
               <label class="label" for="input-contact">Ваш телефон:</label>
               <b-form-input
@@ -28,8 +38,7 @@
                 trim
               />
             </div>
-            <div class="mb-3" role="group">
-              <!-- <label class="label" for="input-email">Электронная почта:</label> -->
+            <!-- <div class="mb-3" role="group">
               <b-form-textarea
                 id="input-text"
                 v-model="text"
@@ -37,7 +46,7 @@
                 placeholder="Ваш вопрос или комментарий"
                 rows="3"
               />
-            </div>
+            </div> -->
 
             <input
               v-for="(key, item) in utm"
@@ -73,12 +82,12 @@
 </template>
 
 <script>
-import { BFormInput, BFormTextarea } from 'bootstrap-vue'
+import { BFormInput } from 'bootstrap-vue'
 
 export default {
   components: {
-    BFormInput,
-    BFormTextarea
+    BFormInput
+    // BFormTextarea
   },
 
   props: {
@@ -91,6 +100,7 @@ export default {
   data () {
     return {
       name: '',
+      company: '',
       contact: '',
       text: ''
     }

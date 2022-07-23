@@ -16,7 +16,7 @@
         type="text/javascript"
         charset="utf-8"
         async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A817b9eca6bc4a7408f190ca30840d872d2fb659e69b36f6135b7958f7c8a8ff9&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1bb61dd3b445270b75ff45b01f52edb119e9766509c5e89a3f73e5bb30212a3c&amp;width=100%25&amp;height=460&amp;lang=ru_RU&amp;scroll=true"
       />
     </section>
   </div>

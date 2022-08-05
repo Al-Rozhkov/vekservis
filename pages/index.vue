@@ -67,11 +67,11 @@
           и&nbsp;30&nbsp;регионах&nbsp;РФ.
         </p>
         <p class="col">
-          <span class="lead">300+</span>
+          <span class="lead">500+</span>
           <br>объектов
         </p>
         <p class="col-4">
-          <span class="lead"> 500&thinsp;000+ м<sup>2</sup></span>
+          <span class="lead"> 600&thinsp;000+ м<sup>2</sup></span>
           <br>обслуживаемых площадей
         </p>
       </div>

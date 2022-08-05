@@ -14,6 +14,11 @@
           </nuxt-link>
         </li>
         <li>
+          <nuxt-link to="/manufacture">
+            Производство
+          </nuxt-link>
+        </li>
+        <li>
           <nuxt-link to="/advantages">
             Преимущества
           </nuxt-link>

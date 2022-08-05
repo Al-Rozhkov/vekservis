@@ -75,6 +75,8 @@
           <span class="phone">
             <span class="small">+7&nbsp;(8412)</span> 20-73-18
           </span>
+          <br>
+          <span class="small">8 800 600-00-65</span>
         </p>
       </div>
     </footer>

@@ -130,6 +130,14 @@ export default {
           width: 160,
           height: 160
         }
+      },
+      thumb160x226: {
+        modifiers: {
+          format: 'jpg',
+          fit: 'cover',
+          width: 160,
+          height: 226
+        }
       }
     }
   }

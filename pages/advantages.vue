@@ -28,15 +28,16 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
+          <nuxt-img
             v-img="{
-              src: '/docs/svidetelstvo_1.jpg',
+              src: '/img/docs/svidetelstvo_1.jpg',
               group: 'docs',
               title: 'Свидетельство СРО'
             }"
-            src="/docs/small/svidetelstvo_1.jpg"
+            src="/docs/svidetelstvo_1.jpg"
             alt="Свидетельство СРО"
-          >
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -46,60 +47,66 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_1.jpg',
+              src: '/img/docs/dopusk_1.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_1.jpg"
+            src="/docs/dopusk_1.jpg"
             alt="Свидетельство о допуске к работам"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_2.jpg',
+              src: '/img/docs/dopusk_2.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_2.jpg"
+            src="/docs/dopusk_2.jpg"
             alt="Свидетельство о допуске к работам"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_3.jpg',
+              src: '/img/docs/dopusk_3.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_3.jpg"
+            src="/docs/dopusk_3.jpg"
             alt="Свидетельство о допуске к работам"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_4.jpg',
+              src: '/img/docs/dopusk_4.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_4.jpg"
+            src="/docs/dopusk_4.jpg"
             alt="Свидетельство о допуске к работам"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_5.jpg',
+              src: '/img/docs/dopusk_5.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_5.jpg"
+            src="/docs/dopusk_5.jpg"
             alt="Свидетельство о допуске к работам"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/dopusk_6.jpg',
+              src: '/img/docs/dopusk_6.jpg',
               group: 'docs',
               title: 'Свидетельство о допуске к работам'
             }"
-            src="/docs/small/dopusk_6.jpg"
+            src="/docs/dopusk_6.jpg"
             alt="Свидетельство о допуске к работам"
-          >
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -109,24 +116,26 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
+          <nuxt-img
             v-img="{
-              src: '/docs/mchs_1.jpg',
+              src: '/img/docs/mchs_1.jpg',
               group: 'docs',
               title: 'Свидетельство МЧС'
             }"
-            src="/docs/small/mchs_1.jpg"
+            src="/docs/mchs_1.jpg"
             alt="Свидетельство МЧС"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/mchs_2.jpg',
+              src: '/img/docs/mchs_2.jpg',
               group: 'docs',
               title: 'Свидетельство МЧС'
             }"
-            src="/docs/small/mchs_2.jpg"
+            src="/docs/mchs_2.jpg"
             alt="Свидетельство МЧС"
-          >
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -136,69 +145,76 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-1.jpg',
+              src: '/img/docs/sert-1.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-1.jpg"
+            src="/docs/sert-1.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-2.jpg',
+              src: '/img/docs/sert-2.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-2.jpg"
+            src="/docs/sert-2.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-3.jpg',
+              src: '/img/docs/sert-3.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-3.jpg"
+            src="/docs/sert-3.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-4.jpg',
+              src: '/img/docs/sert-4.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-4.jpg"
+            src="/docs/sert-4.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-5.jpg',
+              src: '/img/docs/sert-5.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-5.jpg"
+            src="/docs/sert-5.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-6.jpg',
+              src: '/img/docs/sert-6.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-6.jpg"
+            src="/docs/sert-6.jpg"
             alt="Сертификат соответствия"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-7.jpg',
+              src: '/img/docs/sert-7.jpg',
               group: 'docs',
               title: 'Сертификат соответствия'
             }"
-            src="/docs/small/sert-7.jpg"
+            src="/docs/sert-7.jpg"
             alt="Сертификат соответствия"
-          >
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -208,33 +224,36 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-rpo-1.jpg',
+              src: '/img/docs/sert-rpo-1.jpg',
               group: 'docs',
               title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
             }"
-            src="/docs/small/sert-rpo-1.png"
+            src="/docs/sert-rpo-1.jpg"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-rpo-2.jpg',
+              src: '/img/docs/sert-rpo-2.jpg',
               group: 'docs',
               title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
             }"
-            src="/docs/small/sert-rpo-2.png"
+            src="/docs/sert-rpo-2.jpg"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          >
-          <img
+            preset="thumb160x226"
+          />
+          <nuxt-img
             v-img="{
-              src: '/docs/sert-rpo-3.jpg',
+              src: '/img/docs/sert-rpo-3.jpg',
               group: 'docs',
               title: 'Сертификат соответствия ГОСТ РПО 2016:2019'
             }"
-            src="/docs/small/sert-rpo-3.png"
+            src="/docs/sert-rpo-3.jpg"
             alt="Сертификат соответствия ГОСТ РПО 2016:2019"
-          >
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -244,46 +263,61 @@
       </h2>
       <div class="section-body">
         <div class="list-img">
-          <img
-            v-img="{ src: '/docs/VTB.jpg', group: 'docs' }"
-            src="/docs/small/VTB.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_1.jpg', group: 'docs' }"
-            src="/docs/small/pismo_1.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_2.jpg', group: 'docs' }"
-            src="/docs/small/pismo_2.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_sber.jpg', group: 'docs' }"
-            src="/docs/small/pismo_sber.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/leroy.jpg', group: 'docs' }"
-            src="/docs/small/leroy.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/tander.jpg', group: 'docs' }"
-            src="/docs/small/tander.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_3.jpg', group: 'docs' }"
-            src="/docs/small/pismo_3.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_4.jpg', group: 'docs' }"
-            src="/docs/small/pismo_4.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_5.jpg', group: 'docs' }"
-            src="/docs/small/pismo_5.jpg"
-          >
-          <img
-            v-img="{ src: '/docs/pismo_ashan.jpg', group: 'docs' }"
-            src="/docs/small/pismo_ashan.jpg"
-          >
+          <nuxt-img
+            v-img="{ src: '/img/thanks/VTB.jpg', group: 'docs' }"
+            src="/thanks/VTB.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_1.jpg', group: 'docs' }"
+            src="/thanks/pismo_1.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_2.jpg', group: 'docs' }"
+            src="/thanks/pismo_2.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_sber.jpg', group: 'docs' }"
+            src="/thanks/pismo_sber.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/leroy.jpg', group: 'docs' }"
+            src="/thanks/leroy.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/tander.jpg', group: 'docs' }"
+            src="/thanks/tander.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_3.jpg', group: 'docs' }"
+            src="/thanks/pismo_3.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_4.jpg', group: 'docs' }"
+            src="/thanks/pismo_4.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_5.jpg', group: 'docs' }"
+            src="/thanks/pismo_5.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_ashan.jpg', group: 'docs' }"
+            src="/thanks/pismo_ashan.jpg"
+            preset="thumb160x226"
+          />
+          <nuxt-img
+            v-img="{ src: '/img/thanks/pismo_skbt.jpg', group: 'docs' }"
+            src="/thanks/pismo_skbt.jpg"
+            preset="thumb160x226"
+          />
         </div>
       </div>
     </section>
@@ -294,7 +328,7 @@
       <div class="section-body">
         <a href="/docs/vekservis2021.pdf">
           <img
-            src="/docs/presentation2021.jpg"
+            src="/img/docs/presentation2021.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"
           >
           <div>(PDF 3,6Mb)</div>

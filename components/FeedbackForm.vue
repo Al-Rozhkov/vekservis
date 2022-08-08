@@ -2,7 +2,13 @@
   <client-only>
     <div id="feedback-form" class="container feedback-form">
       <div v-if="!isSubmitted" class="form-content">
-        <h2>Запросите предложение на&nbsp;обслуживание инженерных систем</h2>
+        <div class="form-title">
+          <slot>
+            <h2>
+              Запросите предложение на&nbsp;обслуживание инженерных систем
+            </h2>
+          </slot>
+        </div>
         <div class="form-container mb-3">
           <form
             method="post"
@@ -75,7 +81,10 @@
       </div>
 
       <div v-else class="form-confirmation">
-        <h2>Спасибо за вашу заявку! Наш менеджер свяжется с вами в ближайшее время.</h2>
+        <h2>
+          Спасибо за вашу заявку! Наш менеджер свяжется с вами в ближайшее
+          время.
+        </h2>
       </div>
     </div>
   </client-only>
@@ -138,7 +147,7 @@ export default {
 
 .feedback-form {
   position: relative;
-  padding: 2rem;
+  padding: 0.75rem 2rem 2rem;
   color: $white;
   border-radius: $border-radius-sm;
   background-image: url(/img/bg-form.jpg);
@@ -157,18 +166,18 @@ export default {
     opacity: 0.7;
     z-index: 0;
   }
-
-  h2 {
-    text-align: center;
-    max-width: 34rem;
-    margin: 0 auto 2rem;
-  }
 }
 
 .form-content {
   position: relative;
   z-index: 1;
 }
+
+.form-title {
+    text-align: center;
+    max-width: 34rem;
+    margin: 0 auto 2rem;
+  }
 
 .form-confirmation {
   min-height: 200px;

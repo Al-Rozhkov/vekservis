@@ -2,7 +2,7 @@
   <div>
     <app-nav />
 
-    <nuxt class="section" />
+    <nuxt />
 
     <app-footer />
   </div>

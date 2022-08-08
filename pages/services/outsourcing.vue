@@ -2,15 +2,11 @@
   <div>
     <page-header class="ph-purple">
       <header-submenu :menu="services" />
-      <h1 class="page-title">
-        Аутсорсинг персонала
-      </h1>
+      <h1 class="page-title">Аутсорсинг персонала</h1>
     </page-header>
 
     <section class="section">
-      <h2 class="text-center">
-        На чем же основана бизнес-модель аутсорсинга?
-      </h2>
+      <h2 class="text-center">На чем же основана бизнес-модель аутсорсинга?</h2>
 
       <p>
         Если у вас в штате работают сотрудники, за которых вы регулярно и в
@@ -108,15 +104,19 @@
     </section>
 
     <section class="section">
-      <h2 class="text-center">
-        Персонал под любой запрос
-      </h2>
+      <h2 class="text-center">Персонал под любой запрос</h2>
       <div class="row">
         <div class="col-6">
           <h3>Линейный и неквалифицированный персонал:</h3>
           <ul>
-            <li>Розничная торговля (кассиры, продавцы, работники торгового зала)</li>
-            <li>Складской персонал и персонал на производство (комплектовщики; водители погрузчиков, штабелеров; разнорабочие, фасовщики, упаковщики, стикеровщик, сортировщик, упаковщик)</li>
+            <li>
+              Розничная торговля (кассиры, продавцы, работники торгового зала)
+            </li>
+            <li>
+              Складской персонал и персонал на производство (комплектовщики;
+              водители погрузчиков, штабелеров; разнорабочие, фасовщики,
+              упаковщики, стикеровщик, сортировщик, упаковщик)
+            </li>
             <li>Линейный персонал (грузчики, разнорабочие, уборщицы)</li>
           </ul>
         </div>
@@ -142,17 +142,15 @@
     </div>
 
     <section class="section">
-      <h2 class="text-center mb-4">
-        Порядок работы с нами
-      </h2>
+      <h2 class="text-center mb-4">Порядок работы с нами</h2>
       <div class="d-grid grid">
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/envelope.png">
+          <img class="card-img" src="/img/icons-hr/envelope.png" />
           <span class="b">1</span>
           <h3>Заявка от Вас</h3>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/headhunting.png">
+          <img class="card-img" src="/img/icons-hr/headhunting.png" />
           <span class="b">2</span>
           <h3>Мониторинг</h3>
           <p>
@@ -161,32 +159,66 @@
           </p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/requirements.png">
+          <img class="card-img" src="/img/icons-hr/requirements.png" />
           <span class="b">3</span>
           <h3>Формируем коммерческое предложение</h3>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/contract.png">
+          <img class="card-img" src="/img/icons-hr/contract.png" />
           <span class="b">4</span>
           <h3>Заключаем договор</h3>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/staff.png">
+          <img class="card-img" src="/img/icons-hr/staff.png" />
           <span class="b">5</span>
           <h3>Начинаем работать</h3>
           <p>Предоставляем Вам персонал согласно заявке</p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/hired.png">
+          <img class="card-img" src="/img/icons-hr/hired.png" />
           <span class="b">6</span>
           <h3>Реализация проекта</h3>
           <p>Администрируем проект персональным менеджером</p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/insurance.png">
+          <img class="card-img" src="/img/icons-hr/insurance.png" />
           <span class="b">7</span>
           <h3>Качественная обратная связь</h3>
           <p>Вы получили желаемый результат</p>
+        </div>
+      </div>
+
+      <h2 class="text-center">Сила в контроле</h2>
+      <div class="d-grid grid">
+        <div class="card-white">
+          <img class="img" src="/img/icons-hr/manager.jpg">
+          <h3>Личный менеджер</h3>
+          <p>
+            За ваш объект отвечает персональный менеджер. Он соьирает информацию
+            для запуска проекта, составляет расписание сотрудников и
+            корректирует работу над проектом. Менеджер всегда в курсе
+            происходящего, поэтому ответит на любой ваш вопрос.
+          </p>
+        </div>
+
+        <div class="card-white">
+          <img class="img" src="/img/icons-hr/brigadir.jpg">
+          <h3>Бригадир</h3>
+          <p>
+            За выполнение заданий и работу бригады отвечает бригадир. Он
+            руководит рабочими на объекте, ставит им задачи и распределяет по
+            местам.
+          </p>
+        </div>
+
+        <div class="card-white">
+          <img class="img" src="/img/icons-hr/bureau.jpg">
+          <h3>Отдел документооборота</h3>
+          <p>
+            Наш отдел документооборота всегда на связи. Штатный юрист и
+            бухгалтер предоставят вам 7 вариантов договора и несколько способов
+            оплаты на выбор. Как показывает практика, наши клиенты это ценят.
+          </p>
         </div>
       </div>
     </section>
@@ -204,12 +236,12 @@ export default {
   components: {
     PageHeader,
     HeaderSubmenu,
-    FeedbackForm
+    FeedbackForm,
   },
   layout: 'clean',
-  data () {
+  data() {
     return {
-      services: servicesData
+      services: servicesData,
     }
   },
   head: {
@@ -219,10 +251,10 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.'
-      }
-    ]
-  }
+          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.',
+      },
+    ],
+  },
 }
 </script>
 

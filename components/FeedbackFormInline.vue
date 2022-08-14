@@ -4,55 +4,41 @@
       <div v-if="!isSubmitted" class="form-content">
         <div class="form-title">
           <slot>
-            <h2>
-              Запросите предложение на&nbsp;обслуживание инженерных систем
-            </h2>
+            <h2>Оставить заявку</h2>
           </slot>
         </div>
-        <div class="form-container mb-3">
-          <form
-            method="post"
-            action="https://api.formcake.com/api/form/97f10aee-9328-4347-aab1-bc45871357a4/submission"
-          >
-            <div class="mb-3" role="group">
-              <label class="label" for="input-name">Ваше имя:</label>
+        <form
+          method="post"
+          action="https://api.formcake.com/api/form/97f10aee-9328-4347-aab1-bc45871357a4/submission"
+        >
+          <div class="form-container mb-3">
+            <div role="group">
               <b-form-input
                 id="input-name"
                 v-model="name"
                 name="name"
-                placeholder="Иван Петров"
+                placeholder="Ваше имя"
                 trim
               />
             </div>
-            <div class="mb-3" role="group">
-              <label class="label" for="input-name">Название компании:</label>
-              <b-form-input
-                id="input-name"
-                v-model="company"
-                name="company"
-                placeholder="Название компании"
-                trim
-              />
-            </div>
-            <div class="mb-3" role="group">
-              <label class="label" for="input-contact">Ваш телефон:</label>
+            <div role="group">
               <b-form-input
                 id="input-contact"
                 v-model="contact"
                 name="contact"
-                placeholder="+7 927 222 3333"
+                placeholder="+7 (9__) ___-____"
                 trim
               />
             </div>
-            <!-- <div class="mb-3" role="group">
-              <b-form-textarea
-                id="input-text"
-                v-model="text"
-                name="text"
-                placeholder="Ваш вопрос или комментарий"
-                rows="3"
+            <div role="group">
+              <b-form-input
+                id="input-email"
+                v-model="email"
+                name="email"
+                placeholder="Ваш email"
+                trim
               />
-            </div> -->
+            </div>
 
             <input
               v-for="(key, item) in utm"
@@ -62,22 +48,24 @@
               :value="item"
             >
 
+            <div role="group">
+              <input
+                class="btn btn-light btn-block"
+                :disabled="submitDisabled"
+                type="submit"
+                value="Оставить заявку"
+                @click="onSubmit"
+              >
+            </div>
+
             <p class="text-policy">
               Отправляя эту форму вы соглашаетесь на обработку ваших
               персональных данных. Ознакомьтесь с&nbsp;<nuxt-link to="/policy">
                 политикой конфиденциальности.
               </nuxt-link>
             </p>
-
-            <input
-              class="btn btn-block"
-              :disabled="submitDisabled"
-              type="submit"
-              value="Отправить"
-              @click="onSubmit"
-            >
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
 
       <div v-else class="form-confirmation">
@@ -113,7 +101,7 @@ export default {
   data () {
     return {
       name: '',
-      company: '',
+      email: '',
       contact: '',
       text: ''
     }
@@ -151,10 +139,10 @@ export default {
 
 .feedback-form {
   position: relative;
-  padding: 0.75rem 2rem 2rem;
+  padding: 0 1.5rem;
   color: $white;
-  border-radius: $border-radius-sm;
-  background-image: url(/img/bg-form.jpg);
+  border-radius: 1rem;
+  background-image: url(/img/bg-form-inline.jpg);
   background-size: cover;
   overflow: hidden;
 
@@ -171,7 +159,7 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 0;
   }
 }
@@ -192,11 +180,14 @@ export default {
 }
 
 .form-container {
-  max-width: 30rem;
-  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .text-policy {
+  grid-column: 1 / 4;
+  max-width: 38rem;
   font-size: 85%;
   color: $gray-200;
 
@@ -208,5 +199,6 @@ export default {
 .btn-block {
   width: 100%;
   display: block;
+  height: 2.4rem;
 }
 </style>

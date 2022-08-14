@@ -1,21 +1,31 @@
 <template>
   <div class="leader container">
     <logo />
-    <ul class="main-menu" @keyup.enter="onEnter" tabindex="0">
+    <ul class="main-menu" tabindex="0">
       <li>
-        <nuxt-link to="/services"> Услуги </nuxt-link>
+        <nuxt-link to="/services">
+          Услуги
+        </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/clients"> Опыт и клиенты </nuxt-link>
+        <nuxt-link to="/clients">
+          Опыт и клиенты
+        </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/manufacture"> Производство </nuxt-link>
+        <nuxt-link to="/manufacture">
+          Производство
+        </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/advantages"> Преимущества </nuxt-link>
+        <nuxt-link to="/advantages">
+          Преимущества
+        </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/contact"> Контакты </nuxt-link>
+        <nuxt-link to="/contact">
+          Контакты
+        </nuxt-link>
       </li>
     </ul>
     <div class="leader-right">
@@ -34,11 +44,6 @@ import Logo from '~/components/AppLogo.vue'
 export default {
   components: {
     Logo
-  },
-  methods: {
-    onEnter () {
-      debugger
-    }
   }
 }
 </script>

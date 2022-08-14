@@ -1,12 +1,16 @@
 <template>
   <div>
-    <page-header class="ph-purple">
+    <page-header class="ph-blue">
       <header-submenu :menu="services" />
-      <h1 class="page-title">Аутсорсинг персонала</h1>
+      <h1 class="page-title">
+        Аутсорсинг персонала
+      </h1>
     </page-header>
 
     <section class="section">
-      <h2 class="text-center">На чем же основана бизнес-модель аутсорсинга?</h2>
+      <h2 class="text-center">
+        На чем же основана бизнес-модель аутсорсинга?
+      </h2>
 
       <p>
         Если у вас в штате работают сотрудники, за которых вы регулярно и в
@@ -30,15 +34,20 @@
         программ по расчету с самозанятыми.
       </p>
 
+      <h2 class="text-center">
+        Преимущества работы с нами
+      </h2>
+
       <div class="d-grid grid">
         <div class="card-light">
+          <img class="card-img" src="/img/icons-hr/schedule.png">
           <h4>Сохраняем Ваше время</h4>
           <p>
             Подбираем необходимый персонал в сжатые сроки (у нас есть своя база
-            данных соискателей)
+            данных соискателей).
           </p>
-          <p>Отвечаем за адаптацию и программу мотивации персонала</p>
-          <p>Гарантируем соблюдение графиков выхода персонала</p>
+          <p>Отвечаем за адаптацию и программу мотивации персонала.</p>
+          <p>Гарантируем соблюдение графиков выхода персонала.</p>
           <p>
             Контролируем выполнение нанятыми людьми должностных обязанностей.
           </p>
@@ -48,9 +57,11 @@
           </p>
           <p>
             Вы не вступаете в трудовые отношения с временным персоналом -
-            сводятся на нет возможность трудовых споров
+            сводится на нет возможность трудовых споров.
           </p>
-          <p>Вы не платите за простой, избегая проблем с трудовой инспекцией</p>
+          <p>
+            Вы не платите за простой, избегая проблем с трудовой инспекцией.
+          </p>
           <p>
             Мы позволим снизить документальную нагрузку на кадровиков и
             бухгалтерию.
@@ -58,53 +69,57 @@
         </div>
 
         <div class="card-light">
+          <img class="card-img" src="/img/icons-hr/security.png">
           <h4>Обеспечиваем безопасность</h4>
           <p>
             Сопровождаем проект специалистом по охране труда, оформляем
-            медицинские книжки и необходимые допуски
+            медицинские книжки и необходимые допуски.
           </p>
           <p>
             Персональный менеджер обеспечивает организацию вывода персонала на
-            работу и курирует их эффективность
+            работу и курирует их эффективность.
           </p>
           <p>
-            Проверяем достоверность предоставленных документов об образовании
+            Проверяем достоверность предоставленных документов об образовании.
           </p>
           <p>
             Выясняем опыт работы, изучаем рекомендации и проверяем их
-            подлинность
+            подлинность.
           </p>
           <p>
             Выясняем мотивацию к выполнению работы, тип характера,
-            стрессоустойчивость
+            стрессоустойчивость.
           </p>
-          <p>Проверяем персонал службой безопасности</p>
+          <p>Проверяем персонал службой безопасности.</p>
         </div>
 
         <div class="card-light">
+          <img class="card-img" src="/img/icons-hr/money.png">
           <h4>Экономим Ваши финансовые ресурсы</h4>
-          <p>Ведем кадровое сопровождение в полном объеме</p>
-          <p>Ведем всю необходимую налоговую отчетность</p>
-          <p>Берем все затраты на себя по найму (реклама, подбор, обучение)</p>
+          <p>Ведем кадровое сопровождение в полном объеме.</p>
+          <p>Ведем всю необходимую налоговую отчетность.</p>
+          <p>Берем все затраты на себя по найму (реклама, подбор, обучение).</p>
           <p>
             Вы будете экономить на социальных, налоговых выплатах и фонде
-            заработной платы
+            заработной платы.
           </p>
           <p>
             За счет увеличения расходной части отчетности можете снизить
-            налогооблагаемую базу
+            налогооблагаемую базу.
           </p>
-          <p>Можете экономить административный ресурс</p>
+          <p>Можете экономить административный ресурс.</p>
           <p>
             Ваше предприятие и склад будут работать стабильно, в плановом
-            режиме, а значит максимально эффективно
+            режиме, а значит максимально эффективно.
           </p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <h2 class="text-center">Персонал под любой запрос</h2>
+      <h2 class="text-center">
+        Персонал под любой запрос
+      </h2>
       <div class="row">
         <div class="col-6">
           <h3>Линейный и неквалифицированный персонал:</h3>
@@ -132,66 +147,123 @@
       </div>
     </section>
 
+    <section class="section">
+      <h2 class="text-center mb-4">
+        Для кого
+      </h2>
+
+      <div class="d-grid grid">
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/warehouse.png">
+          <p class="text-center">
+            Складов
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/factory.png">
+          <p class="text-center">
+            Производств
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/worker.png">
+          <p class="text-center">
+            Объектов, где требуются рабочие
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/brick-wall.png">
+          <p class="text-center">
+            Строительных организаций
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/transport.png">
+          <p class="text-center">
+            Транспортных компаний
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/engineer.png">
+          <p class="text-center">
+            Прорабов
+          </p>
+        </div>
+      </div>
+    </section>
+
     <div class="container mb-4">
-      <feedback-form>
-        <h2>Оставьте заявку</h2>
-        <p class="text-center">
-          и получите расчет аутсорсинга по вашим требованиям
-        </p>
-      </feedback-form>
+      <feedback-form-inline />
     </div>
 
     <section class="section">
-      <h2 class="text-center mb-4">Порядок работы с нами</h2>
+      <h2 class="text-center mb-4">
+        Порядок работы с нами
+      </h2>
       <div class="d-grid grid">
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/envelope.png" />
+          <img class="card-img" src="/img/icons-hr/envelope.png">
           <span class="b">1</span>
           <h3>Заявка от Вас</h3>
+          <p>
+            Заполните любую форму на сайте и наш менеджер свяжется с Вами для
+            уточнения деталей по Вашей заявке. Мы обсудим количество
+            необходимого персонала, требования к нему, в каком регионе работа и
+            чем будет занят персонал.
+          </p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/headhunting.png" />
+          <img class="card-img" src="/img/icons-hr/headhunting.png">
           <span class="b">2</span>
           <h3>Мониторинг</h3>
           <p>
-            Изучаем специфику Вашего бизнеса, проводим аудит на объекте для
+            Изучаем специфику Вашего бизнеса, производим выезд на объект для
             четкого понимания особенностей всех работ
           </p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/requirements.png" />
+          <img class="card-img" src="/img/icons-hr/contract.png">
           <span class="b">3</span>
-          <h3>Формируем коммерческое предложение</h3>
-        </div>
-        <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/contract.png" />
-          <span class="b">4</span>
           <h3>Заключаем договор</h3>
+          <p>
+            Начинаем согласование договора и договорной цены. Решаем, как будем
+            производить оплату, цена будет ниже при условии оплаты каждые 15
+            дней.
+          </p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/staff.png" />
-          <span class="b">5</span>
-          <h3>Начинаем работать</h3>
-          <p>Предоставляем Вам персонал согласно заявке</p>
-        </div>
-        <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/hired.png" />
-          <span class="b">6</span>
+          <img class="card-img" src="/img/icons-hr/hired.png">
+          <span class="b">4</span>
           <h3>Реализация проекта</h3>
           <p>Администрируем проект персональным менеджером</p>
         </div>
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/insurance.png" />
-          <span class="b">7</span>
+          <img class="card-img" src="/img/icons-hr/staff.png">
+          <span class="b">5</span>
+          <h3>Начинаем работать</h3>
+          <p>
+            Необходимый персонал выезжает к Вам на объект. Это занимает от 3-х
+            до 21 рабочего дня (от 50 человек). В случае, если какие-либо
+            сотрудники не подходят Вам по профилю — производим срочную замену
+            сотрудника за 24 часа
+          </p>
+        </div>
+        <div class="card-blue">
+          <img class="card-img" src="/img/icons-hr/insurance.png">
+          <span class="b">6</span>
           <h3>Качественная обратная связь</h3>
           <p>Вы получили желаемый результат</p>
         </div>
       </div>
+    </section>
 
-      <h2 class="text-center">Сила в контроле</h2>
+    <section class="section">
+      <h2 class="text-center mb-4">
+        Сила в контроле
+      </h2>
       <div class="d-grid grid">
-        <div class="card-white">
-          <img class="img" src="/img/icons-hr/manager.jpg">
+        <div class="card-blue">
+          <img class="card-img" src="/img/icons-hr/manager.png">
           <h3>Личный менеджер</h3>
           <p>
             За ваш объект отвечает персональный менеджер. Он соьирает информацию
@@ -201,27 +273,41 @@
           </p>
         </div>
 
-        <div class="card-white">
-          <img class="img" src="/img/icons-hr/brigadir.jpg">
+        <div class="card-blue">
+          <img class="card-img" src="/img/icons-hr/brigadir.png">
           <h3>Бригадир</h3>
           <p>
             За выполнение заданий и работу бригады отвечает бригадир. Он
             руководит рабочими на объекте, ставит им задачи и распределяет по
             местам.
           </p>
+          <p>
+            На каждом объекте у нас от 1 до 5 бригадиров (в зависимости от
+            заявки), которые контролируют процесс, ведут табель учета рабочего
+            времени, контролируют выработку и помогают Вам в управлении
+            персоналом.
+          </p>
         </div>
 
-        <div class="card-white">
-          <img class="img" src="/img/icons-hr/bureau.jpg">
+        <div class="card-blue">
+          <img class="card-img" src="/img/icons-hr/docs-dep.png">
           <h3>Отдел документооборота</h3>
           <p>
-            Наш отдел документооборота всегда на связи. Штатный юрист и
-            бухгалтер предоставят вам 7 вариантов договора и несколько способов
-            оплаты на выбор. Как показывает практика, наши клиенты это ценят.
+            Отдел документооборота предоставит несколько вариантов договора и
+            способов оплаты. Как показывает практика, наши клиенты это ценят.
           </p>
         </div>
       </div>
     </section>
+
+    <div class="container mb-4">
+      <feedback-form id="feedback-form-bottom">
+        <h2>Остались вопросы?</h2>
+        <p class="text-center">
+          Задайте их нашему специалисту
+        </p>
+      </feedback-form>
+    </div>
   </div>
 </template>
 
@@ -229,6 +315,7 @@
 import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import FeedbackForm from '~/components/FeedbackForm.vue'
+import FeedbackFormInline from '~/components/FeedbackFormInline.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -237,11 +324,12 @@ export default {
     PageHeader,
     HeaderSubmenu,
     FeedbackForm,
+    FeedbackFormInline
   },
   layout: 'clean',
-  data() {
+  data () {
     return {
-      services: servicesData,
+      services: servicesData
     }
   },
   head: {
@@ -251,17 +339,15 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.',
-      },
-    ],
-  },
+          'Компания ВЭКСЕРВИС обеспечивает Ваш бизнес персоналом, взяв на себя ответственность за весь процесс от подбора до полного сопровождения и управления персоналом.'
+      }
+    ]
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~assets/scss/init.scss';
-
-$dark-blue: mix($blue, $black, 40%);
 
 .card-blue {
   background: $dark-blue;
@@ -282,8 +368,10 @@ $dark-blue: mix($blue, $black, 40%);
 }
 
 .card-img {
-  max-width: 5rem;
+  max-width: 4.25rem;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .b {
@@ -302,12 +390,13 @@ $dark-blue: mix($blue, $black, 40%);
 }
 
 .card-light {
-  background: mix($blue, $white, 20%);
+  background: mix($blue, $white, 18%);
   border-radius: 1rem;
   border: 1px solid mix($blue, $white, 40%);
-  padding: 0.5rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 1.5rem 1rem 1rem;
+
+  h4 {
+    color: $dark-blue;
+  }
 }
 </style>

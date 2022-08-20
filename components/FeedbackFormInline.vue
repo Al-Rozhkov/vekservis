@@ -84,7 +84,6 @@ import { BFormInput } from 'bootstrap-vue'
 export default {
   components: {
     BFormInput
-    // BFormTextarea
   },
 
   props: {
@@ -182,11 +181,12 @@ export default {
 .form-container {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .text-policy {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   max-width: 38rem;
   font-size: 85%;
   color: $gray-200;
@@ -200,5 +200,11 @@ export default {
   width: 100%;
   display: block;
   height: 2.4rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .form-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 </style>

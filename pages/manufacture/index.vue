@@ -2,7 +2,7 @@
   <main>
     <page-header class="ph-blue ph-position-center">
       <h1 class="page-title">
-        Собственное производство и&nbsp;разработки компании «ВЭК&nbsp;СЕРВИС»
+        Собственное производство и&nbsp;разработки компании ВЭК&nbsp;СЕРВИС
       </h1>
     </page-header>
     <section class="container">
@@ -58,7 +58,7 @@ export default {
     }
   },
   head: {
-    title: 'Собственное производство и разработки компании «ВЭК СЕРВИС',
+    title: 'Собственное производство и разработки компании ВЭК СЕРВИС'
   }
 }
 </script>

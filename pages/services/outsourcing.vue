@@ -39,7 +39,7 @@
       </h2>
 
       <div class="d-grid grid">
-        <div class="card-light">
+        <div class="card-blue">
           <img class="card-img" src="/img/icons-hr/schedule.png">
           <h4>Сохраняем Ваше время</h4>
           <p>
@@ -68,7 +68,7 @@
           </p>
         </div>
 
-        <div class="card-light">
+        <div class="card-blue">
           <img class="card-img" src="/img/icons-hr/security.png">
           <h4>Обеспечиваем безопасность</h4>
           <p>
@@ -93,7 +93,7 @@
           <p>Проверяем персонал службой безопасности.</p>
         </div>
 
-        <div class="card-light">
+        <div class="card-blue">
           <img class="card-img" src="/img/icons-hr/money.png">
           <h4>Экономим Ваши финансовые ресурсы</h4>
           <p>Ведем кадровое сопровождение в полном объеме.</p>
@@ -122,8 +122,8 @@
       </h2>
       <div class="row">
         <div class="col-6">
-          <h3>Линейный и неквалифицированный персонал:</h3>
-          <ul>
+          <h3>Линейный и неквалифицированный персонал</h3>
+          <!-- <ul>
             <li>
               Розничная торговля (кассиры, продавцы, работники торгового зала)
             </li>
@@ -133,16 +133,16 @@
               упаковщики, стикеровщик, сортировщик, упаковщик)
             </li>
             <li>Линейный персонал (грузчики, разнорабочие, уборщицы)</li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col-6">
-          <h3>Административный и инженерный персонал:</h3>
-          <ul>
+          <h3>Административный и инженерный персонал</h3>
+          <!-- <ul>
             <li>Административный персонал</li>
             <li>Строительство и архитектура</li>
             <li>Бухгалтерия и финансы</li>
             <li>Продажи и закупки</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </section>
@@ -152,7 +152,13 @@
         Для кого
       </h2>
 
-      <div class="d-grid grid">
+      <div class="d-grid grid-4">
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/mall.png">
+          <p class="text-center">
+            Торговых центров
+          </p>
+        </div>
         <div class="card-white">
           <img class="card-img" src="/img/icons-hr/warehouse.png">
           <p class="text-center">
@@ -181,6 +187,12 @@
           <img class="card-img" src="/img/icons-hr/transport.png">
           <p class="text-center">
             Транспортных компаний
+          </p>
+        </div>
+        <div class="card-white">
+          <img class="card-img" src="/img/icons-hr/delivery.png">
+          <p class="text-center">
+            Курьерских служб
           </p>
         </div>
         <div class="card-white">
@@ -266,7 +278,7 @@
           <img class="card-img" src="/img/icons-hr/manager.png">
           <h3>Личный менеджер</h3>
           <p>
-            За ваш объект отвечает персональный менеджер. Он соьирает информацию
+            За ваш объект отвечает персональный менеджер. Он собирает информацию
             для запуска проекта, составляет расписание сотрудников и
             корректирует работу над проектом. Менеджер всегда в курсе
             происходящего, поэтому ответит на любой ваш вопрос.
@@ -349,6 +361,11 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/scss/init.scss';
 
+.grid-4 {
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
 .card-blue {
   background: $dark-blue;
   color: $white;
@@ -389,7 +406,7 @@ export default {
   font-size: 1.2rem;
 }
 
-.card-light {
+/* .card-light {
   background: mix($blue, $white, 18%);
   border-radius: 1rem;
   border: 1px solid mix($blue, $white, 40%);
@@ -398,5 +415,5 @@ export default {
   h4 {
     color: $dark-blue;
   }
-}
+} */
 </style>

@@ -40,7 +40,7 @@
 
       <div class="d-grid grid">
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/schedule.png">
+          <img class="card-img" src="/img/icons-hr/timetable.png">
           <h4>Сохраняем Ваше время</h4>
           <p>
             Подбираем необходимый персонал в сжатые сроки (у нас есть своя база
@@ -69,7 +69,7 @@
         </div>
 
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/security.png">
+          <img class="card-img" src="/img/icons-hr/safety.png">
           <h4>Обеспечиваем безопасность</h4>
           <p>
             Сопровождаем проект специалистом по охране труда, оформляем
@@ -94,7 +94,7 @@
         </div>
 
         <div class="card-blue">
-          <img class="card-img" src="/img/icons-hr/money.png">
+          <img class="card-img" src="/img/icons-hr/safe.png">
           <h4>Экономим Ваши финансовые ресурсы</h4>
           <p>Ведем кадровое сопровождение в полном объеме.</p>
           <p>Ведем всю необходимую налоговую отчетность.</p>

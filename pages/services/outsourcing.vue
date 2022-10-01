@@ -8,34 +8,14 @@
     </page-header>
 
     <section class="section">
-      <h2 class="text-center">
-        На чем же основана бизнес-модель аутсорсинга?
+      <h2 class="page-subtitle">
+        <span class="page-subtitle-underline">Мы обеспечиваем Ваш бизнес персоналом, взяв на себя ответственность
+          за весь процесс от подбора до полного сопровождения и управления
+          персоналом</span>
       </h2>
 
-      <p>
-        Если у вас в штате работают сотрудники, за которых вы регулярно и в
-        полном объеме производите все социальные и налоговые отчисления, то мы
-        можем предложить вам решение по снижению финансовой нагрузки на ваш
-        бизнес: привлечь самозанятых.
-      </p>
-
-      <p>
-        Ваш фонд оплаты труда в сумме с расходами на социальные выплаты может
-        быть сокращен за счет применения налогового режима самозанятых лиц.
-        Дополнительным преимуществом будет возможность повышения уровня
-        заработной платы привлекаемым сотрудникам за счет сэкономленных средств,
-        что создаст дополнительную заинтересованность в вас как работодателе со
-        стороны более квалифицированных кадров.
-      </p>
-
-      <p>
-        Мы берем на себя все кадровое делопроизводство по работе с самозанятыми
-        вместо Вас, в том числе, использование пакета специализированных
-        программ по расчету с самозанятыми.
-      </p>
-
       <h2 class="text-center">
-        Преимущества работы с нами
+        Преимущества работы с&nbsp;нами
       </h2>
 
       <div class="d-grid grid">
@@ -56,11 +36,8 @@
             Вам профессиональными навыками.
           </p>
           <p>
-            Вы не вступаете в трудовые отношения с временным персоналом -
-            сводится на нет возможность трудовых споров.
-          </p>
-          <p>
-            Вы не платите за простой, избегая проблем с трудовой инспекцией.
+            Трудовые споры и взаимодействие с трудовой инспекцией исключаются -
+            всю нагрузку по оформлению мы берём на себя.
           </p>
           <p>
             Мы позволим снизить документальную нагрузку на кадровиков и
@@ -109,8 +86,8 @@
           </p>
           <p>Можете экономить административный ресурс.</p>
           <p>
-            Ваше предприятие и склад будут работать стабильно, в плановом
-            режиме, а значит максимально эффективно.
+            Полное комплектование штатом позволит Вашей компании работать
+            стабильно, в плановом режиме, а значит максимально эффективно.
           </p>
         </div>
       </div>
@@ -152,55 +129,31 @@
         Для кого
       </h2>
 
-      <div class="d-grid grid-4">
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/mall.png">
-          <p class="text-center">
-            Торговых центров
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/warehouse.png">
-          <p class="text-center">
-            Складов
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/factory.png">
-          <p class="text-center">
-            Производств
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/worker.png">
-          <p class="text-center">
-            Объектов, где требуются рабочие
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/brick-wall.png">
-          <p class="text-center">
-            Строительных организаций
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/transport.png">
-          <p class="text-center">
-            Транспортных компаний
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/delivery.png">
-          <p class="text-center">
-            Курьерских служб
-          </p>
-        </div>
-        <div class="card-white">
-          <img class="card-img" src="/img/icons-hr/engineer.png">
-          <p class="text-center">
-            Прорабов
-          </p>
-        </div>
+      <div class="d-grid grid-4 mb-4">
+        <card-hover icon-name="mall">
+          Торговых центров
+        </card-hover>
+        <card-hover icon-name="warehouse">
+          Складов
+        </card-hover>
+        <card-hover icon-name="factory">
+          Производств
+        </card-hover>
+        <card-hover icon-name="worker">
+          Объектов, где требуются рабочие
+        </card-hover>
+        <card-hover icon-name="brick-wall">
+          Строительных организаций
+        </card-hover>
+        <card-hover icon-name="transport">
+          Транспортных компаний
+        </card-hover>
+        <card-hover icon-name="delivery">
+          Курьерских служб
+        </card-hover>
+        <card-hover icon-name="engineer">
+          Прорабов
+        </card-hover>
       </div>
     </section>
 
@@ -328,6 +281,7 @@ import PageHeader from '~/components/PageHeader.vue'
 import HeaderSubmenu from '~/components/HeaderSubmenu.vue'
 import FeedbackForm from '~/components/FeedbackForm.vue'
 import FeedbackFormInline from '~/components/FeedbackFormInline.vue'
+import CardHover from '~/components/CardHover.vue'
 
 import servicesData from '~/data/services.json'
 
@@ -336,7 +290,8 @@ export default {
     PageHeader,
     HeaderSubmenu,
     FeedbackForm,
-    FeedbackFormInline
+    FeedbackFormInline,
+    CardHover
   },
   layout: 'clean',
   data () {
@@ -406,14 +361,14 @@ export default {
   font-size: 1.2rem;
 }
 
-/* .card-light {
-  background: mix($blue, $white, 18%);
-  border-radius: 1rem;
-  border: 1px solid mix($blue, $white, 40%);
-  padding: 1.5rem 1rem 1rem;
+.page-subtitle {
+  max-width: 52rem;
+  margin: 1.5rem auto 3.5rem;
+  text-align: center;
+}
 
-  h4 {
-    color: $dark-blue;
-  }
-} */
+.page-subtitle-underline {
+  max-width: 60rem;
+  border-bottom: 3px solid rgba($blue, 15%);
+}
 </style>

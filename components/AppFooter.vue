@@ -13,7 +13,7 @@
     <div class="col-4">
       <p>
         <nuxt-link to="/contact">
-          г.&nbsp;Пенза, ул.&nbsp;Ставского, 4, оф.&nbsp;4
+          г.&nbsp;Пенза, ул.&nbsp;Ставского, стр.&nbsp;4, офис&nbsp;4
         </nuxt-link>
         <br>
         <nuxt-link to="/contact/moscow">

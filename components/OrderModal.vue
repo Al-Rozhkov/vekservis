@@ -17,7 +17,7 @@
           <b-form-input
             id="input-name"
             v-model="name"
-            placeholder="Иван Иванов"
+            placeholder="Имя"
             trim
           />
         </div>

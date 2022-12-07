@@ -326,7 +326,7 @@
         Презентация компании
       </h2>
       <div class="section-body">
-        <a href="/docs/vekservis2021.pdf">
+        <a href="/docs/vekservis2022.pdf">
           <img
             src="/img/docs/presentation2021.jpg"
             alt="Презентация компании ВЭК СЕРВИС в PDF"

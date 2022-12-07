@@ -20,17 +20,17 @@
                 id="input-name"
                 v-model="name"
                 name="name"
-                placeholder="Иван Петров"
+                placeholder="Имя"
                 trim
               />
             </div>
             <div class="mb-3" role="group">
-              <label class="label" for="input-name">Название компании:</label>
+              <label class="label" for="input-name">Тема запроса / название компании:</label>
               <b-form-input
                 id="input-name"
                 v-model="company"
                 name="company"
-                placeholder="Название компании"
+                placeholder="Тема запроса / название компании"
                 trim
               />
             </div>

@@ -5,7 +5,7 @@
         <div class="form-title">
           <slot>
             <h2>
-              Запросите предложение на&nbsp;обслуживание инженерных систем
+              Запрос стоимости услуг
             </h2>
           </slot>
         </div>
@@ -21,16 +21,18 @@
                 v-model="name"
                 name="name"
                 placeholder="Имя"
+                required
                 trim
               />
             </div>
             <div class="mb-3" role="group">
-              <label class="label" for="input-name">Тема запроса / название компании:</label>
+              <label class="label" for="input-subject">Тема запроса:</label>
               <b-form-input
-                id="input-name"
-                v-model="company"
-                name="company"
-                placeholder="Тема запроса / название компании"
+                id="input-subject"
+                v-model="subject"
+                name="subject"
+                placeholder="Тема запроса"
+                required
                 trim
               />
             </div>
@@ -113,7 +115,7 @@ export default {
   data () {
     return {
       name: '',
-      company: '',
+      subject: '',
       contact: '',
       text: ''
     }
@@ -121,7 +123,7 @@ export default {
 
   computed: {
     submitDisabled () {
-      return this.name.length < 1 || this.contact.length < 6
+      return this.name.length < 1 || this.subject.length < 3 || this.contact.length < 6
     },
 
     utm () {

@@ -33,8 +33,14 @@
       "double": true
     },
     {
+      "name": "welding",
+      "title": "Услуги полуавтоматической сварки",
+      "half": true
+    },
+    {
       "name": "cleaning",
-      "title": "Комплексная уборка помещений и&nbsp;территорий"
+      "title": "Комплексная уборка помещений и&nbsp;территорий",
+      "half": true
     },
     {
       "name": "floor",
@@ -42,7 +48,8 @@
     },
     {
       "name": "outsourcing",
-      "title": "Аутсорсинг персонала"
+      "title": "Аутсорсинг персонала",
+      "double": true
     }
   ]
 }

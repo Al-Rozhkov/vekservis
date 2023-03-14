@@ -6,9 +6,7 @@
       </h1>
     </page-header>
     <section class="container">
-      <p>
-        г.&nbsp;Москва, ул.&nbsp;Космонавта Волкова 6А
-      </p>
+      <p>г.&nbsp;Москва, ул.&nbsp;Академика Королева д.&nbsp;4 к.&nbsp;4</p>
       <p>Телефон: 8&nbsp;800&nbsp;600-00-65</p>
     </section>
     <section class="container">

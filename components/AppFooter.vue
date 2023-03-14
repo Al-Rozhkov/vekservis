@@ -17,7 +17,7 @@
         </nuxt-link>
         <br>
         <nuxt-link to="/contact/moscow">
-          г.&nbsp;Москва, ул.&nbsp;Космонавта Волкова 6А
+          г.&nbsp;Москва, ул.&nbsp;Академика Королева д.&nbsp;4 к.&nbsp;4
         </nuxt-link>
       </p>
       <p>
